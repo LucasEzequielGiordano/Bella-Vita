@@ -1,0 +1,623 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #FFA0BD;
+}
+
+header {
+    width: 100%;
+    height: 30%;
+}
+
+.header {
+    background-image: url(../imagenes/BellaVita.jpg);
+    background-size: contain;
+    width: auto;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    padding: 120px;
+}
+
+nav {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: 8%;
+    background-color: #9DC494;
+    color: #FFFFD0;
+}
+
+ul {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    line-height: 20px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    display: inline;
+    width: 10%;
+    margin: 20px;
+    border: 3px solid #FFFFD0;
+}
+
+li:hover {
+    background-color: #FFFFD0;
+    color: #9DC494;
+    border: 3px solid #9DC494;
+}
+
+main{
+    width: 100%;
+    height: 60%;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    font-family: 'Arial Narrow Bold', helvetica, sans-serif;
+    font-size: 28px;
+    color: #fff;
+}
+
+h3 {
+    display: inline;
+    text-align: center;
+    width: 100%;
+    margin: 10px 90px;
+    padding: 30px 70px 30px 70px;
+    font-family: 'Arial Narrow Bold', helvetica, sans-serif;
+    color: #fff;
+}
+
+img {
+    display: inline-block;
+    text-align: center;
+    margin: 10px 90px;
+    width: 200px;
+    height: 200px;
+}
+
+.div {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 128px;
+    padding: 10px 25px;
+    background-color: #fff;
+    color: pink;
+    border: 3px solid pink;
+}
+
+.div:hover {
+    background-color: pink;
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+footer {
+    position: initial;
+    width: 100%;
+    height: auto;
+    background-color: #9DC494;
+}
+
+div {
+    display: inline;
+}
+
+h4 {
+    font-size: 24px;
+    margin-left: 200px;
+    color: #FFFFD0;
+}
+
+i {
+    margin: 25px 50px;
+    font-size: 24px;
+    color: #FFFFD0;
+}
+
+.far {
+    margin-left: 900px;
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 240vh;
+    overflow-x: hidden;
+    background: rgb(252,228,255);
+    background: linear-gradient(34deg, rgba(252,228,255,1) 9%, rgba(255,160,189,1) 50%, rgba(255,225,248,1) 91%);
+}
+
+#container {
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "header header header"
+    "section1 section1 section1"
+    "section2 section2 section2"
+    "footer footer footer";
+    grid-template-rows: 50px ;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.header {
+    grid-area: header;
+}
+
+.section1 {
+    grid-area: section1;
+}
+
+.section2 {
+    grid-area: section2;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+nav {
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    background-color: #9DC494;
+    color: #FFFFD0;
+}
+
+ul {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    display: inline;
+    width: 150px;
+    height: 24px;
+    border: 3px solid #FFFFD0;
+}
+
+li:hover {
+    background-color: #FFFFD0;
+    color: #9DC494;
+    border: 3px solid #9DC494;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagenes/BellaVita.jpg);
+    background-size: 258px;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    padding: 125px;
+    margin-top: 10px;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    margin-top: 1%;
+}
+
+#section2 {
+    display: grid;
+    grid-template-areas: 
+    "item1 item2"
+    "item3 item4";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 600px 600px;
+    gap: 3px;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.item1{
+    background-image: url(../imagenes/relojnegro.JPG);
+    background-position: center;
+    background-size: cover;
+    border: 3px solid #94faff;
+    font-style: italic;
+    font-size: 25px;
+    padding: 50px;
+}
+.item2{
+    background-image: url(../imagenes/pulserasdecoronas.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 3px solid #94faff;
+    font-style: italic;
+    font-size: 25px;
+    padding: 50px;
+}
+.item3{
+    background-image: url(../imagenes/arosdecara.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 3px solid #94faff;
+    font-style: italic;
+    font-size: 25px;
+    padding: 50px;
+}
+.item4{
+    background-image: url(../imagenes/dijegoodvibes.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 3px solid #94faff;
+    font-style: italic;
+    font-size: 25px;
+    padding: 50px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 9%;
+    background-color: #9DC494;
+}
+
+h4 {
+    font-size: 24px;
+    margin-left: 200px;
+    color: #FFFFD0;
+}
+
+.footer__img {
+    height: 30px;
+    padding-left: 75px;
+}
+
+.footer__imgc {
+    height: 30px;
+    margin-left: 900px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* final del index */
+/* inicio de seccion nuevo */
+/* .headern {
+    width: 100%;
+    height: 15%;
+}
+
+.headern__nav {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: pink;
+}
+
+.headern__nav--li {
+    display: inline-block;
+    width: 10%;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 3px solid pink;
+    color: 5px;
+    margin: 5px;
+}
+
+.headern__nav--li:hover {
+    background-color: pink;
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+.mainn {
+    width: 100%;
+    height: 75%;
+}
+
+.mainn__h2 {
+    width: 100%;
+    display: inline;
+    font-family: 'Arial Narrow Bold', Helvetica, sans-serif;
+    margin: 20px 100px;
+    padding: 20px 130px;
+}
+
+.footern {
+    width: 100%;
+    height: 10%;
+}
+ */
+
+
+
+
+
+/* final de seccion nuevo */
+/* inicio de tienda */
+/* .headert {
+    width: 100%;
+    height: 15%;
+}
+
+.headert__p {
+    text-align: center;
+}
+
+.headert__nav {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: pink;
+}
+
+.headert__nav--li {
+    display: inline-block;
+    width: 10%;
+    pad: 5px 10px;
+    background-color: #fff;
+    border: 3px solid pink;
+    color: 5px;
+    margin: 5px;
+}
+
+.headert__nav--li:hover {
+    background-color: pink;
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+.maint {
+    width: 100%;
+    height: 175%;
+}
+
+.maint__article--h3 {
+    display: inline;
+    font-family: 'Arial Narrow Bold', Helvetica, sans-serif;
+    margin: 20px 650px;
+    padding: 20px 85px;
+}
+
+.maint__img {
+    display: inline-block;
+    text-align: center;
+    margin: 10px 150px;
+}
+
+.maint__div {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 190px;
+    padding: 10px 25px;
+    background-color: #fff;
+    color: pink;
+    border: 3px solid pink;
+}
+
+.maint__div:hover {
+    background-color: pink;
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+
+
+.footert {
+    width: 100%;
+    height: 10%;
+}
+ */
+
+
+
+
+
+
+
+
+
+/* final de tienda */
+/* inicio de nosotros */
+/* .headernos {
+    width: 100%;
+    height: 15%;
+}
+
+.headernos__nav {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: pink;
+}
+
+.headernos__nav--li {
+    display: inline-block;
+    width: 10%;
+    pad: 5px 10px;
+    background-color: #fff;
+    border: 3px solid pink;
+    color: 5px;
+    margin: 5px;
+}
+
+.headernos__nav--li:hover {
+    background-color: pink;
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+.mainnos {
+    width: 100%;
+    height: 75%;
+}
+
+h2 {
+    color: #fff;
+}
+
+.divl {
+    float: left;
+    margin: 100px 250px;
+    background-color: #fff;
+    border: 3px solid pink;
+    color: pink;
+}
+
+.divr {
+    float: right;
+    margin: 40px 60px;
+}
+
+.mainnos__article {
+    float: left;
+    margin: 50px 300px;
+    background-color: #fff;
+    border: 3px solid pink;
+    color: pink;
+}
+
+.mainnos__article--p {
+    float: left;
+    margin:  0px 125px;
+    background-color: #fff;
+    border: 3px solid pink;
+    color: pink;
+}
+
+.footernos {
+    width: 100%;
+    height: 10%;
+} */
+
+
+
+
+
+
+/* final de nosotros */
+/* inicio de contacto */
+/* .headerc {
+    width: 100%;
+    height: 15%;
+}
+
+.headerc__nav {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: pink;
+}
+
+.headerc__nav--li {
+    display: inline-block;
+    width: 10%;
+    pad: 5px 10px;
+    background-color: #fff;
+    border: 3px solid pink;
+    color: 5px;
+    margin: 5px;
+}
+
+.headerc__nav--li:hover {
+    background-color: pink;
+    border: 3px solid #fff;
+    color: #fff;
+}
+
+.mainc {
+    width: 100%;
+    height: 75%;
+}
+
+.mainc__article--p {
+    text-align: center;
+    margin: 50px;
+    color: #fff;
+    font-size: large;
+}
+
+form {
+    text-align: center;
+    margin: 100px;
+    background-color: #fff;
+    color: pink;
+}
+
+legend {
+    color: pink;
+    font-size: xx-large;
+}
+
+.footerc {
+    width: 100%;
+    height: 10%;
+} */
