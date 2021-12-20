@@ -10,75 +10,50 @@
     <title>Tienda</title>
 </head>
 <body>
-    <!-- inicio de header -->
-    <header class="headert">
-        <h1>Tienda</h1>
-        <p class="headert__p">Todos los productos de la tienda cuentan con stock</p>
-        <nav class="headert__nav">
-            <ul>
-                <li class="headert__nav--li"><a href="../index.html">Inicio</a></li>
-                <li class="headert__nav--li"><a href="nuevo.html">Nuevo</a></li>
-                <li class="headert__nav--li"><a href="#">Tienda</a></li>
-                <li class="headert__nav--li"><a href="nosotros.html">Nosotros</a></li>
-                <li class="headert__nav--li"><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- cierre de header -->
-    <!-- inicio del main con img de contenido de la tienda -->
-    <main class="maint">
-        <article class="maint__article">
-            <h3 class="maint__article--h3">Relojes</h3>
-        </article>
-        <section>
-        <img class="maint__img" src="../imagenes/relojagujanegro.jpeg" alt="">
-        <img class="maint__img" src="../imagenes/relojmickeymouse.jpeg" alt="">
-        </section>
-        <div class="maint__div">Comprar</div>
-        <div class="maint__div">Comprar</div>
-        <article>
-            <h3 class="maint__article--h3">Pulseras</h3>
-        </article>
-        <section>
-            <img class="maint__img" src="../imagenes/pulserasdecoronas.jpg" alt="imagen de pulseras de coronas">
-            <img class="maint__img" src="../imagenes/pulseraperlasblancoynegro.jpg" alt="imagen de pulsera de perlas en blanco y negro">
-        </section>
-        <div class="maint__div">Comprar</div>
-        <div class="maint__div">Comprar</div>
-        <article>
-            <h3 class="maint__article--h3">Aros</h3>
-        </article>
-        <section>
-            <img class="maint__img" src="../imagenes/arosdecara.jpg" alt="imagen de aros de cara">
-            <img class="maint__img" src="../imagenes/arosdeserpiente.jpg" alt="imagen de aros de serpientes">
-            <img class="maint__img" src="../imagenes/aroscubiertos.jpg" alt="imagen de aros de cubiertos">
-        </section>
-        <div class="maint__div">Comprar</div>
-        <div class="maint__div">Comprar</div>
-        <div class="maint__div">Comprar</div>
-        <article>
-            <h3 class="maint__article--h3">Dijes</h3>
-        </article>
-        <section>
-            <img class="maint__img" src="../imagenes/dijegoodvibes.jpg" alt="imagen de dije de good vibes">
-            <img class="maint__img" src="../imagenes/dijeplaneta.jpg" alt="imagen de dije de planeta">
-            <img class="maint__img" src="../imagenes/dijecuernito.jpg" alt="imagen de dije de ccuernito">
-        </section>
-        <div class="maint__div">Comprar</div>
-        <div class="maint__div">Comprar</div>
-        <div class="maint__div">Comprar</div>
-    </main>
-    <!-- cierre del main con las imagenes de cada accesorio -->
-    <hr>
-    <!-- inicio del footer con contacto de la página y copyright -->
-    <footer>
-        <h4>Contacto</h4>
-        <div><a href=""><i class="fab fa-facebook-f"></i></a></div>
-        <div><a href="https://www.instagram.com/bellavita.accesorios/"><i class="fab fa-instagram"></i></a></div>
-        <div><a href=""><i class="fab fa-whatsapp"></i></a></div>
-        <div><a href=""><i class="fas fa-envelope"></i></a></div>
-        <div><a href=""><i class="far fa-copyright"></i></a></div>
-    </footer>
-    <!-- cierre del footer y final de la home -->
+    <div id="containertienda">
+        <header class="headertienda">
+            <nav class="navtienda">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="#">Tienda</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="maintienda">
+            <h1 class="maintienda__h1">Tienda</h1>
+            <section class="sectiontienda" id="sectiontienda">
+                <div class="itemtienda itemtienda1">
+                    <h2>Agregar Al Carrito</h2>
+                </div>
+            </section>
+            <section class="sectiontienda" id="sectiontienda1">
+                <div class="itemtienda0 itemtienda2">
+                    <h3 class="itemtienda__h3">Aros Con Forma De Cara</h3>
+                    <img class="itemtienda__img" src="../imagenes/arosdecara.jpg" alt="imagen de aros de cara">
+                    <p class="itemtienda__p">Cantidad Deseada <input type="number" value="1" min="1" max="100"></p>
+                    <p class="itemtienda__p1">$250</p>
+                    <p><a href=""><input class="itemtienda__input" type="button" value="COMPRAR"></a></p>
+                </div>
+                <div class="itemtienda0 itemtienda3">
+                    <h3 class="itemtienda__h3">Aro con forma de Serpiente</h3>
+                    <img class="itemtienda__img" src="../imagenes/arosdeserpiente.jpg" alt="imagen de aros de cara">
+                    <p class="itemtienda__p">Cantidad Deseada <input type="number" value="1" min="1" max="100"></p>
+                    <p class="itemtienda__p1">$250</p>
+                    <p><a href=""><input class="itemtienda__input" type="button" value="COMPRAR"></a></p>
+                </div>
+            </section>
+        </main>
+        <footer class="footertienda" id="footertienda">
+            <a href="https://www.facebook.com/bellavitaccesorios"><img class="footer__img" src="../imagenes/facebook.png" alt="imagen con link de facebook"></a>
+            <a href="https://www.instagram.com/bellavita.accesorios/"><img class="footer__img" src="../imagenes/instagram.png" alt="imagen con link de instagram"></a>
+            <a href=""><img class="footer__img" src="../imagenes/whatsapp.png" alt="imagen con link de whatsapp"></a>
+            <a href=""><img class="footer__img" src="../imagenes/gmail.png" alt="imagen con link del gmail"></a>
+            <a href=""><img class="footer__img" src="../imagenes/copyright.png" alt="imagen con link del copyright"></a>
+            <h4>Todos los derechos reservados.</h4>
+        </footer>
+    </div>
 </body>
 </html>
