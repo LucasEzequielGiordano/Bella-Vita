@@ -13,8 +13,8 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    /* background: rgb(255,160,189); */
-    background: rgba(255,153,187,1);
+    /* background-color: rgb(255,160,189); */
+    background-color: rgba(255,153,187,1);
 }
 
 #container {
@@ -50,7 +50,7 @@ nav {
     top: 0;
     width: 100%;
     background-color: #9DC494;
-    color: #FFFFD0;
+    color: #fefeb4;
     z-index: 99;
 }
 
@@ -70,11 +70,11 @@ li {
     list-style-type: none;
     width: 150px;
     height: 24px;
-    border: 3px solid #FFFFD0;
+    border: 3px solid #fefeb4;
 }
 
 li:hover {
-    background-color: #FFFFD0;
+    background-color: #fefeb4;
     color: #9DC494;
     border: 3px solid #9DC494;
 }
@@ -96,6 +96,7 @@ h1 {
     color: #9DC494;
     background-image: url(../imagenes/BellaVita.jpg);
     background-size: 80px;
+    background-attachment: fixed;
     box-shadow: 5px 5px 5px #9DC494;
 }
 
@@ -128,13 +129,13 @@ h1 {
     font-size: 30px;
     padding: 50px;
     transition: all 3s;
-    color: #FFFFD0;
+    color: #fefeb4;
 }
 
 .item1:hover {
     width: 625px;
     height: 625px;
-    border: 2px solid #03c2c2;
+    border: 2px solid #9DC494;
 }
 
 .item2{
@@ -151,13 +152,13 @@ h1 {
     font-size: 30px;
     padding: 50px;
     transition: all 3s;
-    color: #FFFFD0;
+    color: #fefeb4;
 }
 
 .item2:hover {
     width: 625px;
     height: 625px;
-    border: 2px solid #03c2c2;
+    border: 2px solid #9DC494;
 }
 
 .item3{
@@ -174,13 +175,13 @@ h1 {
     font-size: 30px;
     padding: 50px;
     transition: all 3s;
-    color: #FFFFD0;
+    color: #fefeb4;
 }
 
 .item3:hover {
     width: 625px;
     height: 625px;
-    border: 2px solid #03c2c2
+    border: 2px solid #9DC494;
 }
 
 .item4{
@@ -197,13 +198,13 @@ h1 {
     font-size: 30px;
     padding: 50px;
     transition: all 3s;
-    color: #FFFFD0;
+    color: #fefeb4;
 }
 
 .item4:hover {
     width: 625px;
     height: 625px;
-    border: 2px solid #03c2c2
+    border: 2px solid #9DC494;
 }
 
 
@@ -219,6 +220,7 @@ h1 {
         width: 100%;
         height: 110%;
         overflow-x: hidden;
+        background-color: rgba(255,153,187,1);
     }
 
     nav {
@@ -315,6 +317,7 @@ h1 {
         width: 100%;
         height: 100%;
         overflow-x: hidden;
+        background-color: rgba(255,153,187,1);
     }
 
     nav {
@@ -507,6 +510,7 @@ h1 {
         width: 100%;
         height: 100%;
         overflow-x: hidden;
+        background-color: rgba(255,153,187,1);
     }
 
     nav {
@@ -600,9 +604,10 @@ h1 {
     }
         
     body {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         overflow-x: hidden;
+        background-color: rgba(255,153,187,1);
     }
     
     nav {
@@ -695,9 +700,10 @@ h1 {
     }
         
     body {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         overflow-x: hidden;
+        background-color: rgba(255,153,187,1);
     }
     
     nav {
@@ -790,9 +796,10 @@ h1 {
     }
         
     body {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         overflow-x: hidden;
+        background-color: rgba(255,153,187,1);
     }
     
     nav {
@@ -933,7 +940,7 @@ footer {
 h2 {
     font-size: 60px;
     font-style: italic;
-    color: #03c2c2;
+    color: #b4f0a6;
 }
 
 #sectionproductos {
@@ -977,7 +984,7 @@ h2 {
 }
 
 .itemproductos2:hover {
-    border: 5px solid #03c2c2;
+    border: 5px solid #b4f0a6;
 }
 
 .itemproductos3 {
@@ -996,7 +1003,7 @@ h2 {
 }
 
 .itemproductos3:hover {
-    border: 5px solid #03c2c2;
+    border: 5px solid #b4f0a6;
 }
 
 .itemproductos4 {
@@ -1027,7 +1034,7 @@ h2 {
 }
 
 .itemproductos6:hover {
-    border: 5px solid #03c2c2;
+    border: 5px solid #b4f0a6;
 }
 
 .itemproductos7 {
@@ -1046,7 +1053,7 @@ h2 {
 }
 
 .itemproductos7:hover {
-    border: 5px solid #03c2c2;
+    border: 5px solid #b4f0a6;
 }
 
 .itemproductos8 {
@@ -1064,7 +1071,7 @@ h2 {
 input {
     font-size: 30px;
     color: #9DC494;
-    border: 3px solid #FFFFD0;
+    border: 3px solid #fefeb4;
     border-radius: 5%;
 }
 
@@ -1109,7 +1116,7 @@ input {
 }
 
 .itemproductos11:hover {
-    border: 5px solid #03c2c2;
+    border: 5px solid #b4f0a6;
 }
 
 .itemproductos12 {
@@ -1128,7 +1135,7 @@ input {
 }
 
 .itemproductos12:hover {
-    border: 5px solid #03c2c2;
+    border: 5px solid #b4f0a6;
 }
 
 .itemproductos13 {
@@ -1159,7 +1166,7 @@ input {
 }
 
 .itemproductos15:hover {
-    border: 5px solid #03c2c2;
+    border: 5px solid #b4f0a6;
 }
 
 .itemproductos16 {
@@ -1178,7 +1185,7 @@ input {
 }
 
 .itemproductos16:hover {
-    border: 5px solid #03c2c2;
+    border: 5px solid #b4f0a6;
 }
 
 .itemproductos17 {
@@ -1234,7 +1241,7 @@ input {
 }
 
 .itemproductos20:hover {
-    border: 5px solid #03c2c2;
+    border: 5px solid #b4f0a6;
 }
 
 .itemproductos21 {
@@ -1253,7 +1260,7 @@ input {
 }
 
 .itemproductos21:hover {
-    border: 5px solid #03c2c2;
+    border: 5px solid #b4f0a6;
 }
 
 .itemproductos22 {
@@ -1284,7 +1291,7 @@ input {
 }
 
 .itemproductos24:hover {
-    border: 5px solid #03c2c2;
+    border: 5px solid #b4f0a6;
 }
 
 .itemproductos25 {
@@ -1303,7 +1310,7 @@ input {
 }
 
 .itemproductos25:hover {
-    border: 5px solid #03c2c2;
+    border: 5px solid #b4f0a6;
 }
 
 .itemproductos26 {
@@ -1359,7 +1366,7 @@ input {
 }
 
 .itemproductos29:hover {
-    border: 5px solid #03c2c2;
+    border: 5px solid #b4f0a6;
 }
 
 .itemproductos30 {
@@ -1378,7 +1385,7 @@ input {
 }
 
 .itemproductos30:hover {
-    border: 5px solid #03c2c2;
+    border: 5px solid #b4f0a6;
 }
 
 .itemproductos31 {
@@ -1409,7 +1416,7 @@ input {
 }
 
 .itemproductos33:hover {
-    border: 5px solid #03c2c2;
+    border: 5px solid #b4f0a6;
 }
 
 .itemproductos34 {
@@ -1428,7 +1435,7 @@ input {
 }
 
 .itemproductos34:hover {
-    border: 5px solid #03c2c2;
+    border: 5px solid #b4f0a6;
 }
 
 .itemproductos35 {
@@ -1453,10 +1460,10 @@ input {
     }
     
     body {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         overflow-x: hidden;
-        background-color: darksalmon;
+        background-color: rgba(255,153,187,1);
     }
 
     nav {
@@ -1741,7 +1748,7 @@ input {
         width: 100vw;
         height: 100vh;
         overflow-x: hidden;
-        background-color: darksalmon;
+        background-color: rgba(255,153,187,1);
     }
 
     nav {
@@ -2023,10 +2030,10 @@ input {
     }
     
     body {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         overflow-x: hidden;
-        background-color: darksalmon;
+        background-color: rgba(255,153,187,1);
     }
 
     nav {
@@ -2308,9 +2315,10 @@ input {
     }
     
     body {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         overflow-x: hidden;
+        background-color: rgba(255,153,187,1);
     }
 
     nav {
@@ -2576,9 +2584,10 @@ input {
     }
     
     body {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         overflow-x: hidden;
+        background-color: rgba(255,153,187,1);
     }
 
     nav {
@@ -2844,9 +2853,10 @@ input {
     }
     
     body {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         overflow-x: hidden;
+        background-color: rgba(255,153,187,1);
     }
 
     nav {
@@ -3112,9 +3122,10 @@ input {
     }
     
     body {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         overflow-x: hidden;
+        background-color: rgba(255,153,187,1);
     }
 
     nav {
@@ -3459,9 +3470,10 @@ input {
     }
     
     body {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         overflow-x: hidden;
+        background-color: rgba(255,153,187,1);
     }
 
     nav {
@@ -3611,9 +3623,10 @@ input {
     }
     
     body {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         overflow-x: hidden;
+        background-color: rgba(255,153,187,1);
     }
 
     nav {
@@ -3687,9 +3700,10 @@ input {
     }
     
     body {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         overflow-x: hidden;
+        background-color: rgba(255,153,187,1);
     }
 
     nav {
@@ -3763,9 +3777,10 @@ input {
     }
     
     body {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         overflow-x: hidden;
+        background-color: rgba(255,153,187,1);
     }
 
     nav {
@@ -3839,9 +3854,10 @@ input {
     }
     
     body {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         overflow-x: hidden;
+        background-color: rgba(255,153,187,1);
     }
 
     nav {
@@ -3915,9 +3931,10 @@ input {
     }
     
     body {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         overflow-x: hidden;
+        background-color: rgba(255,153,187,1);
     }
 
     nav {
@@ -4089,59 +4106,39 @@ input {
 /* inicio de contacto */
 
 
-.headerc {
+.maincontacto {
     width: 100%;
-    height: 15%;
-}
-
-.headerc__nav {
-    position: fixed;
-    width: 100%;
-    text-align: center;
-    color: pink;
-}
-
-.headerc__nav--li {
-    display: inline-block;
-    width: 10%;
-    pad: 5px 10px;
-    background-color: #fff;
-    border: 3px solid pink;
-    color: 5px;
-    margin: 5px;
-}
-
-.headerc__nav--li:hover {
-    background-color: pink;
-    border: 3px solid #fff;
-    color: #fff;
-}
-
-.mainc {
-    width: 100%;
-    height: 75%;
-}
-
-.mainc__article--p {
-    text-align: center;
-    margin: 50px;
-    color: #fff;
-    font-size: large;
+    height: 100%;
 }
 
 form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-wrap: wrap;
+}
+
+fieldset {
     text-align: center;
-    margin: 100px;
-    background-color: #fff;
-    color: pink;
+    border-radius: 15px;
+    border: 2px solid #fefeb4;
 }
 
 legend {
-    color: pink;
-    font-size: xx-large;
+    font-size: 30px;
+    color: #b4f0a6;
+    display: flex;
+    justify-content: center;
 }
 
-.footerc {
-    width: 100%;
-    height: 10%;
+label {
+    font-size: 20px;
+    color: #b4f0a6;
+    display: flex;
+    justify-content: center;
+}
+
+.inputcontacto {
+    border-radius: 15px;
 }

@@ -10,54 +10,44 @@
     <title>Contacto</title>
 </head>
 <body>
-    <!-- inicio de header -->
-    <header class="headerc">
-        <h1>Contacto</h1>
-        <nav class="headerc__nav">
+    <header class="headercontacto">
+        <nav class="navcontacto">
             <ul>
-                <li class="headerc__nav--li"><a href="../index.html">Inicio</a></li>
-                <li class="headerc__nav--li"><a href="productos.html">Productos</a></li>
-                <li class="headerc__nav--li"><a href="tienda.html">Tienda</a></li>
-                <li class="headerc__nav--li"><a href="nosotros.html">Nosotros</a></li>
-                <li class="headerc__nav--li"><a href="#">Contacto</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <!-- cierre de header -->
-    <!-- dentro del main se incluye el formulario para el usuario -->
-    <main class="mainc">
-        <article class="mainc__article">
-            <p class="mainc__article--p">Llene el siguiente formulario <br>
-            para recibir noticias nuestras sobre productos <br>
-            además puede dejar su commentario para informar algún problema.</p>
-        </article>
-        <form>
-            <fieldset>
-                <legend>Formulario De Contacto</legend>
-                <label for="nombre">Nombre</label>
-                <input type="text" placeholder="Ingrese su nombre"><br>
-                <label for="apellido">Apellido</label>
-                <input type="text" placeholder="Ingrese su Apellido"><br>
-                <label for="email">E-mail</label>
-                <input type="email" placeholder="Ingrese su Email" required><br>
-                <label for="newsletter">Desea ser notificado/a de nuevos productos?</label>
-                <input type="checkbox"><br>
-                <textarea name="textarea" cols="30" rows="10" placeholder="Escriba un comentario"></textarea><br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Eliminar">
-            </fieldset>
-        </form>
+    <main class="maincontacto" id="maincontacto">
+        <h1>CONTACTO</h1>
+            <form>
+                <fieldset>
+                    <legend>Formulario De Contacto</legend>
+                    <label for="nombre">Nombre</label>
+                    <input class="inputcontacto" type="text" placeholder="Ingrese su nombre"><br>
+                    <label for="apellido">Apellido</label>
+                    <input class="inputcontacto" type="text" placeholder="Ingrese su Apellido"><br>
+                    <label for="email">E-mail</label>
+                    <input class="inputcontacto" type="email" placeholder="Ingrese su Email" required><br>
+                    <label for="newsletter">Desea ser notificado/a de nuevos productos?</label>
+                    <input class="inputcontacto" type="checkbox"><br>
+                    <textarea name="textarea" cols="30" rows="10" placeholder="Escriba un comentario"></textarea><br>
+                    <input class="inputcontacto" type="submit" value="Enviar">
+                    <input class="inputcontacto" type="reset" value="Eliminar">
+                </fieldset>
+            </form>
+        </section>
     </main>
-    <hr>
-    <!-- inicio del footer con contacto de la página y copyright -->
-    <footer>
-        <h4>Contacto</h4>
-        <div><a href=""><i class="fab fa-facebook-f"></i></a></div>
-        <div><a href="https://www.instagram.com/bellavita.accesorios/"><i class="fab fa-instagram"></i></a></div>
-        <div><a href=""><i class="fab fa-whatsapp"></i></a></div>
-        <div><a href=""><i class="fas fa-envelope"></i></a></div>
-        <div><a href=""><i class="far fa-copyright"></i></a></div>
+    <footer class="footercontacto" id="footercontacto">
+        <a href="https://www.facebook.com/bellavitaccesorios"><img class="footer__img" src="../imagenes/facebook.png" alt="imagen con link de facebook"></a>
+        <a href="https://www.instagram.com/bellavita.accesorios/"><img class="footer__img" src="../imagenes/instagram.png" alt="imagen con link de instagram"></a>
+        <a href=""><img class="footer__img" src="../imagenes/whatsapp.png" alt="imagen con link de whatsapp"></a>
+        <a href=""><img class="footer__img" src="../imagenes/gmail.png" alt="imagen con link del gmail"></a>
+        <a href=""><img class="footer__img" src="../imagenes/copyright.png" alt="imagen con link del copyright"></a>
+        <h4>Todos los derechos reservados.</h4>
     </footer>
-    <!-- cierre del footer y final de la home -->
 </body>
 </html>
