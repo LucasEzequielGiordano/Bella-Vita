@@ -10,15 +10,16 @@ html {
 }
 
 body {
-    width: 100vw;
-    height: 200vh;
+    width: 100%;
+    height: 100%;
     overflow-x: hidden;
-    background-color: rgba(255,160,189,1);
+    /* background: rgb(255,160,189); */
+    background: rgba(255,153,187,1);
 }
 
 #container {
     width: 100%;
-    height: 105%;
+    height: 100%;
 }
 
 .nav {
@@ -40,7 +41,7 @@ body {
 }
 
 .main {
-    height: 105%;
+    height: 100%;
 }
 
 nav {
@@ -92,7 +93,7 @@ h1 {
     justify-content: center;
     padding: 60px;
     margin-top: 30px;
-    color: #03c2c2;
+    color: #9DC494;
     background-image: url(../imagenes/BellaVita.jpg);
     background-size: 80px;
     box-shadow: 5px 5px 5px #9DC494;
@@ -130,6 +131,12 @@ h1 {
     color: #FFFFD0;
 }
 
+.item1:hover {
+    width: 625px;
+    height: 625px;
+    border: 2px solid #03c2c2;
+}
+
 .item2{
     grid-row: 1/2;
     grid-column: 2/3;
@@ -145,6 +152,12 @@ h1 {
     padding: 50px;
     transition: all 3s;
     color: #FFFFD0;
+}
+
+.item2:hover {
+    width: 625px;
+    height: 625px;
+    border: 2px solid #03c2c2;
 }
 
 .item3{
@@ -164,6 +177,12 @@ h1 {
     color: #FFFFD0;
 }
 
+.item3:hover {
+    width: 625px;
+    height: 625px;
+    border: 2px solid #03c2c2
+}
+
 .item4{
     grid-row: 2/3;
     grid-column: 2/3;
@@ -181,6 +200,12 @@ h1 {
     color: #FFFFD0;
 }
 
+.item4:hover {
+    width: 625px;
+    height: 625px;
+    border: 2px solid #03c2c2
+}
+
 
 /* inicio de @media query en el index */
 
@@ -191,8 +216,8 @@ h1 {
     }
     
     body {
-        width: 100vw;
-        height: 110vh;
+        width: 100%;
+        height: 110%;
         overflow-x: hidden;
     }
 
@@ -232,6 +257,11 @@ h1 {
         padding: 50px;
     }
     
+    .item1:hover {
+        width: 110px;
+        height: 110px;
+    }
+
     .item2{
         grid-row: 2/3;
         grid-column: 1/2;
@@ -239,6 +269,11 @@ h1 {
         padding: 50px;
     }
     
+    .item2:hover {
+        width: 110px;
+        height: 110px;
+    }
+
     .item3{
         grid-row: 3/4;
         grid-column: 1/2;
@@ -246,11 +281,21 @@ h1 {
         padding: 50px;
     }
     
+    .item3:hover {
+        width: 110px;
+        height: 110px;
+    }
+
     .item4{
         grid-row: 4/5;
         grid-column: 1/2;
         font-size: 15px;
         padding: 50px;
+    }
+
+    .item4:hover {
+        width: 110px;
+        height: 110px;
     }
 
     footer {
@@ -267,8 +312,8 @@ h1 {
     }
     
     body {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         overflow-x: hidden;
     }
 
@@ -308,6 +353,11 @@ h1 {
         margin-top: 50px;
     }
     
+    .item1:hover {
+        width: 150px;
+        height: 150px;
+    }
+
     .item2{
         grid-row: 1/2;
         grid-column: 2/3;
@@ -315,6 +365,11 @@ h1 {
         margin-top: 50px;
     }
     
+    .item2:hover {
+        width: 150px;
+        height: 150px;
+    }
+
     .item3{
         grid-row: 2/3;
         grid-column: 1/2;
@@ -322,11 +377,21 @@ h1 {
         margin-top: 50px;
     }
     
+    .item3:hover {
+        width: 150px;
+        height: 150px;
+    }
+
     .item4{
         grid-row: 2/3;
         grid-column: 2/3;
         font-size: 15px;
         margin-top: 50px;
+    }
+
+    .item4:hover {
+        width: 150px;
+        height: 150px;
     }
 
     footer {
@@ -343,8 +408,8 @@ h1 {
     }
     
     body {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         overflow-x: hidden;
     }
 
@@ -384,6 +449,11 @@ h1 {
         padding: 50px;
     }
     
+    .item1:hover {
+        width: 170px;
+        height: 170px;
+    }
+
     .item2{
         grid-row: 1/2;
         grid-column: 2/3;
@@ -391,6 +461,11 @@ h1 {
         padding: 50px;    
     }
     
+    .item2:hover {
+        width: 170px;
+        height: 170px;
+    }
+
     .item3{
         grid-row: 2/3;
         grid-column: 1/2;
@@ -398,11 +473,21 @@ h1 {
         padding: 50px;
     }
     
+    .item3:hover {
+        width: 170px;
+        height: 170px;
+    }
+
     .item4{
         grid-row: 2/3;
         grid-column: 2/3;
         font-size: 15px;
         padding: 50px;
+    }
+
+    .item4:hover {
+        width: 170px;
+        height: 170px;
     }
 
     footer {
@@ -419,8 +504,8 @@ h1 {
     }
     
     body {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         overflow-x: hidden;
     }
 
@@ -460,11 +545,21 @@ h1 {
         padding: 50px;
     }
     
+    .item1:hover {
+        width: 190px;
+        height: 190px;
+    }
+
     .item2{
         grid-row: 1/2;
         grid-column: 2/3;
         font-size: 20px;
         padding: 50px;
+    }
+
+    .item2:hover {
+        width: 190px;
+        height: 190px;
     }
     
     .item3{
@@ -473,12 +568,22 @@ h1 {
         font-size: 20px;
         padding: 50px;
     }
+
+    .item3:hover {
+        width: 190px;
+        height: 190px;
+    }
     
     .item4{
         grid-row: 2/3;
         grid-column: 2/3;
         font-size: 20px;
         padding: 50px;
+    }
+
+    .item4:hover {
+        width: 190px;
+        height: 190px;
     }
 
     footer {
@@ -534,7 +639,12 @@ h1 {
         font-size: 20px;
         padding: 50px;
     }
-        
+    
+    .item1:hover {
+        width: 310px;
+        height: 310px;
+    }
+
     .item2{
         grid-row: 1/2;
         grid-column: 2/3;
@@ -542,11 +652,21 @@ h1 {
         padding: 50px;
     }
         
+    .item2:hover {
+        width: 310px;
+        height: 310px;
+    }
+
     .item3{
         grid-row: 2/3;
         grid-column: 1/2;
         font-size: 20px;
         padding: 50px;
+    }
+
+    .item3:hover {
+        width: 310px;
+        height: 310px;
     }
         
     .item4{
@@ -554,6 +674,11 @@ h1 {
         grid-column: 2/3;
         font-size: 20px;
         padding: 50px;
+    }
+
+    .item4:hover {
+        width: 310px;
+        height: 310px;
     }
     
     footer {
@@ -609,6 +734,11 @@ h1 {
         font-size: 25px;
         padding: 50px;
     }
+
+    .item1:hover {
+        width: 475px;
+        height: 475px;
+    }
         
     .item2{
         grid-row: 1/2;
@@ -616,7 +746,12 @@ h1 {
         font-size: 25px;
         padding: 50px;
     }
-        
+     
+    .item2:hover {
+        width: 475px;
+        height: 475px;
+    }
+
     .item3{
         grid-row: 2/3;
         grid-column: 1/2;
@@ -624,11 +759,21 @@ h1 {
         padding: 50px;
     }
         
+    .item3:hover {
+        width: 475px;
+        height: 475px;
+    }
+
     .item4{
         grid-row: 2/3;
         grid-column: 2/3;
         font-size: 25px;
         padding: 50px;
+    }
+
+    .item4:hover {
+        width: 475px;
+        height: 475px;
     }
     
     footer {
@@ -735,6 +880,7 @@ footer {
 
 
 /* final del index */
+
 /* inicio de productos */
 
 
@@ -826,8 +972,12 @@ h2 {
     border: 3px;
     border-radius: 2%;
     box-shadow: 10px 10px 10px #555;
-    transition: all 3s;
+    transition: all 1.5s;
     color: #FFFFD0;
+}
+
+.itemproductos2:hover {
+    border: 5px solid #03c2c2;
 }
 
 .itemproductos3 {
@@ -841,8 +991,12 @@ h2 {
     border: 3px;
     border-radius: 2%;
     box-shadow: 10px 10px 10px #555;
-    transition: all 3s;
+    transition: all 1.5s;
     color: #FFFFD0;
+}
+
+.itemproductos3:hover {
+    border: 5px solid #03c2c2;
 }
 
 .itemproductos4 {
@@ -868,8 +1022,12 @@ h2 {
     border: 3px;
     border-radius: 2%;
     box-shadow: 10px 10px 10px #555;
-    transition: all 3s;
+    transition: all 1.5s;
     color: #FFFFD0;
+}
+
+.itemproductos6:hover {
+    border: 5px solid #03c2c2;
 }
 
 .itemproductos7 {
@@ -883,8 +1041,12 @@ h2 {
     border: 3px;
     border-radius: 2%;
     box-shadow: 10px 10px 10px #555;
-    transition: all 3s;
+    transition: all 1.5s;
     color: #FFFFD0;
+}
+
+.itemproductos7:hover {
+    border: 5px solid #03c2c2;
 }
 
 .itemproductos8 {
@@ -942,8 +1104,12 @@ input {
     border: 3px;
     border-radius: 2%;
     box-shadow: 10px 10px 10px #555;
-    transition: all 3s;
+    transition: all 1.5s;
     color: #FFFFD0;
+}
+
+.itemproductos11:hover {
+    border: 5px solid #03c2c2;
 }
 
 .itemproductos12 {
@@ -957,8 +1123,12 @@ input {
     border: 3px;
     border-radius: 2%;
     box-shadow: 10px 10px 10px #555;
-    transition: all 3s;
+    transition: all 1.5s;
     color: #FFFFD0;
+}
+
+.itemproductos12:hover {
+    border: 5px solid #03c2c2;
 }
 
 .itemproductos13 {
@@ -984,8 +1154,12 @@ input {
     border: 3px;
     border-radius: 2%;
     box-shadow: 10px 10px 10px #555;
-    transition: all 3s;
+    transition: all 1.5s;
     color: #FFFFD0;
+}
+
+.itemproductos15:hover {
+    border: 5px solid #03c2c2;
 }
 
 .itemproductos16 {
@@ -999,8 +1173,12 @@ input {
     border: 3px;
     border-radius: 2%;
     box-shadow: 10px 10px 10px #555;
-    transition: all 3s;
+    transition: all 1.5s;
     color: #FFFFD0;
+}
+
+.itemproductos16:hover {
+    border: 5px solid #03c2c2;
 }
 
 .itemproductos17 {
@@ -1051,8 +1229,12 @@ input {
     border: 3px;
     border-radius: 2%;
     box-shadow: 10px 10px 10px #555;
-    transition: all 3s;
+    transition: all 1.5s;
     color: #FFFFD0;
+}
+
+.itemproductos20:hover {
+    border: 5px solid #03c2c2;
 }
 
 .itemproductos21 {
@@ -1068,6 +1250,10 @@ input {
     box-shadow: 10px 10px 10px #555;
     transition: all 3s;
     color: #FFFFD0;
+}
+
+.itemproductos21:hover {
+    border: 5px solid #03c2c2;
 }
 
 .itemproductos22 {
@@ -1097,6 +1283,10 @@ input {
     color: #FFFFD0;
 }
 
+.itemproductos24:hover {
+    border: 5px solid #03c2c2;
+}
+
 .itemproductos25 {
     grid-column: 2/3;
     grid-row: 4/5;
@@ -1110,6 +1300,10 @@ input {
     box-shadow: 10px 10px 10px #555;
     transition: all 3s;
     color: #FFFFD0;
+}
+
+.itemproductos25:hover {
+    border: 5px solid #03c2c2;
 }
 
 .itemproductos26 {
@@ -1164,6 +1358,10 @@ input {
     color: #FFFFD0;
 }
 
+.itemproductos29:hover {
+    border: 5px solid #03c2c2;
+}
+
 .itemproductos30 {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -1177,6 +1375,10 @@ input {
     box-shadow: 10px 10px 10px #555;
     transition: all 3s;
     color: #FFFFD0;
+}
+
+.itemproductos30:hover {
+    border: 5px solid #03c2c2;
 }
 
 .itemproductos31 {
@@ -1206,6 +1408,10 @@ input {
     color: #FFFFD0;
 }
 
+.itemproductos33:hover {
+    border: 5px solid #03c2c2;
+}
+
 .itemproductos34 {
     grid-column: 2/3;
     grid-row: 4/5;
@@ -1219,6 +1425,10 @@ input {
     box-shadow: 10px 10px 10px #555;
     transition: all 3s;
     color: #FFFFD0;
+}
+
+.itemproductos34:hover {
+    border: 5px solid #03c2c2;
 }
 
 .itemproductos35 {
@@ -1246,6 +1456,7 @@ input {
         width: 100vw;
         height: 100vh;
         overflow-x: hidden;
+        background-color: darksalmon;
     }
 
     nav {
@@ -1530,6 +1741,7 @@ input {
         width: 100vw;
         height: 100vh;
         overflow-x: hidden;
+        background-color: darksalmon;
     }
 
     nav {
@@ -1814,6 +2026,7 @@ input {
         width: 100vw;
         height: 100vh;
         overflow-x: hidden;
+        background-color: darksalmon;
     }
 
     nav {
@@ -3164,6 +3377,7 @@ input {
 
 /* final de @media query de productos */
 /* final de productos */
+
 /* inicio de tienda  */
 
 
@@ -3234,7 +3448,6 @@ input {
     grid-row: 1/2;
     padding: 50px;
 }
-
 
 
 /* inicio de @media query de tienda  */
@@ -3797,78 +4010,82 @@ input {
 
 
 /* final de tienda  */
+
 /* inicio de nosotros */
 
 
-.headernos {
+.mainnosotros {
     width: 100%;
-    height: 15%;
+    height: 100%;
 }
 
-.headernos__nav {
-    position: fixed;
+#containernosotros {
     width: 100%;
-    text-align: center;
-    color: pink;
+    height: 100%;
+    display: grid;
 }
 
-.headernos__nav--li {
-    display: inline-block;
-    width: 10%;
-    pad: 5px 10px;
-    background-color: #fff;
-    border: 3px solid pink;
-    color: 5px;
-    margin: 5px;
+.navnosotros {
+    grid-column: 1/3;
+    grid-row: 1/2;
 }
 
-.headernos__nav--li:hover {
-    background-color: pink;
-    color: #fff;
-    border: 3px solid #fff;
+.headernosotros {
+    grid-column: 1/3;
+    grid-row: 2/3;
 }
 
-.mainnos {
+.sectionnosotros {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+}
+
+.footerproductos {
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+
+#sectionnosotros {
+    display: grid;
+    /* grid-template-areas: 
+    "itemnosotros1 itemnosotros3"
+    "itemnosotros2 itemnosotros3"; */
+    gap: 100px;
+}
+
+.itemnosotros {
     width: 100%;
-    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
-.divl {
-    float: left;
-    margin: 100px 250px;
-    background-color: #fff;
-    border: 3px solid pink;
-    color: pink;
+.itemnosotros1 {
+    /* grid-area: itemnosotros1; */
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: 2px solid #03c2c2;
 }
 
-.divr {
-    float: right;
-    margin: 40px 60px;
+.itemnosotros2 {
+    /* grid-area: itemnosotros2; */
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border: 2px solid #03c2c2;
 }
 
-.mainnos__article {
-    float: left;
-    margin: 50px 300px;
-    background-color: #fff;
-    border: 3px solid pink;
-    color: pink;
-}
-
-.mainnos__article--p {
-    float: left;
-    margin:  0px 125px;
-    background-color: #fff;
-    border: 3px solid pink;
-    color: pink;
-}
-
-.footernos {
-    width: 100%;
-    height: 10%;
+.itemnosotros3 {
+    /* grid-area: itemnosotros3; */
+    grid-column: 2/3;
+    grid-row: 1/3;
+    border: 2px solid #03c2c2;
 }
 
 
 /* final de nosotros */
+
 /* inicio de contacto */
 
 
