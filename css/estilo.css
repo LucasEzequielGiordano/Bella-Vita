@@ -5,10 +5,6 @@
     font-family: 'roboto', sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     width: 100%;
     height: 100%;
@@ -17,31 +13,13 @@ body {
     background-color: rgba(255,153,187,1);
 }
 
-#container {
+header {
     width: 100%;
-    height: 100%;
 }
 
-.nav {
-    grid-row: 1/2;
-}
-
-.header {
-    grid-row: 2/3;
-}
-
-.section {
-    grid-row: 3/4;
-    display: flex;
-    justify-content: center;
-}
-
-.footer {
-    grid-row: 4/5;
-}
-
-.main {
-    height: 100%;
+.navbar-img {
+    width: 110px;
+    height: 90px;
 }
 
 nav {
@@ -50,15 +28,17 @@ nav {
     top: 0;
     width: 100%;
     background-color: #9DC494;
-    color: #fefeb4;
     z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ul {
-    display: flex;
     height: 50px;
-    justify-content: space-evenly;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 a {
@@ -68,25 +48,65 @@ a {
 
 li {
     list-style-type: none;
-    width: 150px;
-    height: 24px;
-    border: 3px solid #fefeb4;
+    width: 120px;
+    height: 40px;
+    border: 2px solid #fff;
 }
 
 li:hover {
+    border: 2px solid rgba(255,153,187,1);
+}
+
+nav img {
+    width: 60px;
+    height: 60px;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    color: #ff99bb;
+    border: 3px solid #fff;
+    text-shadow: 1px 1px 1px white;
+}
+
+.carousel {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40;
+    color: #fff;
+    z-index: 99;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__img {
+    height: 35px;
+}
+
+
+/* li:hover {
     background-color: #fefeb4;
     color: #9DC494;
     border: 3px solid #9DC494;
     box-shadow: 2px 2px 2px #555;
-}
+} */
 
-header {
-    width: 100%;
-    background-repeat: repeat;
-    background-size: 130px
-}
 
-h1 {
+/* h1 {
     width: 100%;
     font-size: 35px;
     font-style: italic;
@@ -99,13 +119,13 @@ h1 {
     background-size: 80px;
     background-attachment: fixed;
     box-shadow: 5px 5px 5px #9DC494;
-}
+} */
 
-#section {
+/* #section {
     display: grid;
-    grid-template-columns: 600px 600px;
-    grid-template-rows: 600px 600px;
-    gap: 125px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 800px);
+    gap: 25px;
     padding-top: 20px;
 }
 
@@ -134,9 +154,7 @@ h1 {
 }
 
 .item1:hover {
-    width: 625px;
-    height: 625px;
-    border: 2px solid #9DC494;
+    border: 3px solid #9DC494;
 }
 
 .item2{
@@ -206,13 +224,13 @@ h1 {
     width: 625px;
     height: 625px;
     border: 2px solid #9DC494;
-}
+} */
 
 
 /* inicio de @media query en el index */
 
 
-@media only screen and (min-width: 240px) and (max-width: 320px) {
+/* @media only screen and (min-width: 240px) and (max-width: 320px) {
     html {
         scroll-behavior: smooth;
     }
@@ -865,26 +883,12 @@ h1 {
         width: 100%;
         z-index: 99;
     }
-}
+} */
 
 /* final de @media query en el index */
 
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 8%;
-    background-color: #9DC494;
-    z-index: 99;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 
-.footer__img {
-    height: 35px;
-}
 
 
 /* final del index */
@@ -938,11 +942,11 @@ footer {
     grid-row: 8/9;
 }
 
-h2 {
+/* h2 {
     font-size: 60px;
     font-style: italic;
     color: #b4f0a6;
-}
+} */
 
 #sectionproductos {
     display: grid;
@@ -4077,6 +4081,8 @@ input:hover {
 
 #sectionnosotros {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     /* grid-template-areas: 
     "itemnosotros1 itemnosotros3"
     "itemnosotros2 itemnosotros3"; */
@@ -4087,7 +4093,9 @@ input:hover {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     align-self: center;
+    /* flex-direction: column; */
 }
 
 .itemnosotros1 {
