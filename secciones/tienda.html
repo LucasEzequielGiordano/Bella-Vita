@@ -6,54 +6,407 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="../imagenes/BellaVita.jpg" type="imagenes/BellaVita.jpg">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Tienda</title>
 </head>
 <body>
-    <div id="containertienda">
-        <header class="headertienda">
-            <nav class="navtienda">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="#">Tienda</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+    <header class="headertienda">
+        <nav class="col-12 fixed-top navbar navbar-expand-md bg-dark navbar-dark">
+            <!-- imagen de logo -->
+            <a class="navbar-brand" href="#"><img src="../imagenes/BellaVita.ico" alt="icono de bella vita en la barra de navegacion"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- final de logo -->
+            <!-- inicio de barra de navegacion -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
                 </ul>
-            </nav>
-        </header>
-        <main class="maintienda">
-            <h1 class="maintienda__h1">TIENDA</h1>
-            <section class="sectiontienda" id="sectiontienda">
-                <div class="itemtienda itemtienda1">
-                    <h2>Agregar Al Carrito</h2>
+            </div>
+        </nav>
+    </header>
+    <!-- inicio de relojes con cards -->
+    <main class="maintienda"> 
+        <div class="cardreloj">
+            <div class="row">
+                <h2 class="bg-dark container-fluid col-12">
+                    RELOJES
+                </h2>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container-cardsrelojes" id="container-cardsrelojes">
+                    <div data-aos="flip-down" class="col-12 card cardreloj1" style="width: 18rem;">
+                        <img src="../imagenes/relojnegro.JPG" class="cardimg card-img-top" alt="imagen de reloj negro en venta">
+                        <div class="card-body">
+                            <div class="container-card">
+                                <h5 class="h5 card-title">$2000</h5>
+                                <h6 class="h6 card-title-1">Envio Gratis</h6>
+                                <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                                <a href="#" class="a btn btn-primary">Comprar</a>
+                                <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="flip-down" class="col-12 card cardreloj2" style="width: 18rem;">
+                        <img src="../imagenes/relojmapamundi.JPG" class="cardimg card-img-top" alt="imagen de reloj mapa mundi">
+                        <div class="card-body">
+                            <div class="container-card">
+                                <h5 class="h5 card-title">$1200</h5>
+                                <h6 class="h6 card-title-1">Envio Gratis</h6>
+                                <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                                <a href="#" class="a btn btn-primary">Comprar</a>
+                                <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="flip-down" class="col-12 card cardreloj3" style="width: 18rem;">
+                        <img src="../imagenes/relojnegroagujablanca.jpg" class="cardimg card-img-top" alt="imagen de reloj negro de aguja blanca en venta">
+                        <div class="card-body">
+                            <div class="container-card">
+                                <h5 class="h5 card-title">$1400</h5>
+                                <h6 class="h6 card-title-1">Envio Gratis</h6>
+                                <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                                <a href="#" class="a btn btn-primary">Comprar</a>
+                                <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="flip-down" class="col-12 card cardreloj4" style="width: 18rem;">
+                        <img src="../imagenes/relojgrieta.jpg" class="cardimg card-img-top" alt="imagen de reloj grieta en venta">
+                        <div class="card-body">
+                            <div class="container-card">
+                                <h5 class="h5 card-title">$1300</h5>
+                                <h6 class="h6 card-title-1">Envio Gratis</h6>
+                                <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                                <a href="#" class="a btn btn-primary">Comprar</a>
+                                <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="flip-down" class="col-12 card cardreloj5" style="width: 18rem;">
+                        <img src="../imagenes/relojesbaratos.JPG" class="cardimg card-img-top" alt="imagen de reloj barato en venta">
+                        <div class="card-body">
+                            <div class="container-card">
+                                <h5 class="h5 card-title">$1000</h5>
+                                <h6 class="h6 card-title-1">Envio Gratis</h6>
+                                <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                                <a href="#" class="a btn btn-primary">Comprar</a>
+                                <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
-            <section class="sectiontienda" id="sectiontienda1">
-                <div class="itemtienda0 itemtienda2">
-                    <h3 class="itemtienda__h3">Aros Con Forma De Cara</h3>
-                    <img class="itemtienda__img" src="../imagenes/arosdecara.jpg" alt="imagen de aros de cara">
-                    <p class="itemtienda__p">Cantidad Deseada <input type="number" value="1" min="1" max="100"></p>
-                    <p class="itemtienda__p1">$250</p>
-                    <p><a href=""><input class="itemtienda__input" type="button" value="COMPRAR"></a></p>
+            </div>
+        </div><br>
+        <!-- final de relojes con cards -->
+        <!-- inicio de pulseras con cards -->
+        <div data-aos="fade-up" class="cardpulseras">
+            <div class="row">
+                <h2 class="bg-dark container-fluid col-12">
+                    PULSERAS
+                </h2>
+            </div>
+        </div>
+        <div class="container-cardspulseras" id="container-cardspulseras">
+            <div data-aos="flip-down" class="card cardpulseras1 col-12" style="width: 18rem;">
+                <img src="../imagenes/pulserasdecoronas.jpg" class="cardimg card-img-top" alt="imagen de pulseras de coronas en venta">
+                <div class="card-body">
+                    <div class="container-card">
+                        <h5 class="h5 card-title">$800</h5>
+                        <h6 class="h6 card-title-1">Envio Gratis</h6>
+                        <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                        <a href="#" class="a btn btn-primary">Comprar</a>
+                        <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                    </div>
                 </div>
-                <div class="itemtienda0 itemtienda3">
-                    <h3 class="itemtienda__h3">Aro con forma de Serpiente</h3>
-                    <img class="itemtienda__img" src="../imagenes/arosdeserpiente.jpg" alt="imagen de aros de cara">
-                    <p class="itemtienda__p">Cantidad Deseada <input type="number" value="1" min="1" max="100"></p>
-                    <p class="itemtienda__p1">$250</p>
-                    <p><a href=""><input class="itemtienda__input" type="button" value="COMPRAR"></a></p>
+            </div>
+            <div data-aos="flip-down" class="card cardpulseras2 col-12" style="width: 18rem;">
+                <img src="../imagenes/pulseraperlasblancoynegro.jpg" class="cardimg card-img-top" alt="imagen de pulseras blanca y negra">
+                <div class="card-body">
+                    <div class="container-card">
+                        <h5 class="h5 card-title">$800</h5>
+                        <h6 class="h6 card-title-1">Envio Gratis</h6>
+                        <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                        <a href="#" class="a btn btn-primary">Comprar</a>
+                        <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                    </div>
                 </div>
-            </section>
-        </main>
-        <footer class="footertienda" id="footertienda">
-            <a href="https://www.facebook.com/bellavitaccesorios"><img class="footer__img" src="../imagenes/facebook.png" alt="imagen con link de facebook"></a>
-            <a href="https://www.instagram.com/bellavita.accesorios/"><img class="footer__img" src="../imagenes/instagram.png" alt="imagen con link de instagram"></a>
-            <a href=""><img class="footer__img" src="../imagenes/whatsapp.png" alt="imagen con link de whatsapp"></a>
-            <a href=""><img class="footer__img" src="../imagenes/gmail.png" alt="imagen con link del gmail"></a>
-            <a href=""><img class="footer__img" src="../imagenes/copyright.png" alt="imagen con link del copyright"></a>
-            <h4>Todos los derechos reservados.</h4>
-        </footer>
-    </div>
+            </div>
+            <div data-aos="flip-down" class="card cardpulseras3 col-12" style="width: 18rem;">
+                <img src="../imagenes/pulseracolorinche.jpg" class="cardimg card-img-top" alt="imagen de pulseras colorinches en venta">
+                <div class="card-body">
+                    <div class="container-card">
+                        <h5 class="h5 card-title">$600</h5>
+                        <h6 class="h6 card-title-1">Envio Gratis</h6>
+                        <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                        <a href="#" class="a btn btn-primary">Comprar</a>
+                        <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-down" class="card cardpulseras4 col-12" style="width: 18rem;">
+                <img src="../imagenes/perlasra.jpg" class="cardimg card-img-top" alt="imagen de pulseras roja y azul en venta">
+                <div class="card-body">
+                    <div class="container-card">
+                        <h5 class="h5 card-title">$600</h5>
+                        <h6 class="h6 card-title-1">Envio Gratis</h6>
+                        <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                        <a href="#" class="a btn btn-primary">Comprar</a>
+                        <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        <!-- final de pulseras con cards -->
+        <!-- inicio de aros con cards -->
+        <div data-aos="fade-up" class="cardaros">
+            <div class="row">
+                <h2 class="bg-dark container-fluid col-12">
+                    AROS
+                </h2>
+            </div>
+        </div>
+        <div data-aos="flip-down" class="container-cardsaros" id="container-cardsaros">
+            <div class="card cardaross1 col-12" style="width: 18rem;">
+                <img src="../imagenes/arosdecara.jpg" class="cardimg card-img-top" alt="imagen de aros de cara en venta">
+                <div class="card-body">
+                    <div class="container-card">
+                        <h5 class="h5 card-title">$300</h5>
+                        <h6 class="h6 card-title-1">Envio Gratis</h6>
+                        <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                        <a href="#" class="a btn btn-primary">Comprar</a>
+                        <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-down" class="card cardaros2 col-12" style="width: 18rem;">
+                <img src="../imagenes/aroscaraperfil.JPG" class="cardimg card-img-top" alt="imagen de aros de cara de perfil en venta">
+                <div class="card-body">
+                    <div class="container-card">
+                        <h5 class="h5 card-title">$300</h5>
+                        <h6 class="h6 card-title-1">Envio Gratis</h6>
+                        <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                        <a href="#" class="a btn btn-primary">Comprar</a>
+                        <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-down" class="card cardaros3 col-12" style="width: 18rem;">
+                <img src="../imagenes/aroscarasobresalida.JPG" class="cardimg card-img-top" alt="imagen de aros de cara sobresalida en venta">
+                <div class="card-body">
+                    <div class="container-card">
+                        <h5 class="h5 card-title">$300</h5>
+                        <h6 class="h6 card-title-1">Envio Gratis</h6>
+                        <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                        <a href="#" class="a btn btn-primary">Comprar</a>
+                        <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-down" class="card cardaros4 col-12" style="width: 18rem;">
+                <img src="../imagenes/arosmanitas.JPG" class="cardimg card-img-top" alt="imagen de aros de manitas en venta">
+                <div class="card-body">
+                    <div class="container-card">
+                        <h5 class="h5 card-title">$300</h5>
+                        <h6 class="h6 card-title-1">Envio Gratis</h6>
+                        <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                        <a href="#" class="a btn btn-primary">Comprar</a>
+                        <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-down" class="card cardaros5 col-12" style="width: 18rem;">
+                <img src="../imagenes/arosdeserpiente.jpg" class="cardimg card-img-top" alt="imagen de aros de serpiente en venta">
+                <div class="card-body">
+                    <div class="container-card">
+                        <h5 class="h5 card-title">$250</h5>
+                        <h6 class="h6 card-title-1">Envio Gratis</h6>
+                        <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                        <a href="#" class="a btn btn-primary">Comprar</a>
+                        <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-down" class="card cardaros6 col-12" style="width: 18rem;">
+                <img src="../imagenes/arosrayos.jpg" class="cardimg card-img-top" alt="imagen de aros de rayos en venta">
+                <div class="card-body">
+                    <div class="container-card">
+                        <h5 class="h5 card-title">$250</h5>
+                        <h6 class="h6 card-title-1">Envio Gratis</h6>
+                        <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                        <a href="#" class="a btn btn-primary">Comprar</a>
+                        <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-down" class="card cardaros7 col-12" style="width: 18rem;">
+                <img src="../imagenes/aroscubiertos.jpg" class="cardimg card-img-top" alt="imagen de aros de cubiertos en venta">
+                <div class="card-body">
+                    <div class="container-card">
+                        <h5 class="h5 card-title">$250</h5>
+                        <h6 class="h6 card-title-1">Envio Gratis</h6>
+                        <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                        <a href="#" class="a btn btn-primary">Comprar</a>
+                        <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-down" class="card cardaros8 col-12" style="width: 18rem;">
+                <img src="../imagenes/aroshojarellena.JPG" class="cardimg card-img-top" alt="imagen de aros de hoja en venta">
+                <div class="card-body">
+                    <div class="container-card">
+                        <h5 class="h5 card-title">$300</h5>
+                        <h6 class="h6 card-title-1">Envio Gratis</h6>
+                        <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                        <a href="#" class="a btn btn-primary">Comprar</a>
+                        <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-down" class="card cardaros9 col-12" style="width: 18rem;">
+                <img src="../imagenes/arosdehoja.JPG" class="cardimg card-img-top" alt="imagen de aros de hoja en venta">
+                <div class="card-body">
+                    <div class="container-card">
+                        <h5 class="h5 card-title">$300</h5>
+                        <h6 class="h6 card-title-1">Envio Gratis</h6>
+                        <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                        <a href="#" class="a btn btn-primary">Comprar</a>
+                        <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-down" class="card cardaros10 col-12" style="width: 18rem;">
+                <img src="../imagenes/arosplaneta.JPG" class="cardimg card-img-top" alt="imagen de aros de planeta en venta">
+                <div class="card-body">
+                    <div class="container-card">
+                        <h5 class="h5 card-title">$300</h5>
+                        <h6 class="h6 card-title-1">Envio Gratis</h6>
+                        <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                        <a href="#" class="a btn btn-primary">Comprar</a>
+                        <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        <!-- final de aros de cards -->
+        <!-- inicio de dijes de cards -->
+        <div data-aos="fade-up" class="carddijes">
+            <div class="row">
+                <h2 class="bg-dark container-fluid col-12">
+                    DIJES
+                </h2>
+            </div>
+        </div>
+        <div class="container-cardsdijes" id="container-cardsdijes">
+            <div data-aos="flip-down" class="card cardpulseras1 col-12" style="width: 18rem;">
+                <img src="../imagenes/dijegoodvibes.jpg" class="cardimg card-img-top" alt="imagen de dije de good vibes en venta">
+                <div class="card-body">
+                    <div class="container-card">
+                        <h5 class="h5 card-title">$250</h5>
+                        <h6 class="h6 card-title-1">Envio Gratis</h6>
+                        <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                        <a href="#" class="a btn btn-primary">Comprar</a>
+                        <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-down" class="card carddijes2 col-12" style="width: 18rem;">
+                <img src="../imagenes/dijecuernito.jpg" class="cardimg card-img-top" alt="imagen de dije de cuernito en venta">
+                <div class="card-body">
+                    <div class="container-card">
+                        <h5 class="h5 card-title">$300</h5>
+                        <h6 class="h6 card-title-1">Envio Gratis</h6>
+                        <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                        <a href="#" class="a btn btn-primary">Comprar</a>
+                        <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-down" class="card carddijes3 col-12" style="width: 18rem;">
+                <img src="../imagenes/dijeplaneta.jpg" class="cardimg card-img-top" alt="imagen de dije de planeta en venta">
+                <div class="card-body">
+                    <div class="container-card">
+                        <h5 class="h5 card-title">$300</h5>
+                        <h6 class="h6 card-title-1">Envio Gratis</h6>
+                        <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                        <a href="#" class="a btn btn-primary">Comprar</a>
+                        <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-down" class="card carddijes4 col-12" style="width: 18rem;">
+                <img src="../imagenes/dijehockey.jpg" class="cardimg card-img-top" alt="imagen de dije de hockey en venta">
+                <div class="card-body">
+                    <div class="container-card">
+                        <h5 class="h5 card-title">$250</h5>
+                        <h6 class="h6 card-title-1">Envio Gratis</h6>
+                        <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                        <a href="#" class="a btn btn-primary">Comprar</a>
+                        <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-down" class="card carddijes5 col-12" style="width: 18rem;">
+                <img src="../imagenes/varios.jpeg" class="cardimg card-img-top" alt="imagen de dije mar en venta">
+                <div class="card-body">
+                    <div class="container-card">
+                        <h5 class="h5 card-title">$250</h5>
+                        <h6 class="h6 card-title-1">Envio Gratis</h6>
+                        <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                        <a href="#" class="a btn btn-primary">Comprar</a>
+                        <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-down" class="card carddijes6 col-12" style="width: 18rem;">
+                <img src="../imagenes/avionesdije.JPG" class="cardimg card-img-top" alt="imagen de dije aviones en venta">
+                <div class="card-body">
+                    <div class="container-card">
+                        <h5 class="h5 card-title">$250</h5>
+                        <h6 class="h6 card-title-1">Envio Gratis</h6>
+                        <p class="p card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti quaerat non nihil.</p>
+                        <a href="#" class="a btn btn-primary">Comprar</a>
+                        <a href="#" class="a1 card-link"><img class="cardsimg" src="../imagenes/me-gusta.png" alt="imagen de corazon de me gusta"></a>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        <!-- final de dijes de cards -->
+    </main>
+    <footer class="position-fixed col-12 footertienda" id="footertienda">
+        <a href="https://www.facebook.com/bellavitaccesorios"><img class="footer__img" src="../imagenes/facebook.png" alt="imagen con link de facebook"></a>
+        <a href="https://www.instagram.com/bellavita.accesorios/"><img class="footer__img" src="../imagenes/instagram.png" alt="imagen con link de instagram"></a>
+        <a href=""><img class="footer__img" src="../imagenes/whatsapp.png" alt="imagen con link de whatsapp"></a>
+        <a href=""><img class="footer__img" src="../imagenes/gmail.png" alt="imagen con link del gmail"></a>
+        <a href=""><img class="footer__img" src="../imagenes/copyright.png" alt="imagen con link del copyright"></a>
+        <h4>Todos los derechos reservados.</h4>
+    </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>
