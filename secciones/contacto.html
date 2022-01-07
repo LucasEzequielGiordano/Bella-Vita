@@ -1,53 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="../imagenes/BellaVita.jpg" type="imagenes/BellaVita.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Contacto</title>
 </head>
+
 <body>
     <header class="headercontacto">
-        <nav class="navcontacto">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
+        <nav class="col-12 container-fluid navbar navbar-expand-md navbar-light">
+            <!-- imagen de logo -->
+            <a class="navbar-brand" href="#">
+                <h1>Bella Vita</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- final de logo -->
+            <!-- inicio de barra de navegacion -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acercade.html">Acerca De</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main class="maincontacto" id="maincontacto">
-        <h1>CONTACTO</h1>
-            <form>
-                <fieldset>
-                    <legend>Formulario De Contacto</legend>
-                    <label for="nombre">Nombre</label>
-                    <input class="inputcontacto" type="text" placeholder="Ingrese su nombre"><br>
-                    <label for="apellido">Apellido</label>
-                    <input class="inputcontacto" type="text" placeholder="Ingrese su Apellido"><br>
-                    <label for="email">E-mail</label>
-                    <input class="inputcontacto" type="email" placeholder="Ingrese su Email" required><br>
-                    <label for="newsletter">Desea ser notificado/a de nuevos productos?</label>
-                    <input class="inputcontacto" type="checkbox"><br>
-                    <textarea name="textarea" cols="30" rows="10" placeholder="Escriba un comentario"></textarea><br>
-                    <input class="inputcontacto" type="submit" value="Enviar">
-                    <input class="inputcontacto" type="reset" value="Eliminar">
-                </fieldset>
-            </form>
+    <main class="maincontacto">
+        <section class="sectioncontacto">
+            <h1 class="titulocontacto">Contacto</h1>
         </section>
+        <div class="parrafocontacto">
+            <p>Para cualquier consulta sobre una compra,<br> envíanos el número y la fecha de tu compra.</p>
+        </div>
+        <!-- inicio formulario de contacto -->
+        <div class="formulariocontacto" id="formulariocontacto">
+            <label class="formnombre" for="nombre">Introduce tu nombre</label>
+            <input class="formnombre1" type="text" placeholder="Nombre"><br>
+            <label class="formapellido" for="apellido">Introduce tu apellido</label>
+            <input class="formapellido1" type="text" placeholder="Apellido"><br>
+            <label class="formemail" for="email">Introduce tu email</label>
+            <input class="formemail1" type="email" id="mail" placeholder="Email" required><br>
+            <label class="formnumero" for="number">Introduce tu teléfono</label>
+            <input class="formnumero1" type="numero" placeholder="Teléfono"><br>
+            <label class="formmensaje" for="mensaje">Escribe tu mensaje aquí</label><br>
+            <textarea class="formmensaje1" cols="48" rows="10" placeholder="Mensaje"></textarea><br>
+            <input class="formborrar" type="reset" value="Borrar">
+            <input class="formenviar" type="submit" value="Enviar">
+        </div>
+        <!-- final formulario de contacto -->
     </main>
-    <footer class="footercontacto" id="footercontacto">
-        <a href="https://www.facebook.com/bellavitaccesorios"><img class="footer__img" src="../imagenes/facebook.png" alt="imagen con link de facebook"></a>
-        <a href="https://www.instagram.com/bellavita.accesorios/"><img class="footer__img" src="../imagenes/instagram.png" alt="imagen con link de instagram"></a>
-        <a href=""><img class="footer__img" src="../imagenes/whatsapp.png" alt="imagen con link de whatsapp"></a>
-        <a href=""><img class="footer__img" src="../imagenes/gmail.png" alt="imagen con link del gmail"></a>
-        <a href=""><img class="footer__img" src="../imagenes/copyright.png" alt="imagen con link del copyright"></a>
-        <h4>Todos los derechos reservados.</h4>
+    <footer class="footer">
+        <div class="social">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-whatsapp"></i></a>
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="tienda.html">Tienda</a>
+            </li>
+            <li>
+                <a href="acercade.html">Acerca De</a>
+            </li>
+            <li>
+                <a href="blog.html">Blog</a>
+            </li>
+            <li>
+                <a href="#">Contacto</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            <i class="far fa-copyright"></i>Todos los derechos reservados. 2022
+        </p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

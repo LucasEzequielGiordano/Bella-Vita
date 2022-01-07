@@ -2835,6 +2835,7 @@ li {
     flex-wrap: wrap;
     font-size: clamp(14px, 50%, 25px);
     background-color: #E7EEEA;
+    box-shadow: 0 15px 15px #ccc;
     width: clamp(50px, 100%, 300px);
     height: 90px;
 }
@@ -2856,8 +2857,9 @@ li {
     gap: 20px;
     font-size: clamp(14px, 50%, 25px);
     background-color: #E7EEEA;
+    box-shadow: 0 15px 15px #ccc;
     width: clamp(50px, 100%, 300px);
-    height: 150px;
+    height: 175px;
 }
 
 .underacerca iframe {
@@ -2955,6 +2957,186 @@ li {
 /* FINAL BLOG */
 /* INICIO CONTACTO */
 
+.sectioncontacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-wrap: wrap;
+}
 
+.sectioncontacto h1 {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.parrafocontacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.parrafocontacto p {
+    background-color: #E7EEEA;
+    box-shadow: 0 15px 15px #ccc;
+}
+
+#formulariocontacto {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 75px, 100px, 75px, 100px, 75px, 125px, 75px;
+    gap: 10px;
+}
+
+.formulariocontacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.formnombre {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.formnombre1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 3px outset #E7EEEA;
+    box-shadow: 0 2px 2px #ccc;
+}
+
+.formapellido {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.formapellido1 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    border: 3px outset #E7EEEA;
+    box-shadow: 0 2px 2px #ccc;
+}
+
+.formemail {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.formemail1 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    border: 3px outset #E7EEEA;
+    box-shadow: 0 2px 2px #ccc;
+}
+
+.formnumero {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.formnumero1 {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    border: 3px outset #E7EEEA;
+    box-shadow: 0 2px 2px #ccc;
+}
+
+.formmensaje {
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+.formmensaje1 {
+    grid-column: 2/4;
+    grid-row: 6/7;
+    border: 3px outset #E7EEEA;
+    box-shadow: 0 2px 2px #ccc;
+}
+
+.formborrar {
+    grid-column: 2/3;
+    grid-row: 7/8;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 2px #ccc;
+}
+
+.formenviar {
+    grid-column: 3/4;
+    grid-row: 7/8;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 2px #ccc;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+    #formulariocontacto {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px, 75px, 50px, 75px, 50px, 75px, 50px, 75px, 50px, 100px, 50px, 50px;
+        gap: 10px;
+    }
+    
+    .formulariocontacto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .formnombre {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .formnombre1 {
+        grid-column: 1/2;        grid-row: 2/3;
+    }
+    
+    .formapellido {
+        grid-column: 1/2;        grid-row: 3/4;
+    }
+    
+    .formapellido1 {
+        grid-column: 1/2;        grid-row: 4/5;
+    }
+    
+    .formemail {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    
+    .formemail1 {
+        grid-column: 1/2;        grid-row: 6/7;
+    }
+    
+    .formnumero {
+        grid-column: 1/2;        grid-row: 7/8;
+    }
+    
+    .formnumero1 {
+        grid-column: 1/2;        grid-row: 8/9;
+    }
+    
+    .formmensaje {
+        grid-column: 1/2;        grid-row: 9/10;
+    }
+    
+    .formmensaje1 {
+        grid-column: 1/2;        grid-row: 10/11;
+    }
+    
+    .formborrar {
+        grid-column: 1/2;        grid-row: 11/12;
+    }
+    
+    .formenviar {
+        grid-column: 1/2;        grid-row: 12/13;
+    }   
+}
 
 /* FINAL CONTACTO */
