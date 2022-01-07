@@ -2857,7 +2857,7 @@ li {
     font-size: clamp(14px, 50%, 25px);
     background-color: #E7EEEA;
     width: clamp(50px, 100%, 300px);
-    height: 150px;   
+    height: 150px;
 }
 
 .underacerca iframe {
@@ -2865,3 +2865,96 @@ li {
 }
 
 /* FINAL ACERCA DE */
+/* INICIO BLOG */
+
+.sectionblog {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: flex-start;
+    flex-wrap: wrap;
+}
+
+.sectionblog h1 {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.subtituloblog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.subtituloblog span {
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 36ch;
+    animation: typing 6s infinite alternate steps(36), blink .5s infinite alternate-reverse;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.subtituloblog h3 span {
+    font-size: clamp(14px, 16px, 22px);
+}
+
+.flexblog {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.flexblog .card-img-top {
+    height: 355px;
+}
+
+#flex-i {
+    display: grid;
+    grid-template-columns: repeat(3, 25px) repeat(4, 1fr);
+    gap: 15px;
+}
+
+.flex-i {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.fa-heart {
+    grid-column: 1/2;
+}
+
+.fa-comment-alt {
+    grid-column: 2/3;
+}
+
+.fa-paper-plane {
+    grid-column: 3/4;
+}
+
+.fa-bookmark {
+    grid-column: 8/9;
+}
+
+/* FINAL BLOG */
+/* INICIO CONTACTO */
+
+
+
+/* FINAL CONTACTO */
