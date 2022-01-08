@@ -3073,7 +3073,7 @@ li {
     box-shadow: 0 2px 2px #ccc;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 400px) {
+@media only screen and (min-width: 320px) and (max-width: 576px) {
     #formulariocontacto {
         display: grid;
         grid-template-columns: 1fr;
