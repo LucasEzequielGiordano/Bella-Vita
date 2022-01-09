@@ -2980,163 +2980,51 @@ li {
 
 .parrafocontacto p {
     background-color: #E7EEEA;
-    box-shadow: 0 15px 15px #ccc;
+    box-shadow: 0 0 15px #ffc0cb;
 }
 
-#formulariocontacto {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 75px, 100px, 75px, 100px, 75px, 125px, 75px;
-    gap: 10px;
-}
-
-.formulariocontacto {
+form {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
-.formnombre {
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-
 .formnombre1 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    border: 3px outset #E7EEEA;
-    box-shadow: 0 2px 2px #ccc;
-}
-
-.formapellido {
-    grid-column: 3/4;
-    grid-row: 1/2;
+    width: 300px;
+    border: 2px solid #ffc0cb;
+    box-shadow: 0 0 5px #ffc0cb;
 }
 
 .formapellido1 {
-    grid-column: 3/4;
-    grid-row: 2/3;
-    border: 3px outset #E7EEEA;
-    box-shadow: 0 2px 2px #ccc;
-}
-
-.formemail {
-    grid-column: 2/3;
-    grid-row: 3/4;
+    width: 300px;
+    border: 2px solid #ffc0cb;
+    box-shadow: 0 0 5px #ffc0cb;
 }
 
 .formemail1 {
-    grid-column: 2/3;
-    grid-row: 4/5;
-    border: 3px outset #E7EEEA;
-    box-shadow: 0 2px 2px #ccc;
-}
-
-.formnumero {
-    grid-column: 3/4;
-    grid-row: 3/4;
+    width: 300px;
+    border: 2px solid #ffc0cb;
+    box-shadow: 0 0 5px #ffc0cb;
 }
 
 .formnumero1 {
-    grid-column: 3/4;
-    grid-row: 4/5;
-    border: 3px outset #E7EEEA;
-    box-shadow: 0 2px 2px #ccc;
-}
-
-.formmensaje {
-    grid-column: 2/3;
-    grid-row: 5/6;
+    width: 300px;
+    border: 2px solid #ffc0cb;
+    box-shadow: 0 0 5px #ffc0cb;
 }
 
 .formmensaje1 {
-    grid-column: 2/4;
-    grid-row: 6/7;
-    border: 3px outset #E7EEEA;
-    box-shadow: 0 2px 2px #ccc;
-}
-
-.formborrar {
-    grid-column: 2/3;
-    grid-row: 7/8;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0 2px 2px #ccc;
+    width: 300px;
+    border: 2px solid #ffc0cb;
+    box-shadow: 0 0 5px #ffc0cb;
 }
 
 .formenviar {
-    grid-column: 3/4;
-    grid-row: 7/8;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0 2px 2px #ccc;
-}
-
-@media only screen and (min-width: 320px) and (max-width: 576px) {
-    #formulariocontacto {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 50px, 75px, 50px, 75px, 50px, 75px, 50px, 75px, 50px, 100px, 50px, 50px;
-        gap: 10px;
-    }
-    
-    .formulariocontacto {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    
-    .formnombre {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    
-    .formnombre1 {
-        grid-column: 1/2;        grid-row: 2/3;
-    }
-    
-    .formapellido {
-        grid-column: 1/2;        grid-row: 3/4;
-    }
-    
-    .formapellido1 {
-        grid-column: 1/2;        grid-row: 4/5;
-    }
-    
-    .formemail {
-        grid-column: 1/2;
-        grid-row: 5/6;
-    }
-    
-    .formemail1 {
-        grid-column: 1/2;        grid-row: 6/7;
-    }
-    
-    .formnumero {
-        grid-column: 1/2;        grid-row: 7/8;
-    }
-    
-    .formnumero1 {
-        grid-column: 1/2;        grid-row: 8/9;
-    }
-    
-    .formmensaje {
-        grid-column: 1/2;        grid-row: 9/10;
-    }
-    
-    .formmensaje1 {
-        grid-column: 1/2;        grid-row: 10/11;
-    }
-    
-    .formborrar {
-        grid-column: 1/2;        grid-row: 11/12;
-    }
-    
-    .formenviar {
-        grid-column: 1/2;        grid-row: 12/13;
-    }   
+    width: 300px;
+    border: 2px solid #ffc0cb;
+    box-shadow: 0 0 5px #ffc0cb;
 }
 
 /* FINAL CONTACTO */
