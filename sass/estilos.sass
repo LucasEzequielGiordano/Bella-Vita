@@ -1,0 +1,2601 @@
+// variables sección contacto
+// paleta de colores
+
+$color1: #E7EEEA
+
+// sombras
+
+$shadow: 0 0 5px #ffc0cb
+$shadow1: 0 0 15px #ffc0cb
+
+// fuentes
+
+$font: 'Courier New', Courier, monospace
+
+// bordes
+
+$border: 2px solid #ffc0cb
+
+// final de variables
+    
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Segoe UI', sans-serif
+    font-size: 16px
+
+body
+    width: 100%
+    height: 100%
+    overflow-x: hidden
+    background-color: #fff
+
+.header
+    width: 100%
+    height: 10%
+
+.main
+    width: 100%
+    height: 80%
+
+nav
+    text-align: center
+    top: 0
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #E7EEEA
+
+ul
+    display: flex
+    justify-content: center
+    align-items: flex-end
+    list-style: none
+
+li
+    display: flex
+    justify-content: center
+    align-items: center
+
+.footer
+    padding: 40px 0 10px
+    background-color: #E7EEEA
+
+.footer .social
+    text-align: center
+    margin-bottom: 25px
+    color: #4b4c4d
+
+.footer .social a
+    font-size: 24px
+    color: inherit
+    border: 1px solid #ccc
+    width: 40px
+    height: 40px
+    line-height: 31px
+    display: inline-block
+    text-align: center
+    border-radius: 50%
+    margin: 0 8px
+    opacity: 0.75
+    background: #000
+    color: #fff
+    transition: all 0.3s ease
+
+.footer .social a:hover
+    opacity: 0.9
+    transition: all 0.3s ease
+    color: #24262b
+    background: #fff
+
+.footer ul
+    margin-top: 0
+    padding: 0
+    list-style: none
+    font-size: 18px
+    line-height: 1.6
+    margin-bottom: 0
+    text-align: center
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+.footer ul a
+    color: inherit
+    text-decoration: none
+    opacity: 0.8
+
+.footer ul li
+    display: inline-block
+    padding: 0 15px
+
+.footer ul li a:hover
+    opacity: 1
+    transition: all 0.3s ease
+    color: #24262b
+
+.footer .copyright
+    margin-top: 15px
+    text-align: center
+    font-size: 13px
+    color: #aaa
+
+/* FINAL DE NAV Y FOOTER */
+/* INICIO DE INDEX */
+
+.display-4
+    font-family: 'Courier New', Courier, monospace
+    font-size: 24px clamp(3rem, 2.5vw, 5rem)
+    color: #2E302F
+
+.parrafoindex
+    height: clamp(100px, 50%, 400px)
+
+.container-fluid
+    height: 100%
+
+.contenido
+    width: clamp(320px, 100%, 2560px)
+
+.main
+    background-image: url(../imagenes/jumbotronfondo.jpg)
+    background-repeat: no-repeat
+    background-position-x: center
+    background-position-y: center
+
+.jumbotron
+    visibility: hidden
+    margin-bottom: 0px
+    padding-top: 35%
+    padding-bottom: 35%
+
+.jumbotron h1,
+.jumbotron hr,
+.jumbotron p,
+.jumbotron a
+    visibility: visible
+
+.jumbotron a
+    background-color: #2E302F
+    color: #fff
+    font-size: 500
+    border: 1px solid #ccc
+    border-radius: 50px
+
+.jumbotron a:hover
+    background-color: #fff
+    color: #2E302F
+    font-size: 500
+    border: 1px solid #ccc
+    border-radius: 50px
+
+.btn-tienda
+    text-align: center
+    width: clamp(100px, 50%, 400px)
+
+@media only screen and (max-height: 896px)
+    .main
+        background-position-x: center
+        background-position-y: center
+        padding-top: 25%
+        padding-bottom: 25%
+
+@media only screen and (max-height: 1500px)
+    .main
+        background-position-x: center
+        background-position-y: center
+        padding-top: 0
+        padding-bottom: 0
+
+/* FINAL DEL INDEX */
+/* INICIO DE TIENDA */
+
+.h1tienda
+    font-family: 'Courier New', Courier, monospace
+    font-size: clamp(35px, 50%, 75px)
+    font-size: 50px
+
+/* INICIO DE SECCION RELOJES */
+
+#sectionrelojes
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: 75px repeat(2, 1fr)
+    gap: 20px
+
+.itemrelojes
+    display: flex
+    justify-content: center
+
+.itemrelojes1
+    grid-column: 1/4
+    grid-row: 1/2
+    padding: 10px
+
+.itemrelojes2
+    grid-column: 1/2
+    grid-row: 2/3
+
+.itemrelojes2 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itemrelojes2 figure:hover>img
+    transform: scale(1.2)
+
+.itemrelojes2 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itemrelojes2 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itemrelojes2 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itemrelojes2 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itemrelojes2 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itemrelojes2 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+.itemrelojes3
+    grid-column: 2/3
+    grid-row: 2/3
+
+.itemrelojes3 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itemrelojes3 figure:hover>img
+    transform: scale(1.2)
+
+.itemrelojes3 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itemrelojes3 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itemrelojes3 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itemrelojes3 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itemrelojes3 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itemrelojes3 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+.itemrelojes4
+    grid-column: 3/4
+    grid-row: 2/3
+
+.itemrelojes4 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itemrelojes4 figure:hover>img
+    transform: scale(1.2)
+
+.itemrelojes4 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itemrelojes4 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itemrelojes4 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itemrelojes4 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itemrelojes4 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itemrelojes4 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+.itemrelojes5
+    grid-column: 1/2
+    grid-row: 3/4
+
+.itemrelojes5 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itemrelojes5 figure:hover>img
+    transform: scale(1.2)
+
+.itemrelojes5 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itemrelojes5 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itemrelojes5 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itemrelojes5 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itemrelojes5 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itemrelojes5 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+.itemrelojes6
+    grid-column: 2/3
+    grid-row: 3/4
+
+.itemrelojes6 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itemrelojes6 figure:hover>img
+    transform: scale(1.2)
+
+.itemrelojes6 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itemrelojes6 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itemrelojes6 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itemrelojes6 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itemrelojes6 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itemrelojes6 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+.itemrelojes7
+    grid-column: 3/4
+    grid-row: 3/4
+
+.itemrelojes7 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itemrelojes7 figure:hover>img
+    transform: scale(1.2)
+
+.itemrelojes7 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itemrelojes7 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itemrelojes7 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itemrelojes7 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itemrelojes7 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itemrelojes7 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+/* FINAL DE SECCION RELOJES */
+/* INICIO DE SECCION PULSERAS */
+
+#sectionpulseras
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: 75px 1fr
+    gap: 20px
+
+.itempulseras
+    display: flex
+    justify-content: center
+
+.itempulseras1
+    grid-column: 2/4
+    grid-row: 1/2
+    padding: 10px
+
+.itempulseras2
+    grid-column: 1/2
+    grid-row: 2/3
+
+.itempulseras2 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itempulseras2 figure:hover>img
+    transform: scale(1.2)
+
+.itempulseras2 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itempulseras2 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itempulseras2 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itempulseras2 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itempulseras2 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itempulseras2 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+.itempulseras3
+    grid-column: 2/3
+    grid-row: 2/3
+
+.itempulseras3 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itempulseras3 figure:hover>img
+    transform: scale(1.2)
+
+.itempulseras3 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itempulseras3 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itempulseras3 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itempulseras3 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itempulseras3 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itempulseras3 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+.itempulseras4
+    grid-column: 3/4
+    grid-row: 2/3
+
+.itempulseras4 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itempulseras4 figure:hover>img
+    transform: scale(1.2)
+
+.itempulseras4 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itempulseras4 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itempulseras4 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itempulseras4 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itempulseras4 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itempulseras4 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+.itempulseras5
+    grid-column: 4/5
+    grid-row: 2/3
+
+.itempulseras5 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itempulseras5 figure:hover>img
+    transform: scale(1.2)
+
+.itempulseras5 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itempulseras5 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itempulseras5 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itempulseras5 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itempulseras5 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itempulseras5 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+/* FINAL SECCION PULSERAS */
+/* INICIO SECCION AROS */
+
+#sectionaros
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: 75px repeat(2, 1fr)
+    gap: 20px
+
+.itemaros
+    display: flex
+    justify-content: center
+
+.itemaros1
+    grid-column: 2/4
+    grid-row: 1/2
+    padding: 10px
+
+.itemaros2
+    grid-column: 1/2
+    grid-row: 2/3
+
+.itemaros2 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itemaros2 figure:hover>img
+    transform: scale(1.2)
+
+.itemaros2 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itemaros2 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itemaros2 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itemaros2 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itemaros2 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itemaros2 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+.itemaros3
+    grid-column: 2/3
+    grid-row: 2/3
+
+.itemaros3 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itemaros3 figure:hover>img
+    transform: scale(1.2)
+
+.itemaros3 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itemaros3 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itemaros3 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itemaros3 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itemaros3 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itemaros3 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+.itemaros4
+    grid-column: 3/4
+    grid-row: 2/3
+
+.itemaros4 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itemaros4 figure:hover>img
+    transform: scale(1.2)
+
+.itemaros4 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itemaros4 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itemaros4 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itemaros4 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itemaros4 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itemaros4 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+.itemaros5
+    grid-column: 4/5
+    grid-row: 2/3
+
+.itemaros5 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itemaros5 figure:hover>img
+    transform: scale(1.2)
+
+.itemaros5 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itemaros5 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itemaros5 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itemaros5 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itemaros5 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itemaros5 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+.itemaros6
+    grid-column: 1/2
+    grid-row: 3/4
+
+.itemaros6 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itemaros6 figure:hover>img
+    transform: scale(1.2)
+
+.itemaros6 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itemaros6 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itemaros6 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itemaros6 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itemaros6 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itemaros6 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+.itemaros7
+    grid-column: 2/3
+    grid-row: 3/4
+
+.itemaros7 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itemaros7 figure:hover>img
+    transform: scale(1.2)
+
+.itemaros7 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itemaros7 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itemaros7 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itemaros7 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itemaros7 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itemaros7 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+.itemaros8
+    grid-column: 3/4
+    grid-row: 3/4
+
+.itemaros8 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itemaros8 figure:hover>img
+    transform: scale(1.2)
+
+.itemaros8 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itemaros8 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itemaros8 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itemaros8 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itemaros8 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itemaros8 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+.itemaros9
+    grid-column: 4/5
+    grid-row: 3/4
+
+.itemaros9 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itemaros9 figure:hover>img
+    transform: scale(1.2)
+
+.itemaros9 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itemaros9 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itemaros9 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itemaros9 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itemaros9 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itemaros9 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+/* FINAL SECCION AROS */
+/* INICIO SECCION DIJES */
+
+#sectiondijes
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: 75px repeat(2, 1fr)
+    gap: 20px
+
+.itemdijes
+    display: flex
+    justify-content: center
+
+.itemdijes1
+    grid-column: 1/4
+    grid-row: 1/2
+    padding: 10px
+
+.itemdijes2
+    grid-column: 1/2
+    grid-row: 2/3
+
+.itemdijes2 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itemdijes2 figure:hover>img
+    transform: scale(1.2)
+
+.itemdijes2 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itemdijes2 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itemdijes2 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itemdijes2 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itemdijes2 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itemdijes2 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+.itemdijes3
+    grid-column: 2/3
+    grid-row: 2/3
+
+.itemdijes3 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itemdijes3 figure:hover>img
+    transform: scale(1.2)
+
+.itemdijes3 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itemdijes3 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itemdijes3 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itemdijes3 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itemdijes3 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itemdijes3 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+.itemdijes4
+    grid-column: 3/4
+    grid-row: 2/3
+
+.itemdijes4 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itemdijes4 figure:hover>img
+    transform: scale(1.2)
+
+.itemdijes4 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itemdijes4 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itemdijes4 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itemdijes4 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itemdijes4 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itemdijes4 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+.itemdijes5
+    grid-column: 1/2
+    grid-row: 3/4
+
+.itemdijes5 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itemdijes5 figure:hover>img
+    transform: scale(1.2)
+
+.itemdijes5 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itemdijes5 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itemdijes5 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itemdijes5 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itemdijes5 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itemdijes5 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+.itemdijes6
+    grid-column: 2/3
+    grid-row: 3/4
+
+.itemdijes6 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itemdijes6 figure:hover>img
+    transform: scale(1.2)
+
+.itemdijes6 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itemdijes6 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itemdijes6 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itemdijes6 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itemdijes6 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itemdijes6 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+.itemdijes7
+    grid-column: 3/4
+    grid-row: 3/4
+
+.itemdijes7 figure
+    position: relative
+    width: 305px
+    height: 407px
+    overflow: hidden
+    border-radius: 6px
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50)
+    cursor: pointer
+
+.itemdijes7 figure:hover>img
+    transform: scale(1.2)
+
+.itemdijes7 figure img
+    width: 100%
+    height: 100%
+    transition: all 0.5s ease-out
+
+.itemdijes7 figure .efectocard
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(11, 103, 123, 0.6)
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-direction: column
+
+.itemdijes7 figure:hover>.efectocard
+    opacity: 1
+    visibility: visible
+
+.itemdijes7 figure:hover .efectocard h3
+    color: #E7EEEA
+    font-size: 30px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: start
+    padding-left: 20px
+
+.itemdijes7 figure:hover .efectocard h4
+    color: #39b54a
+    font-size: 18px
+    font-family: 'Courier New', Courier, monospace
+    font-weight: 600
+    text-align: left
+    padding-left: 20px
+
+.itemdijes7 figure .efectocard p
+    color: #E7EEEA
+    font-size: 14px
+    font-family: 'Courier New', Courier, monospace
+    text-align: left
+    padding-left: 20px
+
+/* FINAL SECCION DIJES */
+/* INICIO MEDIA QUERIES TIENDA */
+
+@media only screen and (min-width: 320px) and (max-width: 768px)
+    .h1tienda
+        font-size: 35px
+
+    #sectionrelojes
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: 50px repeat(6, 1fr)
+        gap: 20px
+
+    .itemrelojes
+        display: flex
+        justify-content: center
+
+    .itemrelojes1
+        grid-column: 1/2
+        grid-row: 1/2
+        padding: 10px
+
+    .itemrelojes2
+        grid-column: 1/2
+        grid-row: 2/3
+
+    .itemrelojes3
+        grid-column: 1/2
+        grid-row: 3/4
+
+    .itemrelojes4
+        grid-column: 1/2
+        grid-row: 4/5
+
+    .itemrelojes5
+        grid-column: 1/2
+        grid-row: 5/6
+
+    .itemrelojes6
+        grid-column: 1/2
+        grid-row: 6/7
+
+    .itemrelojes7
+        grid-column: 1/2
+        grid-row: 7/8
+
+    #sectionpulseras
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: 50px repeat(4, 1fr)
+        gap: 20px
+
+    .itempulseras
+        display: flex
+        justify-content: center
+
+    .itempulseras1
+        grid-column: 1/2
+        grid-row: 1/2
+        padding: 10px
+
+    .itempulseras2
+        grid-column: 1/2
+        grid-row: 2/3
+
+    .itempulseras3
+        grid-column: 1/2
+        grid-row: 3/4
+
+    .itempulseras4
+        grid-column: 1/2
+        grid-row: 4/5
+
+    .itempulseras5
+        grid-column: 1/2
+        grid-row: 5/6
+
+    #sectionaros
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: 50px repeat(8, 1fr)
+        gap: 20px
+
+    .itemaros
+        display: flex
+        justify-content: center
+
+    .itemaros1
+        grid-column: 1/2
+        grid-row: 1/2
+        padding: 10px
+
+    .itemaros2
+        grid-column: 1/2
+        grid-row: 2/3
+
+    .itemaros3
+        grid-column: 1/2
+        grid-row: 3/4
+
+    .itemaros4
+        grid-column: 1/2
+        grid-row: 4/5
+
+    .itemaros5
+        grid-column: 1/2
+        grid-row: 5/6
+
+    .itemaros6
+        grid-column: 1/2
+        grid-row: 6/7
+
+    .itemaros7
+        grid-column: 1/2
+        grid-row: 7/8
+
+    .itemaros8
+        grid-column: 1/2
+        grid-row: 8/9
+
+    .itemaros9
+        grid-column: 1/2
+        grid-row: 9/10
+
+    #sectiondijes
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: 75px repeat(6, 1fr)
+        gap: 20px
+
+    .itemdijes
+        display: flex
+        justify-content: center
+
+    .itemdijes1
+        grid-column: 1/2
+        grid-row: 1/2
+        padding: 10px
+
+    .itemdijes2
+        grid-column: 1/2
+        grid-row: 2/3
+
+    .itemdijes3
+        grid-column: 1/2
+        grid-row: 3/4
+
+    .itemdijes4
+        grid-column: 1/2
+        grid-row: 4/5
+
+    .itemdijes5
+        grid-column: 1/2
+        grid-row: 5/6
+
+    .itemdijes6
+        grid-column: 1/2
+        grid-row: 6/7
+
+    .itemdijes7
+        grid-column: 1/2
+        grid-row: 7/8
+
+@media only screen and (min-width: 768px) and (max-width: 992px)
+    .h1tienda
+        font-size: 40px
+
+    #sectionrelojes
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: 50px repeat(3, 1fr)
+        gap: 20px
+
+    .itemrelojes
+        display: flex
+        justify-content: center
+
+    .itemrelojes1
+        grid-column: 1/3
+        grid-row: 1/2
+        padding: 10px
+
+    .itemrelojes2
+        grid-column: 1/2
+        grid-row: 2/3
+
+    .itemrelojes3
+        grid-column: 2/3
+        grid-row: 2/3
+
+    .itemrelojes4
+        grid-column: 1/2
+        grid-row: 3/4
+
+    .itemrelojes5
+        grid-column: 2/3
+        grid-row: 3/4
+
+    .itemrelojes6
+        grid-column: 1/2
+        grid-row: 4/5
+
+    .itemrelojes7
+        grid-column: 2/3
+        grid-row: 4/5
+
+    #sectionpulseras
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: 50px repeat(2, 1fr)
+        gap: 20px
+
+    .itempulseras
+        display: flex
+        justify-content: center
+
+    .itempulseras1
+        grid-column: 1/3
+        grid-row: 1/2
+        padding: 10px
+
+    .itempulseras2
+        grid-column: 1/2
+        grid-row: 2/3
+
+    .itempulseras3
+        grid-column: 2/3
+        grid-row: 2/3
+
+    .itempulseras4
+        grid-column: 1/2
+        grid-row: 3/4
+
+    .itempulseras5
+        grid-column: 2/3
+        grid-row: 3/4
+
+    #sectionaros
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: 50px repeat(4, 1fr)
+        gap: 20px
+
+    .itemaros
+        display: flex
+        justify-content: center
+
+    .itemaros1
+        grid-column: 1/3
+        grid-row: 1/2
+        padding: 10px
+
+    .itemaros2
+        grid-column: 1/2
+        grid-row: 2/3
+
+    .itemaros3
+        grid-column: 2/3
+        grid-row: 2/3
+
+    .itemaros4
+        grid-column: 1/2
+        grid-row: 3/4
+
+    .itemaros5
+        grid-column: 2/3
+        grid-row: 3/4
+
+    .itemaros6
+        grid-column: 1/2
+        grid-row: 4/5
+
+    .itemaros7
+        grid-column: 2/3
+        grid-row: 4/5
+
+    .itemaros8
+        grid-column: 1/2
+        grid-row: 5/6
+
+    .itemaros9
+        grid-column: 2/3
+        grid-row: 5/6
+
+    #sectiondijes
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: 50px repeat(3, 1fr)
+        gap: 20px
+
+    .itemdijes
+        display: flex
+        justify-content: center
+
+    .itemdijes1
+        grid-column: 1/3
+        grid-row: 1/2
+        padding: 10px
+
+    .itemdijes2
+        grid-column: 1/2
+        grid-row: 2/3
+
+    .itemdijes3
+        grid-column: 2/3
+        grid-row: 2/3
+
+    .itemdijes4
+        grid-column: 1/2
+        grid-row: 3/4
+
+    .itemdijes5
+        grid-column: 2/3
+        grid-row: 3/4
+
+    .itemdijes6
+        grid-column: 1/2
+        grid-row: 4/5
+
+    .itemdijes7
+        grid-column: 2/3
+        grid-row: 4/5
+
+@media only screen and (min-width: 992px) and (max-width: 1200px)
+    .h1tienda
+        font-size: 45px
+
+    #sectionrelojes
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: 50px repeat(2, 1fr)
+        gap: 20px
+
+    .itemrelojes
+        display: flex
+        justify-content: center
+
+    .itemrelojes1
+        grid-column: 2/3
+        grid-row: 1/2
+        padding: 10px
+
+    .itemrelojes2
+        grid-column: 1/2
+        grid-row: 2/3
+
+    .itemrelojes3
+        grid-column: 2/3
+        grid-row: 2/3
+
+    .itemrelojes4
+        grid-column: 3/4
+        grid-row: 2/3
+
+    .itemrelojes5
+        grid-column: 1/2
+        grid-row: 3/4
+
+    .itemrelojes6
+        grid-column: 2/3
+        grid-row: 3/4
+
+    .itemrelojes7
+        grid-column: 3/4
+        grid-row: 3/4
+
+    #sectionpulseras
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: 50px repeat(2, 1fr)
+        gap: 20px
+
+    .itempulseras
+        display: flex
+        justify-content: center
+
+    .itempulseras1
+        grid-column: 1/3
+        grid-row: 1/2
+        padding: 10px
+
+    .itempulseras2
+        grid-column: 1/2
+        grid-row: 2/3
+
+    .itempulseras3
+        grid-column: 2/3
+        grid-row: 2/3
+
+    .itempulseras4
+        grid-column: 1/2
+        grid-row: 3/4
+
+    .itempulseras5
+        grid-column: 2/3
+        grid-row: 3/4
+
+    #sectionaros
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: 50px repeat(4, 1fr)
+        gap: 20px
+
+    .itemaros
+        display: flex
+        justify-content: center
+
+    .itemaros1
+        grid-column: 1/3
+        grid-row: 1/2
+        padding: 10px
+
+    .itemaros2
+        grid-column: 1/2
+        grid-row: 2/3
+
+    .itemaros3
+        grid-column: 2/3
+        grid-row: 2/3
+
+    .itemaros4
+        grid-column: 1/2
+        grid-row: 3/4
+
+    .itemaros5
+        grid-column: 2/3
+        grid-row: 3/4
+
+    .itemaros6
+        grid-column: 1/2
+        grid-row: 4/5
+
+    .itemaros7
+        grid-column: 2/3
+        grid-row: 4/5
+
+    .itemaros8
+        grid-column: 1/2
+        grid-row: 5/6
+
+    .itemaros9
+        grid-column: 2/3
+        grid-row: 5/6
+
+    #sectiondijes
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: 50px repeat(2, 1fr)
+        gap: 20px
+
+    .itemdijes
+        display: flex
+        justify-content: center
+
+    .itemdijes1
+        grid-column: 2/3
+        grid-row: 1/2
+        padding: 10px
+
+    .itemdijes2
+        grid-column: 1/2
+        grid-row: 2/3
+
+    .itemdijes3
+        grid-column: 2/3
+        grid-row: 2/3
+
+    .itemdijes4
+        grid-column: 3/4
+        grid-row: 2/3
+
+    .itemdijes5
+        grid-column: 1/2
+        grid-row: 3/4
+
+    .itemdijes6
+        grid-column: 2/3
+        grid-row: 3/4
+
+    .itemdijes7
+        grid-column: 3/4
+        grid-row: 3/4
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px)
+    .h1tienda
+        font-size: 50px
+
+    #sectionrelojes
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: 50px repeat(2, 1fr)
+        gap: 20px
+
+    .itemrelojes
+        display: flex
+        justify-content: center
+
+    .itemrelojes1
+        grid-column: 2/3
+        grid-row: 1/2
+        padding: 10px
+
+    .itemrelojes2
+        grid-column: 1/2
+        grid-row: 2/3
+
+    .itemrelojes3
+        grid-column: 2/3
+        grid-row: 2/3
+
+    .itemrelojes4
+        grid-column: 3/4
+        grid-row: 2/3
+
+    .itemrelojes5
+        grid-column: 1/2
+        grid-row: 3/4
+
+    .itemrelojes6
+        grid-column: 2/3
+        grid-row: 3/4
+
+    .itemrelojes7
+        grid-column: 3/4
+        grid-row: 3/4
+
+    #sectionpulseras
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-template-rows: 50px 1fr
+        gap: 20px
+
+    .itempulseras
+        display: flex
+        justify-content: center
+
+    .itempulseras1
+        grid-column: 2/4
+        grid-row: 1/2
+        padding: 10px
+
+    .itempulseras2
+        grid-column: 1/2
+        grid-row: 2/3
+
+    .itempulseras3
+        grid-column: 2/3
+        grid-row: 2/3
+
+    .itempulseras4
+        grid-column: 3/4
+        grid-row: 2/3
+
+    .itempulseras5
+        grid-column: 4/5
+        grid-row: 2/3
+
+    #sectionaros
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-template-rows: 50px repeat(2, 1fr)
+        gap: 20px
+
+    .itemaros
+        display: flex
+        justify-content: center
+
+    .itemaros1
+        grid-column: 2/4
+        grid-row: 1/2
+        padding: 10px
+
+    .itemaros2
+        grid-column: 1/2
+        grid-row: 2/3
+
+    .itemaros3
+        grid-column: 2/3
+        grid-row: 2/3
+
+    .itemaros4
+        grid-column: 3/4
+        grid-row: 2/3
+
+    .itemaros5
+        grid-column: 4/5
+        grid-row: 2/3
+
+    .itemaros6
+        grid-column: 1/2
+        grid-row: 3/4
+
+    .itemaros7
+        grid-column: 2/3
+        grid-row: 3/4
+
+    .itemaros8
+        grid-column: 3/4
+        grid-row: 3/4
+
+    .itemaros9
+        grid-column: 4/5
+        grid-row: 3/4
+
+    #sectiondijes
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: 50px repeat(2, 1fr)
+        gap: 20px
+
+    .itemdijes
+        display: flex
+        justify-content: center
+
+    .itemdijes1
+        grid-column: 2/3
+        grid-row: 1/2
+        padding: 10px
+
+    .itemdijes2
+        grid-column: 1/2
+        grid-row: 2/3
+
+    .itemdijes3
+        grid-column: 2/3
+        grid-row: 2/3
+
+    .itemdijes4
+        grid-column: 3/4
+        grid-row: 2/3
+
+    .itemdijes5
+        grid-column: 1/2
+        grid-row: 3/4
+
+    .itemdijes6
+        grid-column: 2/3
+        grid-row: 3/4
+
+    .itemdijes7
+        grid-column: 3/4
+        grid-row: 3/4
+
+/* FINAL MEDIA QUERIES TIENDA */
+/* FINAL DE TIENDA */
+/* INICIO ACERCA DE */
+
+.sectionacerca
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    align-self: flex-start
+    flex-wrap: wrap
+
+.tituloacerca
+    display: flex
+
+.sectionacerca h1
+    font-size: 50px
+    font-family: 'Courier New', Courier, monospace
+
+.carouselacerca
+    display: flex
+    justify-content: space-around
+    align-items: center
+    align-self: center
+    flex-wrap: wrap
+    gap: 20px
+
+.carousel
+    width: clamp(250px, 50%, 500px)
+
+.carouselacerca p
+    display: flex
+    justify-content: center
+    align-items: center
+    align-self: center
+    flex-wrap: wrap
+    font-size: clamp(14px, 50%, 25px)
+    background-color: #E7EEEA
+    box-shadow: 0 15px 15px #ccc
+    width: clamp(50px, 100%, 300px)
+    height: 90px
+
+.underacerca
+    display: flex
+    justify-content: space-around
+    align-items: center
+    align-self: center
+    flex-wrap: wrap
+
+.underacerca p
+    display: flex
+    justify-content: center
+    align-items: center
+    align-self: center
+    flex-wrap: wrap
+    gap: 20px
+    font-size: clamp(14px, 50%, 25px)
+    background-color: #E7EEEA
+    box-shadow: 0 15px 15px #ccc
+    width: clamp(50px, 100%, 300px)
+    height: 175px
+
+.underacerca iframe
+    width: clamp(450px, 50%, 500px)
+
+/* FINAL ACERCA DE */
+/* INICIO BLOG */
+
+.sectionblog
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    align-self: flex-start
+    flex-wrap: wrap
+
+.sectionblog h1
+    font-size: 50px
+    font-family: 'Courier New', Courier, monospace
+
+.subtituloblog
+    display: flex
+    justify-content: center
+    align-items: center
+    align-self: center
+
+.subtituloblog span
+    display: block
+    font-family: 'Courier New', Courier, monospace
+    white-space: nowrap
+    border-right: 2px solid
+    width: 36ch
+    animation: typing 6s infinite alternate steps(36), blink .5s infinite alternate-reverse
+    overflow: hidden
+
+@keyframes typing
+    from
+        width: 0
+
+@keyframes blink
+    50%
+        border-color: transparent
+
+.subtituloblog h3 span
+    font-size: clamp(14px, 16px, 22px)
+
+.flexblog
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    gap: 30px
+
+.flexblog .card-img-top
+    height: 355px
+
+#flex-i
+    display: grid
+    grid-template-columns: repeat(3, 25px) repeat(4, 1fr)
+    gap: 15px
+
+.flex-i
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+
+.fa-heart
+    grid-column: 1/2
+
+.fa-comment-alt
+    grid-column: 2/3
+
+.fa-paper-plane
+    grid-column: 3/4
+
+.fa-bookmark
+    grid-column: 8/9
+
+/* FINAL BLOG */
+/* INICIO CONTACTO */
+
+.sectioncontacto
+    display: flex
+    justify-content: center
+    align-items: center
+    align-self: center
+    flex-wrap: wrap
+
+.sectioncontacto 
+    & h1
+        font-size: 50px
+        font-family: $font
+
+.parrafocontacto
+    display: flex
+    justify-content: center
+    align-items: center
+    align-self: center
+    flex-wrap: wrap
+
+.parrafocontacto 
+    & p
+        background-color: $color1
+        box-shadow: $shadow1
+
+form
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    flex-wrap: wrap
+
+.formnombre1
+    width: 300px
+    border: $border
+    box-shadow: $shadow
+
+.formapellido1
+    width: 300px
+    border: $border
+    box-shadow: $shadow
+
+.formemail1
+    width: 300px
+    border: $border
+    box-shadow: $shadow
+
+.formnumero1
+    width: 300px
+    border: $border
+    box-shadow: $shadow
+
+.formmensaje1
+    width: 300px
+    border: $border
+    box-shadow: $shadow
+
+.formenviar
+    width: 300px
+    border: $border
+    box-shadow: $shadow
+
+/* FINAL CONTACTO */
