@@ -3635,7 +3635,7 @@ li {
         flex-wrap: wrap;
         font-size: clamp(14px, 50%, 25px);
         background-color: #E7EEEA;
-        box-shadow: 0 15px 15px #ccc;
+        box-shadow: $bshadow;
         width: clamp(50px, 100%, 300px);
         height: 90px;
     }
@@ -3659,7 +3659,7 @@ li {
         gap: 20px;
         font-size: clamp(14px, 50%, 25px);
         background-color: #E7EEEA;
-        box-shadow: 0 15px 15px #ccc;
+        box-shadow: $bshadow;
         width: clamp(50px, 100%, 300px);
         height: 175px;
     }
@@ -3817,33 +3817,23 @@ form {
 }
 
 .formapellido1 {
-    width: 300px;
-    border: 2px solid #ffc0cb;
-    box-shadow: $bshadow;
+    @extend .formnombre1;
 }
 
 .formemail1 {
-    width: 300px;
-    border: 2px solid #ffc0cb;
-    box-shadow: $bshadow;
+    @extend .formnombre1;
 }
 
 .formnumero1 {
-    width: 300px;
-    border: 2px solid #ffc0cb;
-    box-shadow: $bshadow;
+    @extend .formnombre1;
 }
 
 .formmensaje1 {
-    width: 300px;
-    border: 2px solid #ffc0cb;
-    box-shadow: $bshadow;
+    @extend .formnombre1;
 }
 
 .formenviar {
-    width: 300px;
-    border: 2px solid #ffc0cb;
-    box-shadow: $bshadow;
+    @extend .formnombre1;
 }
 
 /* FINAL CONTACTO */
