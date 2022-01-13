@@ -1,7 +1,12 @@
 // INICIO DE VARIABLES EN SASS
-// SOMBRAS
+// FUENTES
+$font: "Courier New", Courier, monospace;
 
-$bshadow: 0 0 5px #ffc0cb;
+// COLOR DE FONDO
+$bgcolor: #E7EEEA;
+
+// SOMBRAS
+$bshadow: 0 10px 40px rgba(3, 19, 23, 0.25);
 
 // FINAL DE VARIABLES EN SASS
 
@@ -25,7 +30,7 @@ body {
     height: 10%;
 }
 
-.main {
+.main { 
     width: 100%;
     height: 80%;
 }
@@ -3778,7 +3783,7 @@ li {
 .sectioncontacto {
     h1 {
         font-size: 50px;
-        font-family: "Courier New", Courier, monospace;
+        font-family: $font;
     }
 }
 
@@ -3792,8 +3797,8 @@ li {
 
 .parrafocontacto {
     p {
-        background-color: #E7EEEA;
-        box-shadow: 0 0 15px #ffc0cb;
+        background-color: $bgcolor;
+        box-shadow: $bshadow;
     }
 }
 
@@ -3808,31 +3813,31 @@ form {
 .formnombre1 {
     width: 300px;
     border: 2px solid #ffc0cb;
-    box-shadow: 0 0 5px #ffc0cb;
+    box-shadow: $bshadow;
 }
 
 .formapellido1 {
     width: 300px;
     border: 2px solid #ffc0cb;
-    box-shadow: 0 0 5px #ffc0cb;
+    box-shadow: $bshadow;
 }
 
 .formemail1 {
     width: 300px;
     border: 2px solid #ffc0cb;
-    box-shadow: 0 0 5px #ffc0cb;
+    box-shadow: $bshadow;
 }
 
 .formnumero1 {
     width: 300px;
     border: 2px solid #ffc0cb;
-    box-shadow: 0 0 5px #ffc0cb;
+    box-shadow: $bshadow;
 }
 
 .formmensaje1 {
     width: 300px;
     border: 2px solid #ffc0cb;
-    box-shadow: 0 0 5px #ffc0cb;
+    box-shadow: $bshadow;
 }
 
 .formenviar {
