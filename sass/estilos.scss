@@ -4,9 +4,59 @@ $font: "Courier New", Courier, monospace;
 
 // COLOR DE FONDO
 $bgcolor: #E7EEEA;
+$bgcolor1: regba(11, 103, 123, 0.6);
 
 // SOMBRAS
 $bshadow: 0 10px 40px rgba(3, 19, 23, 0.25);
+
+// POSITION
+$position: absolute;
+
+// TOP
+$top: 0;
+
+// WIDTH
+$width: 100%;
+
+// HEIGHT
+$height: 100%;
+
+// OPACITY
+$opacity: 0;
+
+// VISIBILITY
+$visibility: hidden;
+
+// TEXT-ALIGN
+$text-align: center;
+
+// DISPLAY
+$dflex: flex;
+
+// JUSTIFY-CONTENT
+$justify-content: flex-end;
+
+// ALIGN-ITEMS
+$align-items: flex-start;
+
+// FLEX-DIRECTION
+$fdirection: column;
+
+// MIXINS
+@mixin efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection) {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 103, 123, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+}
 
 // FINAL DE VARIABLES EN SASS
 
@@ -407,18 +457,7 @@ li {
 .itemrelojes3 {
     figure {
         .efectocard {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(11, 103, 123, 0.6);
-            opacity: 0;
-            visibility: hidden;
-            text-align: center;
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-start;
-            flex-direction: column;
+            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection)
         }
     }
 }
