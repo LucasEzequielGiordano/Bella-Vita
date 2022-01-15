@@ -200,7 +200,6 @@ li {
 /* INICIO DE TIENDA */
 .h1tienda {
   font-family: "Courier New", Courier, monospace;
-  font-size: clamp(35px, 50%, 75px);
   font-size: 50px;
 }
 
@@ -2973,6 +2972,18 @@ form {
 .formnombre1, .formenviar, .formmensaje1, .formnumero1, .formemail1, .formapellido1 {
   width: 300px;
   border: 2px solid #ffc0cb;
+  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
+}
+
+.form--form {
+  font-family: arial;
+  font-size: 25px;
+  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
+}
+
+.form--courier new {
+  font-family: arial;
+  font-size: 25px;
   box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
 }
 

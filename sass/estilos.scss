@@ -1,10 +1,12 @@
 // INICIO DE VARIABLES EN SASS
+
 // FUENTES
-$font: "Courier New", Courier, monospace;
+$font: 'Courier New', Courier, monospace;
+$font2: arial;
 
 // COLOR DE FONDO
 $bgcolor: #E7EEEA;
-$bgcolor1: regba(11, 103, 123, 0.6);
+$bgcolor1: rgba(11, 103, 123, 0.6);
 
 // SOMBRAS
 $bshadow: 0 10px 40px rgba(3, 19, 23, 0.25);
@@ -57,6 +59,9 @@ $fdirection: column;
     align-items: flex-start;
     flex-direction: column;
 }
+
+// MAPAS
+
 
 // FINAL DE VARIABLES EN SASS
 
@@ -296,7 +301,6 @@ li {
 
 .h1tienda {
     font-family: "Courier New", Courier, monospace;
-    font-size: clamp(35px, 50%, 75px);
     font-size: 50px;
 }
 
@@ -3873,6 +3877,18 @@ form {
 
 .formenviar {
     @extend .formnombre1;
+}
+
+// declaro mapa
+$formularios: (form, 'courier new');
+
+// bucle del mapa
+@each $name, $font in $formularios {
+    .form--#{$name} {
+        font-family: $font2;
+        font-size: 25px;
+        box-shadow: $bshadow;
+    }
 }
 
 /* FINAL CONTACTO */
