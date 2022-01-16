@@ -1,7 +1,9 @@
 // INICIO DE VARIABLES EN SASS
 
 // FUENTES
-$font: 'Courier New', Courier, monospace;
+$font: 'Courier New',
+Courier,
+monospace;
 $font2: arial;
 
 // COLOR DE FONDO
@@ -85,7 +87,7 @@ body {
     height: 10%;
 }
 
-.main { 
+.main {
     width: 100%;
     height: 80%;
 }
@@ -3886,10 +3888,11 @@ $formularios: (
     form2: 'courier new',
     form3: sans-serif,
     form4: serif,
-    );
+);
 
 // bucle del mapa
-@each $name, $font2 in $formularios {
+@each $name,
+$font2 in $formularios {
     .form--#{$name} {
         font-family: $font2;
         font-size: 25px;
