@@ -3880,14 +3880,20 @@ form {
 }
 
 // declaro mapa
-$formularios: (form, 'courier new');
+$formularios: (
+    form: arial,
+    form1: cursive,
+    form2: 'courier new',
+    form3: sans-serif,
+    form4: serif,
+    );
 
 // bucle del mapa
-@each $name, $font in $formularios {
+@each $name, $font2 in $formularios {
     .form--#{$name} {
         font-family: $font2;
         font-size: 25px;
-        box-shadow: $bshadow;
+        color: #4b4c4d;
     }
 }
 
