@@ -188,7 +188,6 @@ li {
     padding-bottom: 25%;
   }
 }
-
 @media only screen and (max-height: 1500px) {
   .main {
     background-position-x: center;
@@ -197,7 +196,6 @@ li {
     padding-bottom: 0;
   }
 }
-
 /* FINAL DEL INDEX */
 /* INICIO DE TIENDA */
 .h1tienda {
@@ -239,7 +237,7 @@ li {
   cursor: pointer;
 }
 
-.itemrelojes2 figure:hover>img {
+.itemrelojes2 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -264,7 +262,7 @@ li {
   flex-direction: column;
 }
 
-.itemrelojes2 figure:hover>.efectocard {
+.itemrelojes2 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -310,7 +308,7 @@ li {
   cursor: pointer;
 }
 
-.itemrelojes3 figure:hover>img {
+.itemrelojes3 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -335,7 +333,7 @@ li {
   flex-direction: column;
 }
 
-.itemrelojes3 figure:hover>.efectocard {
+.itemrelojes3 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -381,7 +379,7 @@ li {
   cursor: pointer;
 }
 
-.itemrelojes4 figure:hover>img {
+.itemrelojes4 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -406,7 +404,7 @@ li {
   flex-direction: column;
 }
 
-.itemrelojes4 figure:hover>.efectocard {
+.itemrelojes4 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -452,7 +450,7 @@ li {
   cursor: pointer;
 }
 
-.itemrelojes5 figure:hover>img {
+.itemrelojes5 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -477,7 +475,7 @@ li {
   flex-direction: column;
 }
 
-.itemrelojes5 figure:hover>.efectocard {
+.itemrelojes5 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -523,7 +521,7 @@ li {
   cursor: pointer;
 }
 
-.itemrelojes6 figure:hover>img {
+.itemrelojes6 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -548,7 +546,7 @@ li {
   flex-direction: column;
 }
 
-.itemrelojes6 figure:hover>.efectocard {
+.itemrelojes6 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -594,7 +592,7 @@ li {
   cursor: pointer;
 }
 
-.itemrelojes7 figure:hover>img {
+.itemrelojes7 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -619,7 +617,7 @@ li {
   flex-direction: column;
 }
 
-.itemrelojes7 figure:hover>.efectocard {
+.itemrelojes7 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -685,7 +683,7 @@ li {
   cursor: pointer;
 }
 
-.itempulseras2 figure:hover>img {
+.itempulseras2 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -710,7 +708,7 @@ li {
   flex-direction: column;
 }
 
-.itempulseras2 figure:hover>.efectocard {
+.itempulseras2 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -756,7 +754,7 @@ li {
   cursor: pointer;
 }
 
-.itempulseras3 figure:hover>img {
+.itempulseras3 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -781,7 +779,7 @@ li {
   flex-direction: column;
 }
 
-.itempulseras3 figure:hover>.efectocard {
+.itempulseras3 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -827,7 +825,7 @@ li {
   cursor: pointer;
 }
 
-.itempulseras4 figure:hover>img {
+.itempulseras4 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -852,7 +850,7 @@ li {
   flex-direction: column;
 }
 
-.itempulseras4 figure:hover>.efectocard {
+.itempulseras4 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -898,7 +896,7 @@ li {
   cursor: pointer;
 }
 
-.itempulseras5 figure:hover>img {
+.itempulseras5 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -923,7 +921,7 @@ li {
   flex-direction: column;
 }
 
-.itempulseras5 figure:hover>.efectocard {
+.itempulseras5 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -989,7 +987,7 @@ li {
   cursor: pointer;
 }
 
-.itemaros2 figure:hover>img {
+.itemaros2 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -1014,7 +1012,7 @@ li {
   flex-direction: column;
 }
 
-.itemaros2 figure:hover>.efectocard {
+.itemaros2 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -1060,7 +1058,7 @@ li {
   cursor: pointer;
 }
 
-.itemaros3 figure:hover>img {
+.itemaros3 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -1085,7 +1083,7 @@ li {
   flex-direction: column;
 }
 
-.itemaros3 figure:hover>.efectocard {
+.itemaros3 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -1131,7 +1129,7 @@ li {
   cursor: pointer;
 }
 
-.itemaros4 figure:hover>img {
+.itemaros4 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -1156,7 +1154,7 @@ li {
   flex-direction: column;
 }
 
-.itemaros4 figure:hover>.efectocard {
+.itemaros4 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -1202,7 +1200,7 @@ li {
   cursor: pointer;
 }
 
-.itemaros5 figure:hover>img {
+.itemaros5 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -1227,7 +1225,7 @@ li {
   flex-direction: column;
 }
 
-.itemaros5 figure:hover>.efectocard {
+.itemaros5 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -1273,7 +1271,7 @@ li {
   cursor: pointer;
 }
 
-.itemaros6 figure:hover>img {
+.itemaros6 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -1298,7 +1296,7 @@ li {
   flex-direction: column;
 }
 
-.itemaros6 figure:hover>.efectocard {
+.itemaros6 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -1344,7 +1342,7 @@ li {
   cursor: pointer;
 }
 
-.itemaros7 figure:hover>img {
+.itemaros7 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -1369,7 +1367,7 @@ li {
   flex-direction: column;
 }
 
-.itemaros7 figure:hover>.efectocard {
+.itemaros7 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -1415,7 +1413,7 @@ li {
   cursor: pointer;
 }
 
-.itemaros8 figure:hover>img {
+.itemaros8 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -1440,7 +1438,7 @@ li {
   flex-direction: column;
 }
 
-.itemaros8 figure:hover>.efectocard {
+.itemaros8 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -1486,7 +1484,7 @@ li {
   cursor: pointer;
 }
 
-.itemaros9 figure:hover>img {
+.itemaros9 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -1511,7 +1509,7 @@ li {
   flex-direction: column;
 }
 
-.itemaros9 figure:hover>.efectocard {
+.itemaros9 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -1577,7 +1575,7 @@ li {
   cursor: pointer;
 }
 
-.itemdijes2 figure:hover>img {
+.itemdijes2 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -1602,7 +1600,7 @@ li {
   flex-direction: column;
 }
 
-.itemdijes2 figure:hover>.efectocard {
+.itemdijes2 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -1648,7 +1646,7 @@ li {
   cursor: pointer;
 }
 
-.itemdijes3 figure:hover>img {
+.itemdijes3 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -1673,7 +1671,7 @@ li {
   flex-direction: column;
 }
 
-.itemdijes3 figure:hover>.efectocard {
+.itemdijes3 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -1719,7 +1717,7 @@ li {
   cursor: pointer;
 }
 
-.itemdijes4 figure:hover>img {
+.itemdijes4 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -1744,7 +1742,7 @@ li {
   flex-direction: column;
 }
 
-.itemdijes4 figure:hover>.efectocard {
+.itemdijes4 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -1790,7 +1788,7 @@ li {
   cursor: pointer;
 }
 
-.itemdijes5 figure:hover>img {
+.itemdijes5 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -1815,7 +1813,7 @@ li {
   flex-direction: column;
 }
 
-.itemdijes5 figure:hover>.efectocard {
+.itemdijes5 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -1861,7 +1859,7 @@ li {
   cursor: pointer;
 }
 
-.itemdijes6 figure:hover>img {
+.itemdijes6 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -1886,7 +1884,7 @@ li {
   flex-direction: column;
 }
 
-.itemdijes6 figure:hover>.efectocard {
+.itemdijes6 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -1932,7 +1930,7 @@ li {
   cursor: pointer;
 }
 
-.itemdijes7 figure:hover>img {
+.itemdijes7 figure:hover > img {
   transform: scale(1.2);
 }
 
@@ -1957,7 +1955,7 @@ li {
   flex-direction: column;
 }
 
-.itemdijes7 figure:hover>.efectocard {
+.itemdijes7 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
@@ -2187,7 +2185,6 @@ li {
     grid-row: 7/8;
   }
 }
-
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .h1tienda {
     font-size: 40px;
@@ -2385,7 +2382,6 @@ li {
     grid-row: 4/5;
   }
 }
-
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .h1tienda {
     font-size: 45px;
@@ -2583,7 +2579,6 @@ li {
     grid-row: 3/4;
   }
 }
-
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
   .h1tienda {
     font-size: 50px;
@@ -2781,7 +2776,6 @@ li {
     grid-row: 3/4;
   }
 }
-
 /* FINAL MEDIA QUERIES TIENDA */
 /* FINAL DE TIENDA */
 /* INICIO ACERCA DE */
@@ -2891,13 +2885,11 @@ li {
     width: 0;
   }
 }
-
 @keyframes blink {
   50% {
     border-color: transparent;
   }
 }
-
 .subtituloblog h3 span {
   font-size: 16px;
 }
@@ -2977,12 +2969,7 @@ form {
   flex-wrap: wrap;
 }
 
-.formnombre1,
-.formenviar,
-.formmensaje1,
-.formnumero1,
-.formemail1,
-.formapellido1 {
+.formnombre1, .formenviar, .formmensaje1, .formnumero1, .formemail1, .formapellido1 {
   width: 300px;
   border: 2px solid #ffc0cb;
   box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
