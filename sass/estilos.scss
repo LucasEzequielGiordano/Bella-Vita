@@ -13,39 +13,6 @@ $bgcolor1: rgba(11, 103, 123, 0.6);
 // SOMBRAS
 $bshadow: 0 10px 40px rgba(3, 19, 23, 0.25);
 
-// POSITION
-$position: absolute;
-
-// TOP
-$top: 0;
-
-// WIDTH
-$width: 100%;
-
-// HEIGHT
-$height: 100%;
-
-// OPACITY
-$opacity: 0;
-
-// VISIBILITY
-$visibility: hidden;
-
-// TEXT-ALIGN
-$text-align: center;
-
-// DISPLAY
-$dflex: flex;
-
-// JUSTIFY-CONTENT
-$justify-content: flex-end;
-
-// ALIGN-ITEMS
-$align-items: flex-start;
-
-// FLEX-DIRECTION
-$fdirection: column;
-
 // MIXINS
 @mixin efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection) {
     position: absolute;
@@ -61,9 +28,6 @@ $fdirection: column;
     align-items: flex-start;
     flex-direction: column;
 }
-
-// MAPAS
-
 
 // FINAL DE VARIABLES EN SASS
 
@@ -362,7 +326,7 @@ li {
 .itemrelojes2 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -452,7 +416,7 @@ li {
 .itemrelojes3 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -542,7 +506,7 @@ li {
 .itemrelojes4 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -630,7 +594,7 @@ li {
 .itemrelojes5 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -722,7 +686,7 @@ li {
 .itemrelojes6 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -814,7 +778,7 @@ li {
 .itemrelojes7 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -927,7 +891,7 @@ li {
 .itempulseras2 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -1019,7 +983,7 @@ li {
 .itempulseras3 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -1111,7 +1075,7 @@ li {
 .itempulseras4 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -1203,7 +1167,7 @@ li {
 .itempulseras5 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -1316,7 +1280,7 @@ li {
 .itemaros2 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -1408,7 +1372,7 @@ li {
 .itemaros3 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -1498,7 +1462,7 @@ li {
 .itemaros4 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -1590,7 +1554,7 @@ li {
 .itemaros5 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -1682,7 +1646,7 @@ li {
 .itemaros6 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -1774,7 +1738,7 @@ li {
 .itemaros7 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -1866,7 +1830,7 @@ li {
 .itemaros8 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -1958,7 +1922,7 @@ li {
 .itemaros9 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -2071,7 +2035,7 @@ li {
 .itemdijes2 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -2163,7 +2127,7 @@ li {
 .itemdijes3 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -2255,7 +2219,7 @@ li {
 .itemdijes4 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -2347,7 +2311,7 @@ li {
 .itemdijes5 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -2440,7 +2404,7 @@ li {
 .itemdijes6 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -2532,7 +2496,7 @@ li {
 .itemdijes7 {
     figure {
         .efectocard {
-            @include efecto($position, $top, $width, $height, $bgcolor1, $opacity, $visibility, $text-align, $dflex, $justify-content, $align-items, $fdirection);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -3638,9 +3602,9 @@ $formularios: (
 
 // bucle del mapa
 @each $name,
-$font2 in $formularios {
+$font in $formularios {
     .form--#{$name} {
-        font-family: $font2;
+        font-family: $font;
         font-size: 25px;
         color: #4b4c4d;
     }
