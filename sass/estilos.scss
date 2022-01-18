@@ -1826,7 +1826,7 @@ li {
     #sectionrelojes {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 50px repeat(6, 1fr);
+        grid-template-rows: 50px repeat(4, 1fr);
         gap: 20px;
     }
 
@@ -1838,7 +1838,7 @@ li {
     .itemrelojes1 {
         grid-column: 1/2;
         grid-row: 1/2;
-        padding: 10px;
+        padding-top: 15px;
     }
 
     .itemrelojes2 {
@@ -1861,16 +1861,6 @@ li {
         grid-row: 5/6;
     }
 
-    .itemrelojes6 {
-        grid-column: 1/2;
-        grid-row: 6/7;
-    }
-
-    .itemrelojes7 {
-        grid-column: 1/2;
-        grid-row: 7/8;
-    }
-
     #sectionpulseras {
         display: grid;
         grid-template-columns: 1fr;
@@ -1886,7 +1876,7 @@ li {
     .itempulseras1 {
         grid-column: 1/2;
         grid-row: 1/2;
-        padding: 10px;
+        padding-top: 15px;
     }
 
     .itempulseras2 {
@@ -1912,7 +1902,7 @@ li {
     #sectionaros {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 50px repeat(8, 1fr);
+        grid-template-rows: 50px repeat(4, 1fr);
         gap: 20px;
     }
 
@@ -1924,7 +1914,7 @@ li {
     .itemaros1 {
         grid-column: 1/2;
         grid-row: 1/2;
-        padding: 10px;
+        padding-top: 15px;
     }
 
     .itemaros2 {
@@ -1947,30 +1937,10 @@ li {
         grid-row: 5/6;
     }
 
-    .itemaros6 {
-        grid-column: 1/2;
-        grid-row: 6/7;
-    }
-
-    .itemaros7 {
-        grid-column: 1/2;
-        grid-row: 7/8;
-    }
-
-    .itemaros8 {
-        grid-column: 1/2;
-        grid-row: 8/9;
-    }
-
-    .itemaros9 {
-        grid-column: 1/2;
-        grid-row: 9/10;
-    }
-
     #sectiondijes {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 75px repeat(6, 1fr);
+        grid-template-rows: 50px repeat(4, 1fr);
         gap: 20px;
     }
 
@@ -1982,7 +1952,7 @@ li {
     .itemdijes1 {
         grid-column: 1/2;
         grid-row: 1/2;
-        padding: 10px;
+        padding-top: 15px;
     }
 
     .itemdijes2 {
@@ -2003,16 +1973,6 @@ li {
     .itemdijes5 {
         grid-column: 1/2;
         grid-row: 5/6;
-    }
-
-    .itemdijes6 {
-        grid-column: 1/2;
-        grid-row: 6/7;
-    }
-
-    .itemdijes7 {
-        grid-column: 1/2;
-        grid-row: 7/8;
     }
 }
 
@@ -2024,7 +1984,7 @@ li {
     #sectionrelojes {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 50px repeat(3, 1fr);
+        grid-template-rows: 50px repeat(2, 1fr);
         gap: 20px;
     }
 
@@ -2036,7 +1996,7 @@ li {
     .itemrelojes1 {
         grid-column: 1/3;
         grid-row: 1/2;
-        padding: 10px;
+        padding-top: 10px;
     }
 
     .itemrelojes2 {
@@ -2059,16 +2019,6 @@ li {
         grid-row: 3/4;
     }
 
-    .itemrelojes6 {
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-
-    .itemrelojes7 {
-        grid-column: 2/3;
-        grid-row: 4/5;
-    }
-
     #sectionpulseras {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -2084,7 +2034,7 @@ li {
     .itempulseras1 {
         grid-column: 1/3;
         grid-row: 1/2;
-        padding: 10px;
+        padding-top: 10px;
     }
 
     .itempulseras2 {
@@ -2110,7 +2060,7 @@ li {
     #sectionaros {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 50px repeat(4, 1fr);
+        grid-template-rows: 50px repeat(2, 1fr);
         gap: 20px;
     }
 
@@ -2122,7 +2072,7 @@ li {
     .itemaros1 {
         grid-column: 1/3;
         grid-row: 1/2;
-        padding: 10px;
+        padding-top: 10px;
     }
 
     .itemaros2 {
@@ -2145,30 +2095,10 @@ li {
         grid-row: 3/4;
     }
 
-    .itemaros6 {
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-
-    .itemaros7 {
-        grid-column: 2/3;
-        grid-row: 4/5;
-    }
-
-    .itemaros8 {
-        grid-column: 1/2;
-        grid-row: 5/6;
-    }
-
-    .itemaros9 {
-        grid-column: 2/3;
-        grid-row: 5/6;
-    }
-
     #sectiondijes {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 50px repeat(3, 1fr);
+        grid-template-rows: 50px repeat(2, 1fr);
         gap: 20px;
     }
 
@@ -2180,7 +2110,7 @@ li {
     .itemdijes1 {
         grid-column: 1/3;
         grid-row: 1/2;
-        padding: 10px;
+        padding-top: 10px;
     }
 
     .itemdijes2 {
@@ -2202,26 +2132,16 @@ li {
         grid-column: 2/3;
         grid-row: 3/4;
     }
-
-    .itemdijes6 {
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-
-    .itemdijes7 {
-        grid-column: 2/3;
-        grid-row: 4/5;
-    }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1300px) {
     .h1tienda {
         font-size: 45px;
     }
 
     #sectionrelojes {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 50px repeat(2, 1fr);
         gap: 20px;
     }
@@ -2232,9 +2152,9 @@ li {
     }
 
     .itemrelojes1 {
-        grid-column: 2/3;
+        grid-column: 1/3;
         grid-row: 1/2;
-        padding: 10px;
+        padding-top: 15px;
     }
 
     .itemrelojes2 {
@@ -2248,22 +2168,12 @@ li {
     }
 
     .itemrelojes4 {
-        grid-column: 3/4;
-        grid-row: 2/3;
-    }
-
-    .itemrelojes5 {
         grid-column: 1/2;
         grid-row: 3/4;
     }
 
-    .itemrelojes6 {
+    .itemrelojes5 {
         grid-column: 2/3;
-        grid-row: 3/4;
-    }
-
-    .itemrelojes7 {
-        grid-column: 3/4;
         grid-row: 3/4;
     }
 
@@ -2282,7 +2192,7 @@ li {
     .itempulseras1 {
         grid-column: 1/3;
         grid-row: 1/2;
-        padding: 10px;
+        padding-top: 15px;
     }
 
     .itempulseras2 {
@@ -2308,7 +2218,7 @@ li {
     #sectionaros {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 50px repeat(4, 1fr);
+        grid-template-rows: 50px repeat(2, 1fr);
         gap: 20px;
     }
 
@@ -2320,7 +2230,7 @@ li {
     .itemaros1 {
         grid-column: 1/3;
         grid-row: 1/2;
-        padding: 10px;
+        padding-top: 15px;
     }
 
     .itemaros2 {
@@ -2343,29 +2253,9 @@ li {
         grid-row: 3/4;
     }
 
-    .itemaros6 {
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-
-    .itemaros7 {
-        grid-column: 2/3;
-        grid-row: 4/5;
-    }
-
-    .itemaros8 {
-        grid-column: 1/2;
-        grid-row: 5/6;
-    }
-
-    .itemaros9 {
-        grid-column: 2/3;
-        grid-row: 5/6;
-    }
-
     #sectiondijes {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 50px repeat(2, 1fr);
         gap: 20px;
     }
@@ -2376,9 +2266,9 @@ li {
     }
 
     .itemdijes1 {
-        grid-column: 2/3;
+        grid-column: 1/3;
         grid-row: 1/2;
-        padding: 10px;
+        padding-top: 15px;
     }
 
     .itemdijes2 {
@@ -2392,35 +2282,25 @@ li {
     }
 
     .itemdijes4 {
-        grid-column: 3/4;
-        grid-row: 2/3;
-    }
-
-    .itemdijes5 {
         grid-column: 1/2;
         grid-row: 3/4;
     }
 
-    .itemdijes6 {
+    .itemdijes5 {
         grid-column: 2/3;
-        grid-row: 3/4;
-    }
-
-    .itemdijes7 {
-        grid-column: 3/4;
         grid-row: 3/4;
     }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+@media only screen and (min-width: 1300px) and (max-width: 1500px) {
     .h1tienda {
         font-size: 50px;
     }
 
     #sectionrelojes {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 50px repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 50px 1fr;
         gap: 20px;
     }
 
@@ -2430,9 +2310,9 @@ li {
     }
 
     .itemrelojes1 {
-        grid-column: 2/3;
+        grid-column: 1/5;
         grid-row: 1/2;
-        padding: 10px;
+        padding-top: 5px;
     }
 
     .itemrelojes2 {
@@ -2451,18 +2331,8 @@ li {
     }
 
     .itemrelojes5 {
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-
-    .itemrelojes6 {
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-
-    .itemrelojes7 {
-        grid-column: 3/4;
-        grid-row: 3/4;
+        grid-column: 4/5;
+        grid-row: 2/3;
     }
 
     #sectionpulseras {
@@ -2478,9 +2348,9 @@ li {
     }
 
     .itempulseras1 {
-        grid-column: 2/4;
+        grid-column: 1/5;
         grid-row: 1/2;
-        padding: 10px;
+        padding-top: 5px;
     }
 
     .itempulseras2 {
@@ -2506,7 +2376,7 @@ li {
     #sectionaros {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 50px repeat(2, 1fr);
+        grid-template-rows: 50px 1fr;
         gap: 20px;
     }
 
@@ -2516,9 +2386,9 @@ li {
     }
 
     .itemaros1 {
-        grid-column: 2/4;
+        grid-column: 1/5;
         grid-row: 1/2;
-        padding: 10px;
+        padding-top: 5px;
     }
 
     .itemaros2 {
@@ -2541,30 +2411,10 @@ li {
         grid-row: 2/3;
     }
 
-    .itemaros6 {
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-
-    .itemaros7 {
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-
-    .itemaros8 {
-        grid-column: 3/4;
-        grid-row: 3/4;
-    }
-
-    .itemaros9 {
-        grid-column: 4/5;
-        grid-row: 3/4;
-    }
-
     #sectiondijes {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 50px repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 50px 1fr;
         gap: 20px;
     }
 
@@ -2574,9 +2424,9 @@ li {
     }
 
     .itemdijes1 {
-        grid-column: 2/3;
+        grid-column: 1/5;
         grid-row: 1/2;
-        padding: 10px;
+        padding-top: 5px;
     }
 
     .itemdijes2 {
@@ -2595,24 +2445,15 @@ li {
     }
 
     .itemdijes5 {
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-
-    .itemdijes6 {
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-
-    .itemdijes7 {
-        grid-column: 3/4;
-        grid-row: 3/4;
+        grid-column: 4/5;
+        grid-row: 2/3;
     }
 }
 
 /* FINAL MEDIA QUERIES TIENDA */
 /* FINAL DE TIENDA */
 /* INICIO ACERCA DE */
+
 .sectionacerca {
     display: flex;
     justify-content: center;
