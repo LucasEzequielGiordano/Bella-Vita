@@ -121,13 +121,16 @@ li {
 /* FINAL DE NAV Y FOOTER */
 /* INICIO DE INDEX */
 .display-4 {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 24px clamp(3rem, 2.5vw, 5rem);
-  color: #2E302F;
+  font-size: 50px;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 5px #4b4c4d;
 }
 
 .parrafoindex {
   height: clamp(100px, 50%, 400px);
+  font-size: 25px;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 2px #4b4c4d;
 }
 
 .container-fluid {
@@ -160,15 +163,18 @@ li {
 }
 
 .jumbotron a {
+  text-decoration: none;
   background-color: #2E302F;
-  color: #fff;
+  color: #E7EEEA;
   font-size: 500;
   border: 1px solid #ccc;
   border-radius: 50px;
+  border-color: #2E302F;
+  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
 }
 
 .jumbotron a:hover {
-  background-color: #fff;
+  background-color: #E7EEEA;
   color: #2E302F;
   font-size: 500;
   border: 1px solid #ccc;
@@ -180,19 +186,30 @@ li {
   width: clamp(100px, 50%, 400px);
 }
 
-@media only screen and (max-width: 615px) {
-  .main {
-    background-position-x: center;
-    background-position-y: center;
-    padding-top: 25%;
-    padding-bottom: 25%;
+@media only screen and (max-width: 560px) {
+  .jumbotron {
+    padding-top: 100%;
+    padding-bottom: 100%;
+  }
+}
+@media only screen and (min-width: 560px) and (max-width: 730px) {
+  .jumbotron {
+    padding-top: 75%;
+    padding-bottom: 75%;
+  }
+}
+@media only screen and (min-width: 730px) and (max-width: 930px) {
+  .jumbotron {
+    padding-top: 50%;
+    padding-bottom: 50%;
   }
 }
 /* FINAL DEL INDEX */
 /* INICIO DE TIENDA */
 .h1tienda {
-  font-family: "Courier New", Courier, monospace;
   font-size: 50px;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 5px #4b4c4d;
 }
 
 /* INICIO DE SECCION RELOJES */
@@ -2057,7 +2074,8 @@ li {
 
 .sectionacerca h1 {
   font-size: 50px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 5px #4b4c4d;
 }
 
 .carouselacerca {
@@ -2123,7 +2141,8 @@ li {
 
 .sectionblog h1 {
   font-size: 50px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 5px #4b4c4d;
 }
 
 .subtituloblog {
@@ -2208,7 +2227,8 @@ li {
 
 .sectioncontacto h1 {
   font-size: 50px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 5px #4b4c4d;
 }
 
 .parrafocontacto {
@@ -2220,8 +2240,19 @@ li {
 }
 
 .parrafocontacto p {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: clamp(14px, 100%, 25px);
   background-color: #E7EEEA;
   box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
+  width: clamp(250px, 75%, 500px);
+  height: 75px;
+  width: 350px;
 }
 
 form {

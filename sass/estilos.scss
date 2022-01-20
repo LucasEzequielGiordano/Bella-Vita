@@ -1,9 +1,7 @@
 // INICIO DE VARIABLES EN SASS
 
 // FUENTES
-$font: 'Courier New',
-Courier,
-monospace;
+$font: sans-serif;
 $font2: arial;
 
 // COLOR DE FONDO
@@ -15,8 +13,8 @@ $bshadow: 0 10px 40px rgba(3, 19, 23, 0.25);
 
 // OVERLAY
 $overlay: linear-gradient(180deg,
-rgba(7, 49, 58, 0) 20%,
-rgba(17, 17, 17, 0.6) 100%,
+    rgba(7, 49, 58, 0) 20%,
+    rgba(17, 17, 17, 0.6) 100%,
 );
 
 // MIXINS
@@ -187,13 +185,16 @@ li {
 /* INICIO DE INDEX */
 
 .display-4 {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 24px clamp(3rem, 2.5vw, 5rem);
-    color: #2E302F;
+    font-size: 50px;
+    font-family: $font;
+    text-shadow: 1px 1px 5px #4b4c4d;
 }
 
 .parrafoindex {
     height: clamp(100px, 50%, 400px);
+    font-size: 25px;
+    font-family: $font;
+    text-shadow: 1px 1px 2px #4b4c4d;
 }
 
 .container-fluid {
@@ -227,17 +228,20 @@ li {
 
 .jumbotron {
     a {
+        text-decoration: none;
         background-color: #2E302F;
-        color: #fff;
+        color: #E7EEEA;
         font-size: 500;
         border: 1px solid #ccc;
         border-radius: 50px;
+        border-color: #2E302F;
+        box-shadow: $bshadow;
     }
 }
 
 .jumbotron {
     a:hover {
-        background-color: #fff;
+        background-color: #E7EEEA;
         color: #2E302F;
         font-size: 500;
         border: 1px solid #ccc;
@@ -250,12 +254,24 @@ li {
     width: clamp(100px, 50%, 400px);
 }
 
-@media only screen and (max-width: 615px) {
-    .main {
-        background-position-x: center;
-        background-position-y: center;
-        padding-top: 25%;
-        padding-bottom: 25%;
+@media only screen and (max-width: 560px) {
+    .jumbotron {
+        padding-top: 100%;
+        padding-bottom: 100%;
+    }
+}
+
+@media only screen and (min-width: 560px) and (max-width: 730px) {
+    .jumbotron {
+        padding-top: 75%;
+        padding-bottom: 75%;
+    }
+}
+
+@media only screen and (min-width: 730px) and (max-width: 930px) {
+    .jumbotron {
+        padding-top: 50%;
+        padding-bottom: 50%;
     }
 }
 
@@ -263,8 +279,9 @@ li {
 /* INICIO DE TIENDA */
 
 .h1tienda {
-    font-family: "Courier New", Courier, monospace;
     font-size: 50px;
+    font-family: $font;
+    text-shadow: 1px 1px 5px #4b4c4d;
 }
 
 /* INICIO DE SECCION RELOJES */
@@ -323,7 +340,7 @@ li {
 .itemrelojes2 {
     figure {
         .efectocard {
-            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103, 123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -413,7 +430,7 @@ li {
 .itemrelojes3 {
     figure {
         .efectocard {
-            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103, 123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -503,7 +520,7 @@ li {
 .itemrelojes4 {
     figure {
         .efectocard {
-            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103, 123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -591,7 +608,7 @@ li {
 .itemrelojes5 {
     figure {
         .efectocard {
-            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103, 123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -704,7 +721,7 @@ li {
 .itempulseras2 {
     figure {
         .efectocard {
-            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103, 123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -796,7 +813,7 @@ li {
 .itempulseras3 {
     figure {
         .efectocard {
-            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103, 123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -888,7 +905,7 @@ li {
 .itempulseras4 {
     figure {
         .efectocard {
-            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103, 123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -980,7 +997,7 @@ li {
 .itempulseras5 {
     figure {
         .efectocard {
-            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103, 123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -1093,7 +1110,7 @@ li {
 .itemaros2 {
     figure {
         .efectocard {
-            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103, 123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -1185,7 +1202,7 @@ li {
 .itemaros3 {
     figure {
         .efectocard {
-            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103, 123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -1275,7 +1292,7 @@ li {
 .itemaros4 {
     figure {
         .efectocard {
-            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103, 123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -1367,7 +1384,7 @@ li {
 .itemaros5 {
     figure {
         .efectocard {
-            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103, 123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -1480,7 +1497,7 @@ li {
 .itemdijes2 {
     figure {
         .efectocard {
-            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103, 123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -1572,7 +1589,7 @@ li {
 .itemdijes3 {
     figure {
         .efectocard {
-            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103, 123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -1664,7 +1681,7 @@ li {
 .itemdijes4 {
     figure {
         .efectocard {
-            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103, 123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -1756,7 +1773,7 @@ li {
 .itemdijes5 {
     figure {
         .efectocard {
-            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103,123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
+            @include efecto(absolute, 0, 100%, 100%, rgba(11, 103, 123, 0.6), 0, hidden, center, flex, flex-end, flex-start, column);
         }
     }
 }
@@ -2466,7 +2483,8 @@ li {
 .sectionacerca {
     h1 {
         font-size: 50px;
-        font-family: "Courier New", Courier, monospace;
+        font-family: $font;
+        text-shadow: 1px 1px 5px #4b4c4d;
     }
 }
 
@@ -2545,7 +2563,8 @@ li {
 .sectionblog {
     h1 {
         font-size: 50px;
-        font-family: "Courier New", Courier, monospace;
+        font-family: $font;
+        text-shadow: 1px 1px 5px #4b4c4d;
     }
 }
 
@@ -2644,6 +2663,7 @@ li {
     h1 {
         font-size: 50px;
         font-family: $font;
+        text-shadow: 1px 1px 5px #4b4c4d;
     }
 }
 
@@ -2657,8 +2677,19 @@ li {
 
 .parrafocontacto {
     p {
-        background-color: $bgcolor;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        font-size: clamp(14px, 100%, 25px);
+        background-color: #E7EEEA;
         box-shadow: $bshadow;
+        width: clamp(250px, 75%, 500px);
+        height: 75px;
+        width: 350px;
     }
 }
 
@@ -2697,8 +2728,7 @@ form {
 }
 
 // declaro mapa
-$formularios: (
-    form: arial,
+$formularios: (form: arial,
     form1: cursive,
     form2: 'courier new',
     form3: sans-serif,
