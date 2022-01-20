@@ -10,6 +10,7 @@ $bgcolor1: rgba(11, 103, 123, 0.6);
 
 // SOMBRAS
 $bshadow: 0 10px 40px rgba(3, 19, 23, 0.25);
+$shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
 
 // OVERLAY
 $overlay: linear-gradient(180deg,
@@ -187,14 +188,14 @@ li {
 .display-4 {
     font-size: 50px;
     font-family: $font;
-    text-shadow: 1px 1px 5px #4b4c4d;
+    text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
 }
 
 .parrafoindex {
     height: clamp(100px, 50%, 400px);
     font-size: 25px;
     font-family: $font;
-    text-shadow: 1px 1px 2px #4b4c4d;
+    text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
 }
 
 .container-fluid {
@@ -281,7 +282,9 @@ li {
 .h1tienda {
     font-size: 50px;
     font-family: $font;
-    text-shadow: 1px 1px 5px #4b4c4d;
+    text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
+    color: #24262b;
+    text-align: center;
 }
 
 /* INICIO DE SECCION RELOJES */
@@ -2484,7 +2487,9 @@ li {
     h1 {
         font-size: 50px;
         font-family: $font;
-        text-shadow: 1px 1px 5px #4b4c4d;
+        text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
+        color: #24262b;
+        text-align: center;
     }
 }
 
@@ -2564,7 +2569,9 @@ li {
     h1 {
         font-size: 50px;
         font-family: $font;
-        text-shadow: 1px 1px 5px #4b4c4d;
+        text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
+        color: #24262b;
+        text-align: center;
     }
 }
 
@@ -2603,6 +2610,7 @@ li {
     h3 {
         span {
             font-size: 16px;
+            text-shadow: $shadow;
         }
     }
 }
@@ -2663,7 +2671,9 @@ li {
     h1 {
         font-size: 50px;
         font-family: $font;
-        text-shadow: 1px 1px 5px #4b4c4d;
+        text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
+        color: #24262b;
+        text-align: center;
     }
 }
 
@@ -2703,7 +2713,8 @@ form {
 
 .formnombre1 {
     width: 300px;
-    border: 2px solid #ffc0cb;
+    border: 2px solid #ccc;
+    border-radius: 5px;
     box-shadow: $bshadow;
 }
 
@@ -2728,11 +2739,11 @@ form {
 }
 
 // declaro mapa
-$formularios: (form: arial,
-    form1: cursive,
-    form2: 'courier new',
+$formularios: (form: sans-serif,
+    form1: sans-serif,
+    form2: sans-serif,
     form3: sans-serif,
-    form4: serif,
+    form4: sans-serif,
 );
 
 // bucle del mapa
@@ -2741,7 +2752,7 @@ $font in $formularios {
     .form--#{$name} {
         font-family: $font;
         font-size: 25px;
-        color: #4b4c4d;
+        color: #2E302F;
     }
 }
 

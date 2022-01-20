@@ -150,14 +150,14 @@ li {
 .display-4 {
   font-size: 50px;
   font-family: sans-serif;
-  text-shadow: 1px 1px 5px #4b4c4d;
+  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
 }
 
 .parrafoindex {
   height: clamp(100px, 50%, 400px);
   font-size: 25px;
   font-family: sans-serif;
-  text-shadow: 1px 1px 2px #4b4c4d;
+  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
 }
 
 .container-fluid {
@@ -240,7 +240,9 @@ li {
 .h1tienda {
   font-size: 50px;
   font-family: sans-serif;
-  text-shadow: 1px 1px 5px #4b4c4d;
+  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
+  color: #24262b;
+  text-align: center;
 }
 
 /* INICIO DE SECCION RELOJES */
@@ -2740,7 +2742,9 @@ li {
 .sectionacerca h1 {
   font-size: 50px;
   font-family: sans-serif;
-  text-shadow: 1px 1px 5px #4b4c4d;
+  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
+  color: #24262b;
+  text-align: center;
 }
 
 .carouselacerca {
@@ -2849,7 +2853,9 @@ li {
 .sectionblog h1 {
   font-size: 50px;
   font-family: sans-serif;
-  text-shadow: 1px 1px 5px #4b4c4d;
+  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
+  color: #24262b;
+  text-align: center;
 }
 
 .subtituloblog {
@@ -2983,7 +2989,9 @@ li {
 .sectioncontacto h1 {
   font-size: 50px;
   font-family: sans-serif;
-  text-shadow: 1px 1px 5px #4b4c4d;
+  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
+  color: #24262b;
+  text-align: center;
 }
 
 .parrafocontacto {
@@ -3047,39 +3055,40 @@ form {
 
 .formnombre1, .formapellido1, .formemail1, .formnumero1, .formmensaje1, .formenviar {
   width: 300px;
-  border: 2px solid #ffc0cb;
+  border: 2px solid #ccc;
+  border-radius: 5px;
   -webkit-box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
           box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
 }
 
 .form--form {
-  font-family: arial;
+  font-family: sans-serif;
   font-size: 25px;
-  color: #4b4c4d;
+  color: #2E302F;
 }
 
 .form--form1 {
-  font-family: cursive;
+  font-family: sans-serif;
   font-size: 25px;
-  color: #4b4c4d;
+  color: #2E302F;
 }
 
 .form--form2 {
-  font-family: "courier new";
+  font-family: sans-serif;
   font-size: 25px;
-  color: #4b4c4d;
+  color: #2E302F;
 }
 
 .form--form3 {
   font-family: sans-serif;
   font-size: 25px;
-  color: #4b4c4d;
+  color: #2E302F;
 }
 
 .form--form4 {
-  font-family: serif;
+  font-family: sans-serif;
   font-size: 25px;
-  color: #4b4c4d;
+  color: #2E302F;
 }
 
 /* FINAL CONTACTO */
