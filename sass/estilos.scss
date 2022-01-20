@@ -244,21 +244,12 @@ li {
     width: clamp(100px, 50%, 400px);
 }
 
-@media only screen and (max-height: 896px) {
+@media only screen and (max-width: 615px) {
     .main {
         background-position-x: center;
         background-position-y: center;
         padding-top: 25%;
         padding-bottom: 25%;
-    }
-}
-
-@media only screen and (max-height: 1500px) {
-    .main {
-        background-position-x: center;
-        background-position-y: center;
-        padding-top: 0;
-        padding-bottom: 0;
     }
 }
 
