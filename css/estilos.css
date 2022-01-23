@@ -6,24 +6,11 @@
   font-size: 16px;
 }
 
-body {
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  background-color: #fff;
-}
-
-.header {
+header {
   width: 100%;
   height: 10%;
 }
-
-.main {
-  width: 100%;
-  height: 80%;
-}
-
-nav {
+header nav {
   text-align: center;
   top: 0;
   width: 100%;
@@ -32,31 +19,32 @@ nav {
   align-items: center;
   background-color: #E7EEEA;
 }
-
-ul {
+header ul {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   list-style: none;
 }
-
-li {
+header li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.main {
+  width: 100%;
+  height: 80%;
 }
 
 .footer {
   padding: 40px 0 10px;
   background-color: #E7EEEA;
 }
-
 .footer .social {
   text-align: center;
   margin-bottom: 25px;
   color: #4b4c4d;
 }
-
 .footer .social a {
   font-size: 24px;
   color: inherit;
@@ -73,14 +61,12 @@ li {
   color: #fff;
   transition: all 0.3s ease;
 }
-
 .footer .social a:hover {
   opacity: 0.9;
   transition: all 0.3s ease;
   color: #24262b;
   background: #fff;
 }
-
 .footer ul {
   margin-top: 0;
   padding: 0;
@@ -93,52 +79,25 @@ li {
   justify-content: center;
   flex-wrap: wrap;
 }
-
-.footer ul a {
-  color: inherit;
-  text-decoration: none;
-  opacity: 0.8;
-}
-
 .footer ul li {
   display: inline-block;
   padding: 0 15px;
 }
-
+.footer ul li a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
 .footer ul li a:hover {
   opacity: 1;
   transition: all 0.3s ease;
   color: #24262b;
 }
-
 .footer .copyright {
   margin-top: 15px;
   text-align: center;
   font-size: 13px;
   color: #aaa;
-}
-
-/* FINAL DE NAV Y FOOTER */
-/* INICIO DE INDEX */
-.display-4 {
-  font-size: 50px;
-  font-family: sans-serif;
-  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
-}
-
-.parrafoindex {
-  height: clamp(100px, 50%, 400px);
-  font-size: 25px;
-  font-family: sans-serif;
-  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
-}
-
-.container-fluid {
-  height: 100%;
-}
-
-.contenido {
-  width: clamp(320px, 100%, 2560px);
 }
 
 .main {
@@ -147,22 +106,36 @@ li {
   background-position-x: center;
   background-position-y: center;
 }
-
-.jumbotron {
+.main .contenido {
+  width: clamp(320px, 100%, 2560px);
+}
+.main .container-fluid {
+  height: 100%;
+}
+.main .container-fluid .jumbotron {
   visibility: hidden;
   margin-bottom: 0px;
-  padding-top: 35%;
+  padding-top: 25%;
   padding-bottom: 35%;
 }
-
-.jumbotron h1,
-.jumbotron hr,
-.jumbotron p,
-.jumbotron a {
+.main .container-fluid .jumbotron .display-4 {
+  visibility: visible;
+  font-size: 50px;
+  font-family: sans-serif;
+  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
+}
+.main .container-fluid .jumbotron .my-4 {
   visibility: visible;
 }
-
-.jumbotron a {
+.main .container-fluid .jumbotron .parrafoindex {
+  visibility: visible;
+  height: clamp(100px, 50%, 400px);
+  font-size: 25px;
+  font-family: sans-serif;
+  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
+}
+.main .container-fluid .jumbotron a {
+  visibility: visible;
   text-decoration: none;
   background-color: #2E302F;
   color: #E7EEEA;
@@ -172,8 +145,7 @@ li {
   border-color: #2E302F;
   box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
 }
-
-.jumbotron a:hover {
+.main .container-fluid .jumbotron a:hover {
   background-color: #E7EEEA;
   color: #2E302F;
   font-size: 500;
@@ -181,71 +153,350 @@ li {
   border-radius: 50px;
   box-shadow: 0 0 5px #4b4c4d, 0 0 25px #4b4c4d, 0 0 50px #4b4c4d, 0 0 200px #4b4c4d;
 }
-
-.btn-tienda {
+.main .container-fluid .jumbotron .btn-tienda {
   text-align: center;
   width: clamp(100px, 50%, 400px);
 }
 
-@media only screen and (max-width: 560px) {
-  .jumbotron {
-    padding-top: 100%;
-    padding-bottom: 100%;
-  }
-}
-@media only screen and (min-width: 560px) and (max-width: 730px) {
+@media only screen and (min-width: 320px) and (max-width: 500px) {
   .jumbotron {
     padding-top: 75%;
+    padding-bottom: 150%;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 637px) {
+  .jumbotron {
+    padding-top: 50%;
+    padding-bottom: 125%;
+  }
+}
+@media only screen and (min-width: 637px) and (max-width: 674px) {
+  .jumbotron {
+    padding-top: 50%;
+    padding-bottom: 115%;
+  }
+}
+@media only screen and (min-width: 674px) and (max-width: 715px) {
+  .jumbotron {
+    padding-top: 50%;
+    padding-bottom: 105%;
+  }
+}
+@media only screen and (min-width: 715px) and (max-width: 880px) {
+  .jumbotron {
+    padding-top: 50%;
     padding-bottom: 75%;
   }
 }
-@media only screen and (min-width: 730px) and (max-width: 850px) {
+@media only screen and (min-width: 880px) and (max-width: 1150px) {
   .jumbotron {
-    padding-top: 65%;
-    padding-bottom: 65%;
-  }
-}
-@media only screen and (min-width: 850px) and (max-width: 1145px) {
-  .jumbotron {
-    padding-top: 50%;
+    padding-top: 45%;
     padding-bottom: 50%;
   }
 }
-/* FINAL DEL INDEX */
-/* INICIO DE TIENDA */
-.h1tienda {
+@media only screen and (min-width: 1150px) and (max-width: 1325px) {
+  .jumbotron {
+    padding-top: 30%;
+    padding-bottom: 50%;
+  }
+}
+.maintienda #sectionrelojes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px 1fr;
+  gap: 20px;
+}
+.maintienda #sectionrelojes .itemrelojes {
+  display: flex;
+  justify-content: center;
+}
+.maintienda #sectionrelojes .itemrelojes1 {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  padding-top: 25px;
+}
+.maintienda #sectionrelojes .itemrelojes1 .h1tienda {
   font-size: 50px;
   font-family: sans-serif;
   text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
   color: #24262b;
   text-align: center;
 }
-
-/* INICIO DE SECCION RELOJES */
-#sectionrelojes {
+.maintienda #sectionrelojes .itemrelojes2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.maintienda #sectionrelojes .itemrelojes2 figure {
+  position: relative;
+  width: 305px;
+  height: 407px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
+  cursor: pointer;
+}
+.maintienda #sectionrelojes .itemrelojes2 figure:hover > img {
+  transform: scale(1.2);
+}
+.maintienda #sectionrelojes .itemrelojes2 figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-out;
+}
+.maintienda #sectionrelojes .itemrelojes2 .efectocard {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 103, 123, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.maintienda #sectionrelojes .itemrelojes2 figure:hover > .efectocard {
+  opacity: 1;
+  visibility: visible;
+}
+.maintienda #sectionrelojes .itemrelojes2 figure:hover > .efectocard h3 {
+  color: #E7EEEA;
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  text-align: start;
+  padding-left: 20px;
+}
+.maintienda #sectionrelojes .itemrelojes2 figure:hover > .efectocard h4 {
+  color: #39b54a;
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 20px;
+}
+.maintienda #sectionrelojes .itemrelojes2 figure:hover > .efectocard p {
+  color: #E7EEEA;
+  font-size: 14px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+  padding-left: 20px;
+}
+.maintienda #sectionrelojes .itemrelojes3 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.maintienda #sectionrelojes .itemrelojes3 figure {
+  position: relative;
+  width: 305px;
+  height: 407px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
+  cursor: pointer;
+}
+.maintienda #sectionrelojes .itemrelojes3 figure:hover > img {
+  transform: scale(1.2);
+}
+.maintienda #sectionrelojes .itemrelojes3 figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-out;
+}
+.maintienda #sectionrelojes .itemrelojes3 .efectocard {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 103, 123, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.maintienda #sectionrelojes .itemrelojes3 figure:hover > .efectocard {
+  opacity: 1;
+  visibility: visible;
+}
+.maintienda #sectionrelojes .itemrelojes3 figure:hover > .efectocard h3 {
+  color: #E7EEEA;
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  text-align: start;
+  padding-left: 20px;
+}
+.maintienda #sectionrelojes .itemrelojes3 figure:hover > .efectocard h4 {
+  color: #39b54a;
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 20px;
+}
+.maintienda #sectionrelojes .itemrelojes3 figure:hover > .efectocard p {
+  color: #E7EEEA;
+  font-size: 14px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+  padding-left: 20px;
+}
+.maintienda #sectionrelojes .itemrelojes4 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.maintienda #sectionrelojes .itemrelojes4 figure {
+  position: relative;
+  width: 305px;
+  height: 407px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
+  cursor: pointer;
+}
+.maintienda #sectionrelojes .itemrelojes4 figure:hover > img {
+  transform: scale(1.2);
+}
+.maintienda #sectionrelojes .itemrelojes4 figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-out;
+}
+.maintienda #sectionrelojes .itemrelojes4 .efectocard {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 103, 123, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.maintienda #sectionrelojes .itemrelojes4 figure:hover > .efectocard {
+  opacity: 1;
+  visibility: visible;
+}
+.maintienda #sectionrelojes .itemrelojes4 figure:hover > .efectocard h3 {
+  color: #E7EEEA;
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  text-align: start;
+  padding-left: 20px;
+}
+.maintienda #sectionrelojes .itemrelojes4 figure:hover > .efectocard h4 {
+  color: #39b54a;
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 20px;
+}
+.maintienda #sectionrelojes .itemrelojes4 figure:hover > .efectocard p {
+  color: #E7EEEA;
+  font-size: 14px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+  padding-left: 20px;
+}
+.maintienda #sectionrelojes .itemrelojes5 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+.maintienda #sectionrelojes .itemrelojes5 figure {
+  position: relative;
+  width: 305px;
+  height: 407px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
+  cursor: pointer;
+}
+.maintienda #sectionrelojes .itemrelojes5 figure:hover > img {
+  transform: scale(1.2);
+}
+.maintienda #sectionrelojes .itemrelojes5 figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-out;
+}
+.maintienda #sectionrelojes .itemrelojes5 .efectocard {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 103, 123, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.maintienda #sectionrelojes .itemrelojes5 figure:hover > .efectocard {
+  opacity: 1;
+  visibility: visible;
+}
+.maintienda #sectionrelojes .itemrelojes5 figure:hover > .efectocard h3 {
+  color: #E7EEEA;
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  text-align: start;
+  padding-left: 20px;
+}
+.maintienda #sectionrelojes .itemrelojes5 figure:hover > .efectocard h4 {
+  color: #39b54a;
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 20px;
+}
+.maintienda #sectionrelojes .itemrelojes5 figure:hover > .efectocard p {
+  color: #E7EEEA;
+  font-size: 14px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+  padding-left: 20px;
+}
+.maintienda #sectionpulseras {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 100px 1fr;
   gap: 20px;
 }
-
-.itemrelojes {
+.maintienda #sectionpulseras .itempulseras {
   display: flex;
   justify-content: center;
 }
-
-.itemrelojes1 {
+.maintienda #sectionpulseras .itempulseras1 {
   grid-column: 1/5;
   grid-row: 1/2;
   padding-top: 25px;
 }
-
-.itemrelojes2 {
+.maintienda #sectionpulseras .itempulseras1 .h1tienda {
+  font-size: 50px;
+  font-family: sans-serif;
+  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
+  color: #24262b;
+  text-align: center;
+}
+.maintienda #sectionpulseras .itempulseras2 {
   grid-column: 1/2;
   grid-row: 2/3;
 }
-
-.itemrelojes2 figure {
+.maintienda #sectionpulseras .itempulseras2 figure {
   position: relative;
   width: 305px;
   height: 407px;
@@ -254,18 +505,15 @@ li {
   box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
   cursor: pointer;
 }
-
-.itemrelojes2 figure:hover > img {
+.maintienda #sectionpulseras .itempulseras2 figure:hover > img {
   transform: scale(1.2);
 }
-
-.itemrelojes2 figure img {
+.maintienda #sectionpulseras .itempulseras2 figure img {
   width: 100%;
   height: 100%;
   transition: all 0.5s ease-out;
 }
-
-.itemrelojes2 figure .efectocard {
+.maintienda #sectionpulseras .itempulseras2 .efectocard {
   position: absolute;
   top: 0;
   width: 100%;
@@ -279,13 +527,11 @@ li {
   align-items: flex-start;
   flex-direction: column;
 }
-
-.itemrelojes2 figure:hover > .efectocard {
+.maintienda #sectionpulseras .itempulseras2 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
-
-.itemrelojes2 figure:hover .efectocard h3 {
+.maintienda #sectionpulseras .itempulseras2 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
   font-family: "Courier New", Courier, monospace;
@@ -293,8 +539,7 @@ li {
   text-align: start;
   padding-left: 20px;
 }
-
-.itemrelojes2 figure:hover .efectocard h4 {
+.maintienda #sectionpulseras .itempulseras2 figure:hover > .efectocard h4 {
   color: #39b54a;
   font-size: 18px;
   font-family: "Courier New", Courier, monospace;
@@ -302,21 +547,18 @@ li {
   text-align: left;
   padding-left: 20px;
 }
-
-.itemrelojes2 figure .efectocard p {
+.maintienda #sectionpulseras .itempulseras2 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
   font-family: "Courier New", Courier, monospace;
   text-align: left;
   padding-left: 20px;
 }
-
-.itemrelojes3 {
+.maintienda #sectionpulseras .itempulseras3 {
   grid-column: 2/3;
   grid-row: 2/3;
 }
-
-.itemrelojes3 figure {
+.maintienda #sectionpulseras .itempulseras3 figure {
   position: relative;
   width: 305px;
   height: 407px;
@@ -325,18 +567,15 @@ li {
   box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
   cursor: pointer;
 }
-
-.itemrelojes3 figure:hover > img {
+.maintienda #sectionpulseras .itempulseras3 figure:hover > img {
   transform: scale(1.2);
 }
-
-.itemrelojes3 figure img {
+.maintienda #sectionpulseras .itempulseras3 figure img {
   width: 100%;
   height: 100%;
   transition: all 0.5s ease-out;
 }
-
-.itemrelojes3 figure .efectocard {
+.maintienda #sectionpulseras .itempulseras3 .efectocard {
   position: absolute;
   top: 0;
   width: 100%;
@@ -350,13 +589,11 @@ li {
   align-items: flex-start;
   flex-direction: column;
 }
-
-.itemrelojes3 figure:hover > .efectocard {
+.maintienda #sectionpulseras .itempulseras3 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
-
-.itemrelojes3 figure:hover .efectocard h3 {
+.maintienda #sectionpulseras .itempulseras3 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
   font-family: "Courier New", Courier, monospace;
@@ -364,8 +601,7 @@ li {
   text-align: start;
   padding-left: 20px;
 }
-
-.itemrelojes3 figure:hover .efectocard h4 {
+.maintienda #sectionpulseras .itempulseras3 figure:hover > .efectocard h4 {
   color: #39b54a;
   font-size: 18px;
   font-family: "Courier New", Courier, monospace;
@@ -373,21 +609,18 @@ li {
   text-align: left;
   padding-left: 20px;
 }
-
-.itemrelojes3 figure .efectocard p {
+.maintienda #sectionpulseras .itempulseras3 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
   font-family: "Courier New", Courier, monospace;
   text-align: left;
   padding-left: 20px;
 }
-
-.itemrelojes4 {
+.maintienda #sectionpulseras .itempulseras4 {
   grid-column: 3/4;
   grid-row: 2/3;
 }
-
-.itemrelojes4 figure {
+.maintienda #sectionpulseras .itempulseras4 figure {
   position: relative;
   width: 305px;
   height: 407px;
@@ -396,18 +629,15 @@ li {
   box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
   cursor: pointer;
 }
-
-.itemrelojes4 figure:hover > img {
+.maintienda #sectionpulseras .itempulseras4 figure:hover > img {
   transform: scale(1.2);
 }
-
-.itemrelojes4 figure img {
+.maintienda #sectionpulseras .itempulseras4 figure img {
   width: 100%;
   height: 100%;
   transition: all 0.5s ease-out;
 }
-
-.itemrelojes4 figure .efectocard {
+.maintienda #sectionpulseras .itempulseras4 .efectocard {
   position: absolute;
   top: 0;
   width: 100%;
@@ -421,13 +651,11 @@ li {
   align-items: flex-start;
   flex-direction: column;
 }
-
-.itemrelojes4 figure:hover > .efectocard {
+.maintienda #sectionpulseras .itempulseras4 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
-
-.itemrelojes4 figure:hover .efectocard h3 {
+.maintienda #sectionpulseras .itempulseras4 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
   font-family: "Courier New", Courier, monospace;
@@ -435,8 +663,7 @@ li {
   text-align: start;
   padding-left: 20px;
 }
-
-.itemrelojes4 figure:hover .efectocard h4 {
+.maintienda #sectionpulseras .itempulseras4 figure:hover > .efectocard h4 {
   color: #39b54a;
   font-size: 18px;
   font-family: "Courier New", Courier, monospace;
@@ -444,21 +671,18 @@ li {
   text-align: left;
   padding-left: 20px;
 }
-
-.itemrelojes4 figure .efectocard p {
+.maintienda #sectionpulseras .itempulseras4 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
   font-family: "Courier New", Courier, monospace;
   text-align: left;
   padding-left: 20px;
 }
-
-.itemrelojes5 {
+.maintienda #sectionpulseras .itempulseras5 {
   grid-column: 4/5;
   grid-row: 2/3;
 }
-
-.itemrelojes5 figure {
+.maintienda #sectionpulseras .itempulseras5 figure {
   position: relative;
   width: 305px;
   height: 407px;
@@ -467,18 +691,15 @@ li {
   box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
   cursor: pointer;
 }
-
-.itemrelojes5 figure:hover > img {
+.maintienda #sectionpulseras .itempulseras5 figure:hover > img {
   transform: scale(1.2);
 }
-
-.itemrelojes5 figure img {
+.maintienda #sectionpulseras .itempulseras5 figure img {
   width: 100%;
   height: 100%;
   transition: all 0.5s ease-out;
 }
-
-.itemrelojes5 figure .efectocard {
+.maintienda #sectionpulseras .itempulseras5 .efectocard {
   position: absolute;
   top: 0;
   width: 100%;
@@ -492,13 +713,11 @@ li {
   align-items: flex-start;
   flex-direction: column;
 }
-
-.itemrelojes5 figure:hover > .efectocard {
+.maintienda #sectionpulseras .itempulseras5 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
-
-.itemrelojes5 figure:hover .efectocard h3 {
+.maintienda #sectionpulseras .itempulseras5 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
   font-family: "Courier New", Courier, monospace;
@@ -506,8 +725,7 @@ li {
   text-align: start;
   padding-left: 20px;
 }
-
-.itemrelojes5 figure:hover .efectocard h4 {
+.maintienda #sectionpulseras .itempulseras5 figure:hover > .efectocard h4 {
   color: #39b54a;
   font-size: 18px;
   font-family: "Courier New", Courier, monospace;
@@ -515,41 +733,40 @@ li {
   text-align: left;
   padding-left: 20px;
 }
-
-.itemrelojes5 figure .efectocard p {
+.maintienda #sectionpulseras .itempulseras5 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
   font-family: "Courier New", Courier, monospace;
   text-align: left;
   padding-left: 20px;
 }
-
-/* FINAL DE SECCION RELOJES */
-/* INICIO DE SECCION PULSERAS */
-#sectionpulseras {
+.maintienda #sectionaros {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 100px 1fr;
   gap: 20px;
 }
-
-.itempulseras {
+.maintienda #sectionaros .itemaros {
   display: flex;
   justify-content: center;
 }
-
-.itempulseras1 {
+.maintienda #sectionaros .itemaros1 {
   grid-column: 1/5;
   grid-row: 1/2;
   padding-top: 25px;
 }
-
-.itempulseras2 {
+.maintienda #sectionaros .itemaros1 .h1tienda {
+  font-size: 50px;
+  font-family: sans-serif;
+  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
+  color: #24262b;
+  text-align: center;
+}
+.maintienda #sectionaros .itemaros2 {
   grid-column: 1/2;
   grid-row: 2/3;
 }
-
-.itempulseras2 figure {
+.maintienda #sectionaros .itemaros2 figure {
   position: relative;
   width: 305px;
   height: 407px;
@@ -558,18 +775,15 @@ li {
   box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
   cursor: pointer;
 }
-
-.itempulseras2 figure:hover > img {
+.maintienda #sectionaros .itemaros2 figure:hover > img {
   transform: scale(1.2);
 }
-
-.itempulseras2 figure img {
+.maintienda #sectionaros .itemaros2 figure img {
   width: 100%;
   height: 100%;
   transition: all 0.5s ease-out;
 }
-
-.itempulseras2 figure .efectocard {
+.maintienda #sectionaros .itemaros2 .efectocard {
   position: absolute;
   top: 0;
   width: 100%;
@@ -583,13 +797,11 @@ li {
   align-items: flex-start;
   flex-direction: column;
 }
-
-.itempulseras2 figure:hover > .efectocard {
+.maintienda #sectionaros .itemaros2 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
-
-.itempulseras2 figure:hover .efectocard h3 {
+.maintienda #sectionaros .itemaros2 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
   font-family: "Courier New", Courier, monospace;
@@ -597,8 +809,7 @@ li {
   text-align: start;
   padding-left: 20px;
 }
-
-.itempulseras2 figure:hover .efectocard h4 {
+.maintienda #sectionaros .itemaros2 figure:hover > .efectocard h4 {
   color: #39b54a;
   font-size: 18px;
   font-family: "Courier New", Courier, monospace;
@@ -606,21 +817,18 @@ li {
   text-align: left;
   padding-left: 20px;
 }
-
-.itempulseras2 figure .efectocard p {
+.maintienda #sectionaros .itemaros2 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
   font-family: "Courier New", Courier, monospace;
   text-align: left;
   padding-left: 20px;
 }
-
-.itempulseras3 {
+.maintienda #sectionaros .itemaros3 {
   grid-column: 2/3;
   grid-row: 2/3;
 }
-
-.itempulseras3 figure {
+.maintienda #sectionaros .itemaros3 figure {
   position: relative;
   width: 305px;
   height: 407px;
@@ -629,18 +837,15 @@ li {
   box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
   cursor: pointer;
 }
-
-.itempulseras3 figure:hover > img {
+.maintienda #sectionaros .itemaros3 figure:hover > img {
   transform: scale(1.2);
 }
-
-.itempulseras3 figure img {
+.maintienda #sectionaros .itemaros3 figure img {
   width: 100%;
   height: 100%;
   transition: all 0.5s ease-out;
 }
-
-.itempulseras3 figure .efectocard {
+.maintienda #sectionaros .itemaros3 .efectocard {
   position: absolute;
   top: 0;
   width: 100%;
@@ -654,13 +859,11 @@ li {
   align-items: flex-start;
   flex-direction: column;
 }
-
-.itempulseras3 figure:hover > .efectocard {
+.maintienda #sectionaros .itemaros3 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
-
-.itempulseras3 figure:hover .efectocard h3 {
+.maintienda #sectionaros .itemaros3 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
   font-family: "Courier New", Courier, monospace;
@@ -668,8 +871,7 @@ li {
   text-align: start;
   padding-left: 20px;
 }
-
-.itempulseras3 figure:hover .efectocard h4 {
+.maintienda #sectionaros .itemaros3 figure:hover > .efectocard h4 {
   color: #39b54a;
   font-size: 18px;
   font-family: "Courier New", Courier, monospace;
@@ -677,21 +879,18 @@ li {
   text-align: left;
   padding-left: 20px;
 }
-
-.itempulseras3 figure .efectocard p {
+.maintienda #sectionaros .itemaros3 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
   font-family: "Courier New", Courier, monospace;
   text-align: left;
   padding-left: 20px;
 }
-
-.itempulseras4 {
+.maintienda #sectionaros .itemaros4 {
   grid-column: 3/4;
   grid-row: 2/3;
 }
-
-.itempulseras4 figure {
+.maintienda #sectionaros .itemaros4 figure {
   position: relative;
   width: 305px;
   height: 407px;
@@ -700,18 +899,15 @@ li {
   box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
   cursor: pointer;
 }
-
-.itempulseras4 figure:hover > img {
+.maintienda #sectionaros .itemaros4 figure:hover > img {
   transform: scale(1.2);
 }
-
-.itempulseras4 figure img {
+.maintienda #sectionaros .itemaros4 figure img {
   width: 100%;
   height: 100%;
   transition: all 0.5s ease-out;
 }
-
-.itempulseras4 figure .efectocard {
+.maintienda #sectionaros .itemaros4 .efectocard {
   position: absolute;
   top: 0;
   width: 100%;
@@ -725,13 +921,11 @@ li {
   align-items: flex-start;
   flex-direction: column;
 }
-
-.itempulseras4 figure:hover > .efectocard {
+.maintienda #sectionaros .itemaros4 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
-
-.itempulseras4 figure:hover .efectocard h3 {
+.maintienda #sectionaros .itemaros4 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
   font-family: "Courier New", Courier, monospace;
@@ -739,8 +933,7 @@ li {
   text-align: start;
   padding-left: 20px;
 }
-
-.itempulseras4 figure:hover .efectocard h4 {
+.maintienda #sectionaros .itemaros4 figure:hover > .efectocard h4 {
   color: #39b54a;
   font-size: 18px;
   font-family: "Courier New", Courier, monospace;
@@ -748,21 +941,18 @@ li {
   text-align: left;
   padding-left: 20px;
 }
-
-.itempulseras4 figure .efectocard p {
+.maintienda #sectionaros .itemaros4 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
   font-family: "Courier New", Courier, monospace;
   text-align: left;
   padding-left: 20px;
 }
-
-.itempulseras5 {
+.maintienda #sectionaros .itemaros5 {
   grid-column: 4/5;
   grid-row: 2/3;
 }
-
-.itempulseras5 figure {
+.maintienda #sectionaros .itemaros5 figure {
   position: relative;
   width: 305px;
   height: 407px;
@@ -771,18 +961,15 @@ li {
   box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
   cursor: pointer;
 }
-
-.itempulseras5 figure:hover > img {
+.maintienda #sectionaros .itemaros5 figure:hover > img {
   transform: scale(1.2);
 }
-
-.itempulseras5 figure img {
+.maintienda #sectionaros .itemaros5 figure img {
   width: 100%;
   height: 100%;
   transition: all 0.5s ease-out;
 }
-
-.itempulseras5 figure .efectocard {
+.maintienda #sectionaros .itemaros5 .efectocard {
   position: absolute;
   top: 0;
   width: 100%;
@@ -796,13 +983,11 @@ li {
   align-items: flex-start;
   flex-direction: column;
 }
-
-.itempulseras5 figure:hover > .efectocard {
+.maintienda #sectionaros .itemaros5 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
-
-.itempulseras5 figure:hover .efectocard h3 {
+.maintienda #sectionaros .itemaros5 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
   font-family: "Courier New", Courier, monospace;
@@ -810,8 +995,7 @@ li {
   text-align: start;
   padding-left: 20px;
 }
-
-.itempulseras5 figure:hover .efectocard h4 {
+.maintienda #sectionaros .itemaros5 figure:hover > .efectocard h4 {
   color: #39b54a;
   font-size: 18px;
   font-family: "Courier New", Courier, monospace;
@@ -819,345 +1003,40 @@ li {
   text-align: left;
   padding-left: 20px;
 }
-
-.itempulseras5 figure .efectocard p {
+.maintienda #sectionaros .itemaros5 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
   font-family: "Courier New", Courier, monospace;
   text-align: left;
   padding-left: 20px;
 }
-
-/* FINAL SECCION PULSERAS */
-/* INICIO SECCION AROS */
-#sectionaros {
+.maintienda #sectiondijes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 100px 1fr;
   gap: 20px;
 }
-
-.itemaros {
+.maintienda #sectiondijes .itemdijes {
   display: flex;
   justify-content: center;
 }
-
-.itemaros1 {
-  grid-column: 1/5;
-  grid-row: 1/2;
-  padding-top: 25px;
-}
-
-.itemaros2 {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-
-.itemaros2 figure {
-  position: relative;
-  width: 305px;
-  height: 407px;
-  overflow: hidden;
-  border-radius: 6px;
-  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
-  cursor: pointer;
-}
-
-.itemaros2 figure:hover > img {
-  transform: scale(1.2);
-}
-
-.itemaros2 figure img {
-  width: 100%;
-  height: 100%;
-  transition: all 0.5s ease-out;
-}
-
-.itemaros2 figure .efectocard {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(11, 103, 123, 0.6);
-  opacity: 0;
-  visibility: hidden;
-  text-align: center;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-.itemaros2 figure:hover > .efectocard {
-  opacity: 1;
-  visibility: visible;
-}
-
-.itemaros2 figure:hover .efectocard h3 {
-  color: #E7EEEA;
-  font-size: 30px;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 600;
-  text-align: start;
-  padding-left: 20px;
-}
-
-.itemaros2 figure:hover .efectocard h4 {
-  color: #39b54a;
-  font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 600;
-  text-align: left;
-  padding-left: 20px;
-}
-
-.itemaros2 figure .efectocard p {
-  color: #E7EEEA;
-  font-size: 14px;
-  font-family: "Courier New", Courier, monospace;
-  text-align: left;
-  padding-left: 20px;
-}
-
-.itemaros3 {
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-
-.itemaros3 figure {
-  position: relative;
-  width: 305px;
-  height: 407px;
-  overflow: hidden;
-  border-radius: 6px;
-  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
-  cursor: pointer;
-}
-
-.itemaros3 figure:hover > img {
-  transform: scale(1.2);
-}
-
-.itemaros3 figure img {
-  width: 100%;
-  height: 100%;
-  transition: all 0.5s ease-out;
-}
-
-.itemaros3 figure .efectocard {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(11, 103, 123, 0.6);
-  opacity: 0;
-  visibility: hidden;
-  text-align: center;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-.itemaros3 figure:hover > .efectocard {
-  opacity: 1;
-  visibility: visible;
-}
-
-.itemaros3 figure:hover .efectocard h3 {
-  color: #E7EEEA;
-  font-size: 30px;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 600;
-  text-align: start;
-  padding-left: 20px;
-}
-
-.itemaros3 figure:hover .efectocard h4 {
-  color: #39b54a;
-  font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 600;
-  text-align: left;
-  padding-left: 20px;
-}
-
-.itemaros3 figure .efectocard p {
-  color: #E7EEEA;
-  font-size: 14px;
-  font-family: "Courier New", Courier, monospace;
-  text-align: left;
-  padding-left: 20px;
-}
-
-.itemaros4 {
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-
-.itemaros4 figure {
-  position: relative;
-  width: 305px;
-  height: 407px;
-  overflow: hidden;
-  border-radius: 6px;
-  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
-  cursor: pointer;
-}
-
-.itemaros4 figure:hover > img {
-  transform: scale(1.2);
-}
-
-.itemaros4 figure img {
-  width: 100%;
-  height: 100%;
-  transition: all 0.5s ease-out;
-}
-
-.itemaros4 figure .efectocard {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(11, 103, 123, 0.6);
-  opacity: 0;
-  visibility: hidden;
-  text-align: center;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-.itemaros4 figure:hover > .efectocard {
-  opacity: 1;
-  visibility: visible;
-}
-
-.itemaros4 figure:hover .efectocard h3 {
-  color: #E7EEEA;
-  font-size: 30px;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 600;
-  text-align: start;
-  padding-left: 20px;
-}
-
-.itemaros4 figure:hover .efectocard h4 {
-  color: #39b54a;
-  font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 600;
-  text-align: left;
-  padding-left: 20px;
-}
-
-.itemaros4 figure .efectocard p {
-  color: #E7EEEA;
-  font-size: 14px;
-  font-family: "Courier New", Courier, monospace;
-  text-align: left;
-  padding-left: 20px;
-}
-
-.itemaros5 {
-  grid-column: 4/5;
-  grid-row: 2/3;
-}
-
-.itemaros5 figure {
-  position: relative;
-  width: 305px;
-  height: 407px;
-  overflow: hidden;
-  border-radius: 6px;
-  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
-  cursor: pointer;
-}
-
-.itemaros5 figure:hover > img {
-  transform: scale(1.2);
-}
-
-.itemaros5 figure img {
-  width: 100%;
-  height: 100%;
-  transition: all 0.5s ease-out;
-}
-
-.itemaros5 figure .efectocard {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(11, 103, 123, 0.6);
-  opacity: 0;
-  visibility: hidden;
-  text-align: center;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-.itemaros5 figure:hover > .efectocard {
-  opacity: 1;
-  visibility: visible;
-}
-
-.itemaros5 figure:hover .efectocard h3 {
-  color: #E7EEEA;
-  font-size: 30px;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 600;
-  text-align: start;
-  padding-left: 20px;
-}
-
-.itemaros5 figure:hover .efectocard h4 {
-  color: #39b54a;
-  font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 600;
-  text-align: left;
-  padding-left: 20px;
-}
-
-.itemaros5 figure .efectocard p {
-  color: #E7EEEA;
-  font-size: 14px;
-  font-family: "Courier New", Courier, monospace;
-  text-align: left;
-  padding-left: 20px;
-}
-
-/* FINAL SECCION AROS */
-/* INICIO SECCION DIJES */
-#sectiondijes {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 100px 1fr;
-  gap: 20px;
-}
-
-.itemdijes {
-  display: flex;
-  justify-content: center;
-}
-
-.itemdijes1 {
+.maintienda #sectiondijes .itemdijes1 {
   grid-column: 1/5;
   grid-row: 1/2;
   padding: 25px;
 }
-
-.itemdijes2 {
+.maintienda #sectiondijes .itemdijes1 .h1tienda {
+  font-size: 50px;
+  font-family: sans-serif;
+  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
+  color: #24262b;
+  text-align: center;
+}
+.maintienda #sectiondijes .itemdijes2 {
   grid-column: 1/2;
   grid-row: 2/3;
 }
-
-.itemdijes2 figure {
+.maintienda #sectiondijes .itemdijes2 figure {
   position: relative;
   width: 305px;
   height: 407px;
@@ -1166,18 +1045,15 @@ li {
   box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
   cursor: pointer;
 }
-
-.itemdijes2 figure:hover > img {
+.maintienda #sectiondijes .itemdijes2 figure:hover > img {
   transform: scale(1.2);
 }
-
-.itemdijes2 figure img {
+.maintienda #sectiondijes .itemdijes2 figure img {
   width: 100%;
   height: 100%;
   transition: all 0.5s ease-out;
 }
-
-.itemdijes2 figure .efectocard {
+.maintienda #sectiondijes .itemdijes2 .efectocard {
   position: absolute;
   top: 0;
   width: 100%;
@@ -1191,13 +1067,11 @@ li {
   align-items: flex-start;
   flex-direction: column;
 }
-
-.itemdijes2 figure:hover > .efectocard {
+.maintienda #sectiondijes .itemdijes2 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
-
-.itemdijes2 figure:hover .efectocard h3 {
+.maintienda #sectiondijes .itemdijes2 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
   font-family: "Courier New", Courier, monospace;
@@ -1205,8 +1079,7 @@ li {
   text-align: start;
   padding-left: 20px;
 }
-
-.itemdijes2 figure:hover .efectocard h4 {
+.maintienda #sectiondijes .itemdijes2 figure:hover > .efectocard h4 {
   color: #39b54a;
   font-size: 18px;
   font-family: "Courier New", Courier, monospace;
@@ -1214,21 +1087,18 @@ li {
   text-align: left;
   padding-left: 20px;
 }
-
-.itemdijes2 figure .efectocard p {
+.maintienda #sectiondijes .itemdijes2 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
   font-family: "Courier New", Courier, monospace;
   text-align: left;
   padding-left: 20px;
 }
-
-.itemdijes3 {
+.maintienda #sectiondijes .itemdijes3 {
   grid-column: 2/3;
   grid-row: 2/3;
 }
-
-.itemdijes3 figure {
+.maintienda #sectiondijes .itemdijes3 figure {
   position: relative;
   width: 305px;
   height: 407px;
@@ -1237,18 +1107,15 @@ li {
   box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
   cursor: pointer;
 }
-
-.itemdijes3 figure:hover > img {
+.maintienda #sectiondijes .itemdijes3 figure:hover > img {
   transform: scale(1.2);
 }
-
-.itemdijes3 figure img {
+.maintienda #sectiondijes .itemdijes3 figure img {
   width: 100%;
   height: 100%;
   transition: all 0.5s ease-out;
 }
-
-.itemdijes3 figure .efectocard {
+.maintienda #sectiondijes .itemdijes3 .efectocard {
   position: absolute;
   top: 0;
   width: 100%;
@@ -1262,13 +1129,11 @@ li {
   align-items: flex-start;
   flex-direction: column;
 }
-
-.itemdijes3 figure:hover > .efectocard {
+.maintienda #sectiondijes .itemdijes3 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
-
-.itemdijes3 figure:hover .efectocard h3 {
+.maintienda #sectiondijes .itemdijes3 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
   font-family: "Courier New", Courier, monospace;
@@ -1276,8 +1141,7 @@ li {
   text-align: start;
   padding-left: 20px;
 }
-
-.itemdijes3 figure:hover .efectocard h4 {
+.maintienda #sectiondijes .itemdijes3 figure:hover > .efectocard h4 {
   color: #39b54a;
   font-size: 18px;
   font-family: "Courier New", Courier, monospace;
@@ -1285,21 +1149,18 @@ li {
   text-align: left;
   padding-left: 20px;
 }
-
-.itemdijes3 figure .efectocard p {
+.maintienda #sectiondijes .itemdijes3 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
   font-family: "Courier New", Courier, monospace;
   text-align: left;
   padding-left: 20px;
 }
-
-.itemdijes4 {
+.maintienda #sectiondijes .itemdijes4 {
   grid-column: 3/4;
   grid-row: 2/3;
 }
-
-.itemdijes4 figure {
+.maintienda #sectiondijes .itemdijes4 figure {
   position: relative;
   width: 305px;
   height: 407px;
@@ -1308,18 +1169,15 @@ li {
   box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
   cursor: pointer;
 }
-
-.itemdijes4 figure:hover > img {
+.maintienda #sectiondijes .itemdijes4 figure:hover > img {
   transform: scale(1.2);
 }
-
-.itemdijes4 figure img {
+.maintienda #sectiondijes .itemdijes4 figure img {
   width: 100%;
   height: 100%;
   transition: all 0.5s ease-out;
 }
-
-.itemdijes4 figure .efectocard {
+.maintienda #sectiondijes .itemdijes4 .efectocard {
   position: absolute;
   top: 0;
   width: 100%;
@@ -1333,13 +1191,11 @@ li {
   align-items: flex-start;
   flex-direction: column;
 }
-
-.itemdijes4 figure:hover > .efectocard {
+.maintienda #sectiondijes .itemdijes4 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
-
-.itemdijes4 figure:hover .efectocard h3 {
+.maintienda #sectiondijes .itemdijes4 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
   font-family: "Courier New", Courier, monospace;
@@ -1347,8 +1203,7 @@ li {
   text-align: start;
   padding-left: 20px;
 }
-
-.itemdijes4 figure:hover .efectocard h4 {
+.maintienda #sectiondijes .itemdijes4 figure:hover > .efectocard h4 {
   color: #39b54a;
   font-size: 18px;
   font-family: "Courier New", Courier, monospace;
@@ -1356,21 +1211,18 @@ li {
   text-align: left;
   padding-left: 20px;
 }
-
-.itemdijes4 figure .efectocard p {
+.maintienda #sectiondijes .itemdijes4 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
   font-family: "Courier New", Courier, monospace;
   text-align: left;
   padding-left: 20px;
 }
-
-.itemdijes5 {
+.maintienda #sectiondijes .itemdijes5 {
   grid-column: 4/5;
   grid-row: 2/3;
 }
-
-.itemdijes5 figure {
+.maintienda #sectiondijes .itemdijes5 figure {
   position: relative;
   width: 305px;
   height: 407px;
@@ -1379,18 +1231,15 @@ li {
   box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
   cursor: pointer;
 }
-
-.itemdijes5 figure:hover > img {
+.maintienda #sectiondijes .itemdijes5 figure:hover > img {
   transform: scale(1.2);
 }
-
-.itemdijes5 figure img {
+.maintienda #sectiondijes .itemdijes5 figure img {
   width: 100%;
   height: 100%;
   transition: all 0.5s ease-out;
 }
-
-.itemdijes5 figure .efectocard {
+.maintienda #sectiondijes .itemdijes5 .efectocard {
   position: absolute;
   top: 0;
   width: 100%;
@@ -1404,13 +1253,11 @@ li {
   align-items: flex-start;
   flex-direction: column;
 }
-
-.itemdijes5 figure:hover > .efectocard {
+.maintienda #sectiondijes .itemdijes5 figure:hover > .efectocard {
   opacity: 1;
   visibility: visible;
 }
-
-.itemdijes5 figure:hover .efectocard h3 {
+.maintienda #sectiondijes .itemdijes5 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
   font-family: "Courier New", Courier, monospace;
@@ -1418,8 +1265,7 @@ li {
   text-align: start;
   padding-left: 20px;
 }
-
-.itemdijes5 figure:hover .efectocard h4 {
+.maintienda #sectiondijes .itemdijes5 figure:hover > .efectocard h4 {
   color: #39b54a;
   font-size: 18px;
   font-family: "Courier New", Courier, monospace;
@@ -1427,669 +1273,584 @@ li {
   text-align: left;
   padding-left: 20px;
 }
-
-.itemdijes5 figure .efectocard p {
+.maintienda #sectiondijes .itemdijes5 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
   font-family: "Courier New", Courier, monospace;
   text-align: left;
   padding-left: 20px;
 }
-
-/* FINAL SECCION DIJES */
-/* INICIO MEDIA QUERIES TIENDA */
 @media only screen and (min-width: 320px) and (max-width: 768px) {
-  .h1tienda {
+  .maintienda #sectionrelojes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px repeat(4, 1fr);
+    gap: 20px;
+  }
+  .maintienda #sectionrelojes .itemrelojes {
+    display: flex;
+    justify-content: center;
+  }
+  .maintienda #sectionrelojes .itemrelojes .h1tienda {
     font-size: 35px;
   }
-
-  #sectionrelojes {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px repeat(4, 1fr);
-    gap: 20px;
-  }
-
-  .itemrelojes {
-    display: flex;
-    justify-content: center;
-  }
-
-  .itemrelojes1 {
+  .maintienda #sectionrelojes .itemrelojes1 {
     grid-column: 1/2;
     grid-row: 1/2;
     padding-top: 15px;
   }
-
-  .itemrelojes2 {
+  .maintienda #sectionrelojes .itemrelojes2 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-
-  .itemrelojes3 {
+  .maintienda #sectionrelojes .itemrelojes3 {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-
-  .itemrelojes4 {
+  .maintienda #sectionrelojes .itemrelojes4 {
     grid-column: 1/2;
     grid-row: 4/5;
   }
-
-  .itemrelojes5 {
+  .maintienda #sectionrelojes .itemrelojes5 {
     grid-column: 1/2;
     grid-row: 5/6;
   }
-
-  #sectionpulseras {
+  .maintienda #sectionpulseras {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50px repeat(4, 1fr);
     gap: 20px;
   }
-
-  .itempulseras {
+  .maintienda #sectionpulseras .itempulseras {
     display: flex;
     justify-content: center;
   }
-
-  .itempulseras1 {
+  .maintienda #sectionpulseras .itempulseras .h1tienda {
+    font-size: 35px;
+  }
+  .maintienda #sectionpulseras .itempulseras1 {
     grid-column: 1/2;
     grid-row: 1/2;
     padding-top: 15px;
   }
-
-  .itempulseras2 {
+  .maintienda #sectionpulseras .itempulseras2 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-
-  .itempulseras3 {
+  .maintienda #sectionpulseras .itempulseras3 {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-
-  .itempulseras4 {
+  .maintienda #sectionpulseras .itempulseras4 {
     grid-column: 1/2;
     grid-row: 4/5;
   }
-
-  .itempulseras5 {
+  .maintienda #sectionpulseras .itempulseras5 {
     grid-column: 1/2;
     grid-row: 5/6;
   }
-
-  #sectionaros {
+  .maintienda #sectionaros {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50px repeat(4, 1fr);
     gap: 20px;
   }
-
-  .itemaros {
+  .maintienda #sectionaros .itemaros {
     display: flex;
     justify-content: center;
   }
-
-  .itemaros1 {
+  .maintienda #sectionaros .itemaros .h1tienda {
+    font-size: 35px;
+  }
+  .maintienda #sectionaros .itemaros1 {
     grid-column: 1/2;
     grid-row: 1/2;
     padding-top: 15px;
   }
-
-  .itemaros2 {
+  .maintienda #sectionaros .itemaros2 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-
-  .itemaros3 {
+  .maintienda #sectionaros .itemaros3 {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-
-  .itemaros4 {
+  .maintienda #sectionaros .itemaros4 {
     grid-column: 1/2;
     grid-row: 4/5;
   }
-
-  .itemaros5 {
+  .maintienda #sectionaros .itemaros5 {
     grid-column: 1/2;
     grid-row: 5/6;
   }
-
-  #sectiondijes {
+  .maintienda #sectiondijes {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50px repeat(4, 1fr);
     gap: 20px;
   }
-
-  .itemdijes {
+  .maintienda #sectiondijes .itemdijes {
     display: flex;
     justify-content: center;
   }
-
-  .itemdijes1 {
+  .maintienda #sectiondijes .itemdijes .h1tienda {
+    font-size: 35px;
+  }
+  .maintienda #sectiondijes .itemdijes1 {
     grid-column: 1/2;
     grid-row: 1/2;
     padding-top: 15px;
   }
-
-  .itemdijes2 {
+  .maintienda #sectiondijes .itemdijes2 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-
-  .itemdijes3 {
+  .maintienda #sectiondijes .itemdijes3 {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-
-  .itemdijes4 {
+  .maintienda #sectiondijes .itemdijes4 {
     grid-column: 1/2;
     grid-row: 4/5;
   }
-
-  .itemdijes5 {
+  .maintienda #sectiondijes .itemdijes5 {
     grid-column: 1/2;
     grid-row: 5/6;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  .h1tienda {
+  .maintienda #sectionrelojes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px repeat(2, 1fr);
+    gap: 20px;
+  }
+  .maintienda #sectionrelojes .itemrelojes {
+    display: flex;
+    justify-content: center;
+  }
+  .maintienda #sectionrelojes .itemrelojes .h1tienda {
     font-size: 40px;
   }
-
-  #sectionrelojes {
+  .maintienda #sectionrelojes .itemrelojes1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding-top: 10px;
+  }
+  .maintienda #sectionrelojes .itemrelojes2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .maintienda #sectionrelojes .itemrelojes3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .maintienda #sectionrelojes .itemrelojes4 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .maintienda #sectionrelojes .itemrelojes5 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .maintienda #sectionpulseras {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 50px repeat(2, 1fr);
     gap: 20px;
   }
-
-  .itemrelojes {
+  .maintienda #sectionpulseras .itempulseras {
     display: flex;
     justify-content: center;
   }
-
-  .itemrelojes1 {
+  .maintienda #sectionpulseras .itempulseras .h1tienda {
+    font-size: 40px;
+  }
+  .maintienda #sectionpulseras .itempulseras1 {
     grid-column: 1/3;
     grid-row: 1/2;
     padding-top: 10px;
   }
-
-  .itemrelojes2 {
+  .maintienda #sectionpulseras .itempulseras2 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-
-  .itemrelojes3 {
+  .maintienda #sectionpulseras .itempulseras3 {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-
-  .itemrelojes4 {
+  .maintienda #sectionpulseras .itempulseras4 {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-
-  .itemrelojes5 {
+  .maintienda #sectionpulseras .itempulseras5 {
     grid-column: 2/3;
     grid-row: 3/4;
   }
-
-  #sectionpulseras {
+  .maintienda #sectionaros {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 50px repeat(2, 1fr);
     gap: 20px;
   }
-
-  .itempulseras {
+  .maintienda #sectionaros .itemaros {
     display: flex;
     justify-content: center;
   }
-
-  .itempulseras1 {
+  .maintienda #sectionaros .itemaros .h1tienda {
+    font-size: 40px;
+  }
+  .maintienda #sectionaros .itemaros1 {
     grid-column: 1/3;
     grid-row: 1/2;
     padding-top: 10px;
   }
-
-  .itempulseras2 {
+  .maintienda #sectionaros .itemaros2 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-
-  .itempulseras3 {
+  .maintienda #sectionaros .itemaros3 {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-
-  .itempulseras4 {
+  .maintienda #sectionaros .itemaros4 {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-
-  .itempulseras5 {
+  .maintienda #sectionaros .itemaros5 {
     grid-column: 2/3;
     grid-row: 3/4;
   }
-
-  #sectionaros {
+  .maintienda #sectiondijes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 50px repeat(2, 1fr);
     gap: 20px;
   }
-
-  .itemaros {
+  .maintienda #sectiondijes .itemdijes {
     display: flex;
     justify-content: center;
   }
-
-  .itemaros1 {
+  .maintienda #sectiondijes .itemdijes .h1tienda {
+    font-size: 40px;
+  }
+  .maintienda #sectiondijes .itemdijes1 {
     grid-column: 1/3;
     grid-row: 1/2;
     padding-top: 10px;
   }
-
-  .itemaros2 {
+  .maintienda #sectiondijes .itemdijes2 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-
-  .itemaros3 {
+  .maintienda #sectiondijes .itemdijes3 {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-
-  .itemaros4 {
+  .maintienda #sectiondijes .itemdijes4 {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-
-  .itemaros5 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-
-  #sectiondijes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 50px repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .itemdijes {
-    display: flex;
-    justify-content: center;
-  }
-
-  .itemdijes1 {
-    grid-column: 1/3;
-    grid-row: 1/2;
-    padding-top: 10px;
-  }
-
-  .itemdijes2 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  .itemdijes3 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  .itemdijes4 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-
-  .itemdijes5 {
+  .maintienda #sectiondijes .itemdijes5 {
     grid-column: 2/3;
     grid-row: 3/4;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1300px) {
-  .h1tienda {
+  .maintienda #sectionrelojes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px repeat(2, 1fr);
+    gap: 20px;
+  }
+  .maintienda #sectionrelojes .itemrelojes {
+    display: flex;
+    justify-content: center;
+  }
+  .maintienda #sectionrelojes .itemrelojes .h1tienda {
     font-size: 45px;
   }
-
-  #sectionrelojes {
+  .maintienda #sectionrelojes .itemrelojes1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding-top: 15px;
+  }
+  .maintienda #sectionrelojes .itemrelojes2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .maintienda #sectionrelojes .itemrelojes3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .maintienda #sectionrelojes .itemrelojes4 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .maintienda #sectionrelojes .itemrelojes5 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .maintienda #sectionpulseras {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 50px repeat(2, 1fr);
     gap: 20px;
   }
-
-  .itemrelojes {
+  .maintienda #sectionpulseras .itempulseras {
     display: flex;
     justify-content: center;
   }
-
-  .itemrelojes1 {
+  .maintienda #sectionpulseras .itempulseras .h1tienda {
+    font-size: 45px;
+  }
+  .maintienda #sectionpulseras .itempulseras1 {
     grid-column: 1/3;
     grid-row: 1/2;
     padding-top: 15px;
   }
-
-  .itemrelojes2 {
+  .maintienda #sectionpulseras .itempulseras2 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-
-  .itemrelojes3 {
+  .maintienda #sectionpulseras .itempulseras3 {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-
-  .itemrelojes4 {
+  .maintienda #sectionpulseras .itempulseras4 {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-
-  .itemrelojes5 {
+  .maintienda #sectionpulseras .itempulseras5 {
     grid-column: 2/3;
     grid-row: 3/4;
   }
-
-  #sectionpulseras {
+  .maintienda #sectionaros {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 50px repeat(2, 1fr);
     gap: 20px;
   }
-
-  .itempulseras {
+  .maintienda #sectionaros .itemaros {
     display: flex;
     justify-content: center;
   }
-
-  .itempulseras1 {
+  .maintienda #sectionaros .itemaros .h1tienda {
+    font-size: 45px;
+  }
+  .maintienda #sectionaros .itemaros1 {
     grid-column: 1/3;
     grid-row: 1/2;
     padding-top: 15px;
   }
-
-  .itempulseras2 {
+  .maintienda #sectionaros .itemaros2 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-
-  .itempulseras3 {
+  .maintienda #sectionaros .itemaros3 {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-
-  .itempulseras4 {
+  .maintienda #sectionaros .itemaros4 {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-
-  .itempulseras5 {
+  .maintienda #sectionaros .itemaros5 {
     grid-column: 2/3;
     grid-row: 3/4;
   }
-
-  #sectionaros {
+  .maintienda #sectiondijes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 50px repeat(2, 1fr);
     gap: 20px;
   }
-
-  .itemaros {
+  .maintienda #sectiondijes .itemdijes {
     display: flex;
     justify-content: center;
   }
-
-  .itemaros1 {
+  .maintienda #sectiondijes .itemdijes .h1tienda {
+    font-size: 45px;
+  }
+  .maintienda #sectiondijes .itemdijes1 {
     grid-column: 1/3;
     grid-row: 1/2;
     padding-top: 15px;
   }
-
-  .itemaros2 {
+  .maintienda #sectiondijes .itemdijes2 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-
-  .itemaros3 {
+  .maintienda #sectiondijes .itemdijes3 {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-
-  .itemaros4 {
+  .maintienda #sectiondijes .itemdijes4 {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-
-  .itemaros5 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-
-  #sectiondijes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 50px repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .itemdijes {
-    display: flex;
-    justify-content: center;
-  }
-
-  .itemdijes1 {
-    grid-column: 1/3;
-    grid-row: 1/2;
-    padding-top: 15px;
-  }
-
-  .itemdijes2 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  .itemdijes3 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  .itemdijes4 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-
-  .itemdijes5 {
+  .maintienda #sectiondijes .itemdijes5 {
     grid-column: 2/3;
     grid-row: 3/4;
   }
 }
 @media only screen and (min-width: 1300px) and (max-width: 1500px) {
-  .h1tienda {
+  .maintienda #sectionrelojes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 1fr;
+    gap: 20px;
+  }
+  .maintienda #sectionrelojes .itemrelojes {
+    display: flex;
+    justify-content: center;
+  }
+  .maintienda #sectionrelojes .itemrelojes .h1tienda {
     font-size: 50px;
   }
-
-  #sectionrelojes {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 50px 1fr;
-    gap: 20px;
-  }
-
-  .itemrelojes {
-    display: flex;
-    justify-content: center;
-  }
-
-  .itemrelojes1 {
+  .maintienda #sectionrelojes .itemrelojes1 {
     grid-column: 1/5;
     grid-row: 1/2;
     padding-top: 5px;
   }
-
-  .itemrelojes2 {
+  .maintienda #sectionrelojes .itemrelojes2 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-
-  .itemrelojes3 {
+  .maintienda #sectionrelojes .itemrelojes3 {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-
-  .itemrelojes4 {
+  .maintienda #sectionrelojes .itemrelojes4 {
     grid-column: 3/4;
     grid-row: 2/3;
   }
-
-  .itemrelojes5 {
+  .maintienda #sectionrelojes .itemrelojes5 {
     grid-column: 4/5;
     grid-row: 2/3;
   }
-
-  #sectionpulseras {
+  .maintienda #sectionpulseras {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 50px 1fr;
     gap: 20px;
   }
-
-  .itempulseras {
+  .maintienda #sectionpulseras .itempulseras {
     display: flex;
     justify-content: center;
   }
-
-  .itempulseras1 {
+  .maintienda #sectionpulseras .itempulseras .h1tienda {
+    font-size: 50px;
+  }
+  .maintienda #sectionpulseras .itempulseras1 {
     grid-column: 1/5;
     grid-row: 1/2;
     padding-top: 5px;
   }
-
-  .itempulseras2 {
+  .maintienda #sectionpulseras .itempulseras2 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-
-  .itempulseras3 {
+  .maintienda #sectionpulseras .itempulseras3 {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-
-  .itempulseras4 {
+  .maintienda #sectionpulseras .itempulseras4 {
     grid-column: 3/4;
     grid-row: 2/3;
   }
-
-  .itempulseras5 {
+  .maintienda #sectionpulseras .itempulseras5 {
     grid-column: 4/5;
     grid-row: 2/3;
   }
-
-  #sectionaros {
+  .maintienda #sectionaros {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 50px 1fr;
     gap: 20px;
   }
-
-  .itemaros {
+  .maintienda #sectionaros .itemaros {
     display: flex;
     justify-content: center;
   }
-
-  .itemaros1 {
+  .maintienda #sectionaros .itemaros .h1tienda {
+    font-size: 50px;
+  }
+  .maintienda #sectionaros .itemaros1 {
     grid-column: 1/5;
     grid-row: 1/2;
     padding-top: 5px;
   }
-
-  .itemaros2 {
+  .maintienda #sectionaros .itemaros2 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-
-  .itemaros3 {
+  .maintienda #sectionaros .itemaros3 {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-
-  .itemaros4 {
+  .maintienda #sectionaros .itemaros4 {
     grid-column: 3/4;
     grid-row: 2/3;
   }
-
-  .itemaros5 {
+  .maintienda #sectionaros .itemaros5 {
     grid-column: 4/5;
     grid-row: 2/3;
   }
-
-  #sectiondijes {
+  .maintienda #sectiondijes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 50px 1fr;
     gap: 20px;
   }
-
-  .itemdijes {
+  .maintienda #sectiondijes .itemdijes {
     display: flex;
     justify-content: center;
   }
-
-  .itemdijes1 {
+  .maintienda #sectiondijes .itemdijes .h1tienda {
+    font-size: 50px;
+  }
+  .maintienda #sectiondijes .itemdijes1 {
     grid-column: 1/5;
     grid-row: 1/2;
     padding-top: 5px;
   }
-
-  .itemdijes2 {
+  .maintienda #sectiondijes .itemdijes2 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-
-  .itemdijes3 {
+  .maintienda #sectiondijes .itemdijes3 {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-
-  .itemdijes4 {
+  .maintienda #sectiondijes .itemdijes4 {
     grid-column: 3/4;
     grid-row: 2/3;
   }
-
-  .itemdijes5 {
+  .maintienda #sectiondijes .itemdijes5 {
     grid-column: 4/5;
     grid-row: 2/3;
   }
 }
-/* FINAL MEDIA QUERIES TIENDA */
-/* FINAL DE TIENDA */
-/* INICIO ACERCA DE */
-.sectionacerca {
+
+.mainacercade .sectionacerca {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   align-self: flex-start;
   flex-wrap: wrap;
 }
-
-.tituloacerca {
+.mainacercade .sectionacerca .tituloacerca {
   display: flex;
 }
-
-.sectionacerca h1 {
+.mainacercade .sectionacerca .tituloacerca h1 {
   font-size: 50px;
   font-family: sans-serif;
   text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
   color: #24262b;
   text-align: center;
 }
-
-.carouselacerca {
+.mainacercade .carouselacerca {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -2097,75 +1858,69 @@ li {
   flex-wrap: wrap;
   gap: 20px;
 }
-
-.carousel, .underacerca iframe {
+.mainacercade .carouselacerca .carousel {
+  width: clamp(250px, 100%, 500px);
+}
+.mainacercade .carouselacerca p {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: clamp(14px, 100%, 25px);
+  background-color: #E7EEEA;
+  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
+  width: clamp(250px, 75%, 500px);
+  height: 215px;
+}
+.mainacercade .underacerca {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-self: center;
+  flex-wrap: wrap;
+}
+.mainacercade .underacerca p {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: clamp(14px, 100%, 25px);
+  background-color: #E7EEEA;
+  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
+  width: clamp(250px, 75%, 500px);
+  height: 215px;
+}
+.mainacercade .underacerca iframe {
   width: clamp(250px, 100%, 500px);
 }
 
-.carouselacerca p {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  font-size: clamp(14px, 100%, 25px);
-  background-color: #E7EEEA;
-  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
-  width: clamp(250px, 75%, 500px);
-  height: 215px;
-}
-
-.underacerca {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  align-self: center;
-  flex-wrap: wrap;
-}
-
-.underacerca p {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  font-size: clamp(14px, 100%, 25px);
-  background-color: #E7EEEA;
-  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
-  width: clamp(250px, 75%, 500px);
-  height: 215px;
-}
-
-/* FINAL ACERCA DE */
-/* INICIO BLOG */
-.sectionblog {
+.mainblog .sectionblog {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   align-self: flex-start;
   flex-wrap: wrap;
 }
-
-.sectionblog h1 {
+.mainblog .sectionblog h1 {
   font-size: 50px;
   font-family: sans-serif;
   text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
   color: #24262b;
   text-align: center;
 }
-
-.subtituloblog {
+.mainblog .subtituloblog {
   display: flex;
   justify-content: center;
   align-items: center;
   align-self: center;
 }
-
-.subtituloblog span {
+.mainblog .subtituloblog span {
   display: block;
   font-family: "Courier New", Courier, monospace;
   white-space: nowrap;
@@ -2173,8 +1928,9 @@ li {
   width: 36ch;
   animation: typing 6s infinite alternate steps(36), blink 0.5s infinite alternate-reverse;
   overflow: hidden;
+  font-size: 16px;
+  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
 }
-
 @keyframes typing {
   from {
     width: 0;
@@ -2185,77 +1941,60 @@ li {
     border-color: transparent;
   }
 }
-.subtituloblog h3 span {
-  font-size: 16px;
-  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
-}
-
-.flexblog {
+.mainblog .flexblog {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
-
-.flexblog .card-img-top {
+.mainblog .flexblog .card-img-top {
   height: 355px;
 }
-
-#flex-i {
+.mainblog .flexblog .card-img-top #flex-i {
   display: grid;
   grid-template-columns: repeat(3, 25px) repeat(4, 1fr);
   gap: 15px;
 }
-
-.flex-i {
+.mainblog .flexblog .card-img-top .flex-i {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
-.fa-heart {
+.mainblog .flexblog .card-img-top .flex-i .fa-heart {
   grid-column: 1/2;
 }
-
-.fa-comment-alt {
+.mainblog .flexblog .card-img-top .flex-i .fa-comment-alt {
   grid-column: 2/3;
 }
-
-.fa-paper-plane {
+.mainblog .flexblog .card-img-top .flex-i .fa-paper-plane {
   grid-column: 3/4;
 }
-
-.fa-bookmark {
+.mainblog .flexblog .card-img-top .flex-i .fa-bookmark {
   grid-column: 8/9;
 }
 
-/* FINAL BLOG */
-/* INICIO CONTACTO */
-.sectioncontacto {
+.maincontacto .sectioncontacto {
   display: flex;
   justify-content: center;
   align-items: center;
   align-self: center;
   flex-wrap: wrap;
 }
-
-.sectioncontacto h1 {
+.maincontacto .sectioncontacto h1 {
   font-size: 50px;
   font-family: sans-serif;
   text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
   color: #24262b;
   text-align: center;
 }
-
-.parrafocontacto {
+.maincontacto .parrafocontacto {
   display: flex;
   justify-content: center;
   align-items: center;
   align-self: center;
   flex-wrap: wrap;
 }
-
-.parrafocontacto p {
+.maincontacto .parrafocontacto p {
   text-align: center;
   display: flex;
   justify-content: center;
@@ -2270,52 +2009,43 @@ li {
   height: 75px;
   width: 350px;
 }
-
-form {
+.maincontacto form {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   flex-wrap: wrap;
+  flex-direction: column;
 }
-
-.formnombre1, .formenviar, .formmensaje1, .formnumero1, .formemail1, .formapellido1 {
+.maincontacto form .formnombre1, .maincontacto form .formenviar, .maincontacto form .formmensaje1, .maincontacto form .formnumero1, .maincontacto form .formemail1, .maincontacto form .formapellido1 {
   width: 300px;
   border: 2px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
 }
-
-.form--form {
+.maincontacto form .form--form {
   font-family: sans-serif;
   font-size: 25px;
   color: #2E302F;
 }
-
-.form--form1 {
+.maincontacto form .form--form1 {
   font-family: sans-serif;
   font-size: 25px;
   color: #2E302F;
 }
-
-.form--form2 {
+.maincontacto form .form--form2 {
   font-family: sans-serif;
   font-size: 25px;
   color: #2E302F;
 }
-
-.form--form3 {
+.maincontacto form .form--form3 {
   font-family: sans-serif;
   font-size: 25px;
   color: #2E302F;
 }
-
-.form--form4 {
+.maincontacto form .form--form4 {
   font-family: sans-serif;
   font-size: 25px;
   color: #2E302F;
 }
-
-/* FINAL CONTACTO */
 
 /*# sourceMappingURL=estilos.css.map */
