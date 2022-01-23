@@ -61,19 +61,25 @@
         </div>
         <!-- inicio formulario de contacto -->
         <div class="formulariocontacto" id="formulariocontacto">
-            <form action="" class="formform">
-                <label class="form--form" for="nombre">Introduce tu nombre</label>
-                <input class="formnombre1" type="text" placeholder="Nombre"><br>
-                <label class="form--form1" for="apellido">Introduce tu apellido</label>
-                <input class="formapellido1" type="text" placeholder="Apellido"><br>
-                <label class="form--form2" for="email">Introduce tu email</label>
-                <input class="formemail1" type="email" id="mail" placeholder="Email" required><br>
-                <label class="form--form3" for="number">Introduce tu teléfono</label>
-                <input class="formnumero1" type="numero" placeholder="Teléfono"><br>
-                <label class="form--form4" for="mensaje">Escribe tu mensaje aquí</label><br>
-                <textarea class="formmensaje1" cols="30" rows="10" placeholder="Mensaje"></textarea><br>
-                <input class="formenviar" type="submit" value="Enviar">
-                <br>
+            <form action="" class="formform container">
+                <div class="divform1 row-cols-2">
+                    <label class="form--form col-6" for="nombre">Introduce tu nombre</label>
+                    <input class="formnombre1 col-6" type="text" placeholder="Nombre" required>
+                    <label class="form--form1 col-6" for="apellido">Introduce tu apellido</label>
+                    <input class="formapellido1 col-6" type="text" placeholder="Apellido" required>
+                </div>
+                <div class="divform2 row-cols-2">
+                    <label class="form--form2 col-6" for="email">Introduce tu email</label>
+                    <input class="formemail1 col-6" type="email" id="mail" placeholder="Email" required>
+                    <label class="form--form3 col-6" for="number">Introduce tu teléfono</label>
+                    <input class="formnumero1 col-6" type="numero" placeholder="Teléfono" required>
+                </div>
+                <div class="divform3">
+                    <label class="form--form4" for="mensaje">Escribe tu mensaje aquí</label>
+                    <textarea class="formmensaje1" cols="30" rows="10" placeholder="Mensaje" required></textarea><br>
+                    <input class="formenviar" type="submit" value="Enviar">
+                    <br>
+                </div>
             </form>
         </div>
         <!-- final formulario de contacto -->

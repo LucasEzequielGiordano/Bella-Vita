@@ -2253,34 +2253,42 @@ header {
         align-items: center;
         flex-wrap: wrap;
         flex-direction: column;
-
-        .formnombre1 {
-            width: 300px;
-            border: 2px solid #ccc;
-            border-radius: 5px;
-            box-shadow: $bshadow;
+        .divform1 {
+            text-align: center;
+            .formnombre1 {
+                width: 300px;
+                border: 2px solid #ccc;
+                border-radius: 5px;
+                box-shadow: $bshadow;
+            }
+            .formapellido1 {
+                @extend .formnombre1;
+            }
         }
-
-        .formapellido1 {
-            @extend .formnombre1;
+        .divform2 {
+            text-align: center;
+            .formemail1 {
+                width: 300px;
+                border: 2px solid #ccc;
+                border-radius: 5px;
+                box-shadow: $bshadow;;
+            }
+            .formnumero1 {
+                @extend .formemail1;
+            }
         }
-
-        .formemail1 {
-            @extend .formnombre1;
+        .divform3 {
+            display: flex;
+            flex-direction: column;
+            .formmensaje1 {
+                width: 300px;
+                border: 2px solid #ccc;
+                border-radius: 5px;
+                box-shadow: $bshadow;            }
+            .formenviar {
+                @extend .formmensaje1;
+            }
         }
-
-        .formnumero1 {
-            @extend .formnombre1;
-        }
-
-        .formmensaje1 {
-            @extend .formnombre1;
-        }
-
-        .formenviar {
-            @extend .formnombre1;
-        }
-
         @each $name,
         $font in $formularios {
             .form--#{$name} {

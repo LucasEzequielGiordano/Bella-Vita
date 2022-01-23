@@ -2016,7 +2016,29 @@ header li {
   flex-wrap: wrap;
   flex-direction: column;
 }
-.maincontacto form .formnombre1, .maincontacto form .formenviar, .maincontacto form .formmensaje1, .maincontacto form .formnumero1, .maincontacto form .formemail1, .maincontacto form .formapellido1 {
+.maincontacto form .divform1 {
+  text-align: center;
+}
+.maincontacto form .divform1 .formnombre1, .maincontacto form .divform1 .formapellido1 {
+  width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
+}
+.maincontacto form .divform2 {
+  text-align: center;
+}
+.maincontacto form .divform2 .formemail1, .maincontacto form .divform2 .formnumero1 {
+  width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
+}
+.maincontacto form .divform3 {
+  display: flex;
+  flex-direction: column;
+}
+.maincontacto form .divform3 .formmensaje1, .maincontacto form .divform3 .formenviar {
   width: 300px;
   border: 2px solid #ccc;
   border-radius: 5px;
