@@ -157,49 +157,49 @@ header li {
   text-align: center;
   width: clamp(100px, 50%, 400px);
 }
-
 @media only screen and (min-width: 320px) and (max-width: 500px) {
-  .jumbotron {
+  .main .container-fluid .jumbotron {
     padding-top: 75%;
     padding-bottom: 150%;
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 637px) {
-  .jumbotron {
+  .main .container-fluid .jumbotron {
     padding-top: 50%;
     padding-bottom: 125%;
   }
 }
 @media only screen and (min-width: 637px) and (max-width: 674px) {
-  .jumbotron {
+  .main .container-fluid .jumbotron {
     padding-top: 50%;
     padding-bottom: 115%;
   }
 }
 @media only screen and (min-width: 674px) and (max-width: 715px) {
-  .jumbotron {
+  .main .container-fluid .jumbotron {
     padding-top: 50%;
     padding-bottom: 105%;
   }
 }
 @media only screen and (min-width: 715px) and (max-width: 880px) {
-  .jumbotron {
+  .main .container-fluid .jumbotron {
     padding-top: 50%;
     padding-bottom: 75%;
   }
 }
 @media only screen and (min-width: 880px) and (max-width: 1150px) {
-  .jumbotron {
+  .main .container-fluid .jumbotron {
     padding-top: 45%;
     padding-bottom: 50%;
   }
 }
 @media only screen and (min-width: 1150px) and (max-width: 1325px) {
-  .jumbotron {
+  .main .container-fluid .jumbotron {
     padding-top: 30%;
     padding-bottom: 50%;
   }
 }
+
 .maintienda #sectionrelojes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1941,36 +1941,81 @@ header li {
     border-color: transparent;
   }
 }
-.mainblog .flexblog {
+.mainblog .divglobal1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.mainblog .divglobal1 .cardblog {
+  width: 300px;
+  position: relative;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
+  cursor: pointer;
 }
-.mainblog .flexblog .card-img-top {
-  height: 355px;
-}
-.mainblog .flexblog .card-img-top #flex-i {
-  display: grid;
-  grid-template-columns: repeat(3, 25px) repeat(4, 1fr);
-  gap: 15px;
-}
-.mainblog .flexblog .card-img-top .flex-i {
+.mainblog .divglobal1 .cardblog .card-usuario,
+.mainblog .divglobal1 .cardblog .card-contenido {
+  width: 95%;
+  position: absolute;
+  margin-bottom: 5px;
+  padding: 7px 10px;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  align-items: center;
+  background: white;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: all 0.4s;
 }
-.mainblog .flexblog .card-img-top .flex-i .fa-heart {
-  grid-column: 1/2;
+.mainblog .divglobal1 .cardblog .card-usuario {
+  top: -30px;
+  box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.089), 0 20px 20px rgba(0, 0, 0, 0.089);
 }
-.mainblog .flexblog .card-img-top .flex-i .fa-comment-alt {
-  grid-column: 2/3;
+.mainblog .divglobal1 .cardblog .card-usuario img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid #d72f80;
 }
-.mainblog .flexblog .card-img-top .flex-i .fa-paper-plane {
-  grid-column: 3/4;
+.mainblog .divglobal1 .cardblog .card-usuario div {
+  padding-left: 8px;
 }
-.mainblog .flexblog .card-img-top .flex-i .fa-bookmark {
-  grid-column: 8/9;
+.mainblog .divglobal1 .cardblog .card-usuario div p:nth-child(1) {
+  font-size: 13px;
+  font-weight: 700;
+}
+.mainblog .divglobal1 .cardblog .card-usuario div p:nth-child(2) {
+  font-size: 10px;
+}
+.mainblog .divglobal1 .cardblog .card-imagen {
+  width: 300px;
+}
+.mainblog .divglobal1 .cardblog .card-imagen img {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.247);
+}
+.mainblog .divglobal1 .cardblog .card-contenido {
+  padding: 12px 0;
+  justify-content: space-evenly;
+  bottom: -20px;
+  box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.089), 0 20px 20px rgba(0, 0, 0, 0.089);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.4s;
+}
+.mainblog .divglobal1 .cardblog .card-contenido i {
+  color: rgba(59, 59, 59, 0.514);
+  text-shadow: inset 0 0 10px rgba(255, 53, 53, 0.342);
+}
+.mainblog .divglobal1 .cardblog:hover .card-contenido,
+.mainblog .divglobal1 .cardblog:hover .card-usuario {
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 .maincontacto .sectioncontacto {
@@ -2039,7 +2084,6 @@ header li {
   flex-direction: column;
 }
 .maincontacto form .divform3 .formmensaje1, .maincontacto form .divform3 .formenviar {
-  width: 300px;
   border: 2px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);

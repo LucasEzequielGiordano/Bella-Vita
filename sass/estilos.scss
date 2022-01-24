@@ -158,7 +158,6 @@ header {
     }
 }
 
-
 // final de nav y footer
 // inicio de index
 
@@ -226,55 +225,55 @@ header {
                 width: clamp(100px, 50%, 400px);
             }
         }
-    }
-}
 
-@media only screen and (min-width: 320px) and (max-width: 500px) {
-    .jumbotron {
-        padding-top: 75%;
-        padding-bottom: 150%;
-    }
-}
+        @media only screen and (min-width: 320px) and (max-width: 500px) {
+            .jumbotron {
+                padding-top: 75%;
+                padding-bottom: 150%;
+            }
+        }
 
-@media only screen and (min-width: 500px) and (max-width: 637px) {
-    .jumbotron {
-        padding-top: 50%;
-        padding-bottom: 125%;
-    }
-}
+        @media only screen and (min-width: 500px) and (max-width: 637px) {
+            .jumbotron {
+                padding-top: 50%;
+                padding-bottom: 125%;
+            }
+        }
 
-@media only screen and (min-width: 637px) and (max-width: 674px) {
-    .jumbotron {
-        padding-top: 50%;
-        padding-bottom: 115%;
-    }
-}
+        @media only screen and (min-width: 637px) and (max-width: 674px) {
+            .jumbotron {
+                padding-top: 50%;
+                padding-bottom: 115%;
+            }
+        }
 
-@media only screen and (min-width: 674px) and (max-width: 715px) {
-    .jumbotron {
-        padding-top: 50%;
-        padding-bottom: 105%;
-    }
-}
+        @media only screen and (min-width: 674px) and (max-width: 715px) {
+            .jumbotron {
+                padding-top: 50%;
+                padding-bottom: 105%;
+            }
+        }
 
-@media only screen and (min-width: 715px) and (max-width: 880px) {
-    .jumbotron {
-        padding-top: 50%;
-        padding-bottom: 75%;
-    }
-}
+        @media only screen and (min-width: 715px) and (max-width: 880px) {
+            .jumbotron {
+                padding-top: 50%;
+                padding-bottom: 75%;
+            }
+        }
 
-@media only screen and (min-width: 880px) and (max-width: 1150px) {
-    .jumbotron {
-        padding-top: 45%;
-        padding-bottom: 50%;
-    }
-}
+        @media only screen and (min-width: 880px) and (max-width: 1150px) {
+            .jumbotron {
+                padding-top: 45%;
+                padding-bottom: 50%;
+            }
+        }
 
-@media only screen and (min-width: 1150px) and (max-width: 1325px) {
-    .jumbotron {
-        padding-top: 30%;
-        padding-bottom: 50%;
+        @media only screen and (min-width: 1150px) and (max-width: 1325px) {
+            .jumbotron {
+                padding-top: 30%;
+                padding-bottom: 50%;
+            }
+        }
     }
 }
 
@@ -305,7 +304,7 @@ header {
                 color: #24262b;
                 text-align: center;
             }
-        } 
+        }
 
         .itemrelojes2 {
             grid-column: 1/2;
@@ -2163,42 +2162,92 @@ header {
         }
     }
 
-    .flexblog {
+    .divglobal1 {
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-evenly;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 25px;
 
-        .card-img-top {
-            height: 355px;
+        .cardblog {
+            width: 300px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
 
-            #flex-i {
-                display: grid;
-                grid-template-columns: repeat(3, 25px) repeat(4, 1fr);
-                gap: 15px;
-            }
-
-            .flex-i {
+            .card-usuario,
+            .card-contenido {
+                width: 95%;
+                position: absolute;
+                margin-bottom: 5px;
+                padding: 7px 10px;
                 display: flex;
-                justify-content: space-around;
-                flex-wrap: wrap;
+                align-items: center;
+                background: rgb(255, 255, 255);
+                backdrop-filter: blur(10px);
+                border-radius: 10px;
+                transform: translateY(-20px);
+                opacity: 0;
+                transition: all 0.4s;
+            }
 
-                .fa-heart {
-                    grid-column: 1/2;
+            .card-usuario {
+                top: -30px;
+                box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.089), 0 20px 20px rgba(0, 0, 0, 0.089);
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50px;
+                    border: 2px solid rgb(215, 47, 128);
                 }
 
-                .fa-comment-alt {
-                    grid-column: 2/3;
-                }
+                div {
+                    padding-left: 8px;
 
-                .fa-paper-plane {
-                    grid-column: 3/4;
-                }
+                    p:nth-child(1) {
+                        font-size: 13px;
+                        font-weight: 700;
+                    }
 
-                .fa-bookmark {
-                    grid-column: 8/9;
+                    p:nth-child(2) {
+                        font-size: 10px;
+                    }
                 }
             }
+
+            .card-imagen {
+                width: 300px;
+
+                img {
+                    width: 100%;
+                    height: 350px;
+                    border-radius: 10px;
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.247);
+                }
+            }
+
+            .card-contenido {
+                padding: 12px 0;
+                justify-content: space-evenly;
+                bottom: -20px;
+                box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.089), 0 20px 20px rgba(0, 0, 0, 0.089);
+                transform: translateY(20px);
+                opacity: 0;
+                transition: all 0.4s;
+
+                i {
+                    color: rgba(59, 59, 59, 0.514);
+                    text-shadow: inset 0 0 10px rgba(255, 53, 53, 0.342);
+                }
+            }
+        }
+
+        .cardblog:hover .card-contenido,
+        .cardblog:hover .card-usuario {
+            transform: translateY(0px);
+            opacity: 1;
         }
     }
 }
@@ -2253,42 +2302,53 @@ header {
         align-items: center;
         flex-wrap: wrap;
         flex-direction: column;
+
         .divform1 {
             text-align: center;
+
             .formnombre1 {
                 width: 300px;
                 border: 2px solid #ccc;
                 border-radius: 5px;
                 box-shadow: $bshadow;
             }
+
             .formapellido1 {
                 @extend .formnombre1;
             }
         }
+
         .divform2 {
             text-align: center;
+
             .formemail1 {
                 width: 300px;
                 border: 2px solid #ccc;
                 border-radius: 5px;
-                box-shadow: $bshadow;;
+                box-shadow: $bshadow;
+                ;
             }
+
             .formnumero1 {
                 @extend .formemail1;
             }
         }
+
         .divform3 {
             display: flex;
             flex-direction: column;
+
             .formmensaje1 {
-                width: 300px;
                 border: 2px solid #ccc;
                 border-radius: 5px;
-                box-shadow: $bshadow;            }
+                box-shadow: $bshadow;
+            }
+
             .formenviar {
                 @extend .formmensaje1;
             }
         }
+
         @each $name,
         $font in $formularios {
             .form--#{$name} {
