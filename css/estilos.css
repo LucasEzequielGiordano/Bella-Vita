@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "poppins", sans-serif;
   font-size: 16px;
 }
 
@@ -51,7 +52,7 @@ header li {
   border: 1px solid #ccc;
   width: 40px;
   height: 40px;
-  line-height: 31px;
+  line-height: 35px;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
@@ -121,8 +122,7 @@ header li {
 .main .container-fluid .jumbotron .display-4 {
   visibility: visible;
   font-size: 50px;
-  font-family: sans-serif;
-  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
+  font-family: "poppins", sans-serif;
 }
 .main .container-fluid .jumbotron .my-4 {
   visibility: visible;
@@ -131,8 +131,7 @@ header li {
   visibility: visible;
   height: clamp(100px, 50%, 400px);
   font-size: 25px;
-  font-family: sans-serif;
-  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
+  font-family: "poppins", sans-serif;
 }
 .main .container-fluid .jumbotron a {
   visibility: visible;
@@ -149,9 +148,9 @@ header li {
   background-color: #E7EEEA;
   color: #2E302F;
   font-size: 500;
-  border: 1px solid #ccc;
+  border: 1px solid #E7EEEA;
   border-radius: 50px;
-  box-shadow: 0 0 5px #4b4c4d, 0 0 25px #4b4c4d, 0 0 50px #4b4c4d, 0 0 200px #4b4c4d;
+  box-shadow: 0 0 5px #000, 0 0 25px #E7EEEA, 0 0 50px #E7EEEA, 0 0 75px #E7EEEA;
 }
 .main .container-fluid .jumbotron .btn-tienda {
   text-align: center;
@@ -200,6 +199,9 @@ header li {
   }
 }
 
+.maintienda {
+  overflow-x: hidden;
+}
 .maintienda #sectionrelojes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -217,9 +219,8 @@ header li {
 }
 .maintienda #sectionrelojes .itemrelojes1 .h1tienda {
   font-size: 50px;
-  font-family: sans-serif;
-  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
-  color: #24262b;
+  font-family: "poppins", sans-serif;
+  color: #000;
   text-align: center;
 }
 .maintienda #sectionrelojes .itemrelojes2 {
@@ -264,24 +265,27 @@ header li {
 .maintienda #sectionrelojes .itemrelojes2 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
   text-align: start;
+  text-shadow: -1px -1px 1px #000;
   padding-left: 20px;
 }
 .maintienda #sectionrelojes .itemrelojes2 figure:hover > .efectocard h4 {
-  color: #39b54a;
+  color: #00A650;
   font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
   text-align: left;
+  text-shadow: -1px -1px 1px #E7EEEA;
   padding-left: 20px;
 }
 .maintienda #sectionrelojes .itemrelojes2 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   text-align: left;
+  text-shadow: -1px -1px 1px #000;
   padding-left: 20px;
 }
 .maintienda #sectionrelojes .itemrelojes3 {
@@ -326,25 +330,28 @@ header li {
 .maintienda #sectionrelojes .itemrelojes3 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #000;
   text-align: start;
   padding-left: 20px;
 }
 .maintienda #sectionrelojes .itemrelojes3 figure:hover > .efectocard h4 {
-  color: #39b54a;
+  color: #00A650;
   font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
   text-align: left;
+  text-shadow: -1px -1px 1px #E7EEEA;
   padding-left: 20px;
 }
 .maintienda #sectionrelojes .itemrelojes3 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   text-align: left;
   padding-left: 20px;
+  text-shadow: -1px -1px 1px #000;
 }
 .maintienda #sectionrelojes .itemrelojes4 {
   grid-column: 3/4;
@@ -388,23 +395,26 @@ header li {
 .maintienda #sectionrelojes .itemrelojes4 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #000;
   text-align: start;
   padding-left: 20px;
 }
 .maintienda #sectionrelojes .itemrelojes4 figure:hover > .efectocard h4 {
-  color: #39b54a;
+  color: #00A650;
   font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #E7EEEA;
   text-align: left;
   padding-left: 20px;
 }
 .maintienda #sectionrelojes .itemrelojes4 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
+  text-shadow: -1px -1px 1px #000;
   text-align: left;
   padding-left: 20px;
 }
@@ -450,23 +460,26 @@ header li {
 .maintienda #sectionrelojes .itemrelojes5 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #000;
   text-align: start;
   padding-left: 20px;
 }
 .maintienda #sectionrelojes .itemrelojes5 figure:hover > .efectocard h4 {
-  color: #39b54a;
+  color: #00A650;
   font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #E7EEEA;
   text-align: left;
   padding-left: 20px;
 }
 .maintienda #sectionrelojes .itemrelojes5 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
+  text-shadow: -1px -1px 1px #000;
   text-align: left;
   padding-left: 20px;
 }
@@ -487,8 +500,7 @@ header li {
 }
 .maintienda #sectionpulseras .itempulseras1 .h1tienda {
   font-size: 50px;
-  font-family: sans-serif;
-  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
+  font-family: "poppins", sans-serif;
   color: #24262b;
   text-align: center;
 }
@@ -534,23 +546,26 @@ header li {
 .maintienda #sectionpulseras .itempulseras2 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #000;
   text-align: start;
   padding-left: 20px;
 }
 .maintienda #sectionpulseras .itempulseras2 figure:hover > .efectocard h4 {
-  color: #39b54a;
+  color: #00A650;
   font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #E7EEEA;
   text-align: left;
   padding-left: 20px;
 }
 .maintienda #sectionpulseras .itempulseras2 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
+  text-shadow: -1px -1px 1px #000;
   text-align: left;
   padding-left: 20px;
 }
@@ -596,23 +611,26 @@ header li {
 .maintienda #sectionpulseras .itempulseras3 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #000;
   text-align: start;
   padding-left: 20px;
 }
 .maintienda #sectionpulseras .itempulseras3 figure:hover > .efectocard h4 {
-  color: #39b54a;
+  color: #00A650;
   font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #E7EEEA;
   text-align: left;
   padding-left: 20px;
 }
 .maintienda #sectionpulseras .itempulseras3 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
+  text-shadow: -1px -1px 1px #000;
   text-align: left;
   padding-left: 20px;
 }
@@ -658,23 +676,26 @@ header li {
 .maintienda #sectionpulseras .itempulseras4 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #000;
   text-align: start;
   padding-left: 20px;
 }
 .maintienda #sectionpulseras .itempulseras4 figure:hover > .efectocard h4 {
-  color: #39b54a;
+  color: #00A650;
   font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #E7EEEA;
   text-align: left;
   padding-left: 20px;
 }
 .maintienda #sectionpulseras .itempulseras4 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
+  text-shadow: -1px -1px 1px #000;
   text-align: left;
   padding-left: 20px;
 }
@@ -720,23 +741,26 @@ header li {
 .maintienda #sectionpulseras .itempulseras5 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #000;
   text-align: start;
   padding-left: 20px;
 }
 .maintienda #sectionpulseras .itempulseras5 figure:hover > .efectocard h4 {
-  color: #39b54a;
+  color: #00A650;
   font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #E7EEEA;
   text-align: left;
   padding-left: 20px;
 }
 .maintienda #sectionpulseras .itempulseras5 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
+  text-shadow: -1px -1px 1px #000;
   text-align: left;
   padding-left: 20px;
 }
@@ -757,8 +781,7 @@ header li {
 }
 .maintienda #sectionaros .itemaros1 .h1tienda {
   font-size: 50px;
-  font-family: sans-serif;
-  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
+  font-family: "poppins", sans-serif;
   color: #24262b;
   text-align: center;
 }
@@ -804,23 +827,26 @@ header li {
 .maintienda #sectionaros .itemaros2 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #000;
   text-align: start;
   padding-left: 20px;
 }
 .maintienda #sectionaros .itemaros2 figure:hover > .efectocard h4 {
-  color: #39b54a;
+  color: #00A650;
   font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #E7EEEA;
   text-align: left;
   padding-left: 20px;
 }
 .maintienda #sectionaros .itemaros2 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
+  text-shadow: -1px -1px 1px #000;
   text-align: left;
   padding-left: 20px;
 }
@@ -866,23 +892,26 @@ header li {
 .maintienda #sectionaros .itemaros3 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #000;
   text-align: start;
   padding-left: 20px;
 }
 .maintienda #sectionaros .itemaros3 figure:hover > .efectocard h4 {
-  color: #39b54a;
+  color: #00A650;
   font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #E7EEEA;
   text-align: left;
   padding-left: 20px;
 }
 .maintienda #sectionaros .itemaros3 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
+  text-shadow: -1px -1px 1px #000;
   text-align: left;
   padding-left: 20px;
 }
@@ -928,23 +957,26 @@ header li {
 .maintienda #sectionaros .itemaros4 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #000;
   text-align: start;
   padding-left: 20px;
 }
 .maintienda #sectionaros .itemaros4 figure:hover > .efectocard h4 {
-  color: #39b54a;
+  color: #00A650;
   font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #E7EEEA;
   text-align: left;
   padding-left: 20px;
 }
 .maintienda #sectionaros .itemaros4 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
+  text-shadow: -1px -1px 1px #000;
   text-align: left;
   padding-left: 20px;
 }
@@ -990,23 +1022,26 @@ header li {
 .maintienda #sectionaros .itemaros5 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #000;
   text-align: start;
   padding-left: 20px;
 }
 .maintienda #sectionaros .itemaros5 figure:hover > .efectocard h4 {
-  color: #39b54a;
+  color: #00A650;
   font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #E7EEEA;
   text-align: left;
   padding-left: 20px;
 }
 .maintienda #sectionaros .itemaros5 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
+  text-shadow: -1px -1px 1px #000;
   text-align: left;
   padding-left: 20px;
 }
@@ -1027,8 +1062,7 @@ header li {
 }
 .maintienda #sectiondijes .itemdijes1 .h1tienda {
   font-size: 50px;
-  font-family: sans-serif;
-  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
+  font-family: "poppins", sans-serif;
   color: #24262b;
   text-align: center;
 }
@@ -1074,23 +1108,26 @@ header li {
 .maintienda #sectiondijes .itemdijes2 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #000;
   text-align: start;
   padding-left: 20px;
 }
 .maintienda #sectiondijes .itemdijes2 figure:hover > .efectocard h4 {
-  color: #39b54a;
+  color: #00A650;
   font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #E7EEEA;
   text-align: left;
   padding-left: 20px;
 }
 .maintienda #sectiondijes .itemdijes2 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
+  text-shadow: -1px -1px 1px #000;
   text-align: left;
   padding-left: 20px;
 }
@@ -1136,23 +1173,26 @@ header li {
 .maintienda #sectiondijes .itemdijes3 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #000;
   text-align: start;
   padding-left: 20px;
 }
 .maintienda #sectiondijes .itemdijes3 figure:hover > .efectocard h4 {
-  color: #39b54a;
+  color: #00A650;
   font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #E7EEEA;
   text-align: left;
   padding-left: 20px;
 }
 .maintienda #sectiondijes .itemdijes3 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
+  text-shadow: -1px -1px 1px #000;
   text-align: left;
   padding-left: 20px;
 }
@@ -1198,23 +1238,26 @@ header li {
 .maintienda #sectiondijes .itemdijes4 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #000;
   text-align: start;
   padding-left: 20px;
 }
 .maintienda #sectiondijes .itemdijes4 figure:hover > .efectocard h4 {
-  color: #39b54a;
+  color: #00A650;
   font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #E7EEEA;
   text-align: left;
   padding-left: 20px;
 }
 .maintienda #sectiondijes .itemdijes4 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
+  text-shadow: -1px -1px 1px #000;
   text-align: left;
   padding-left: 20px;
 }
@@ -1260,23 +1303,26 @@ header li {
 .maintienda #sectiondijes .itemdijes5 figure:hover > .efectocard h3 {
   color: #E7EEEA;
   font-size: 30px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #000;
   text-align: start;
   padding-left: 20px;
 }
 .maintienda #sectiondijes .itemdijes5 figure:hover > .efectocard h4 {
-  color: #39b54a;
+  color: #00A650;
   font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   font-weight: 600;
+  text-shadow: -1px -1px 1px #E7EEEA;
   text-align: left;
   padding-left: 20px;
 }
 .maintienda #sectiondijes .itemdijes5 figure:hover > .efectocard p {
   color: #E7EEEA;
   font-size: 14px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
+  text-shadow: -1px -1px 1px #E7EEEA;
   text-align: left;
   padding-left: 20px;
 }
@@ -1845,8 +1891,7 @@ header li {
 }
 .mainacercade .sectionacerca .tituloacerca h1 {
   font-size: 50px;
-  font-family: sans-serif;
-  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
+  font-family: "poppins", sans-serif;
   color: #24262b;
   text-align: center;
 }
@@ -1871,7 +1916,7 @@ header li {
   gap: 20px;
   font-size: clamp(14px, 100%, 25px);
   background-color: #E7EEEA;
-  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
+  box-shadow: 0 10px 20px rgba(3, 19, 23, 0.25);
   width: clamp(250px, 75%, 500px);
   height: 215px;
 }
@@ -1892,7 +1937,7 @@ header li {
   gap: 20px;
   font-size: clamp(14px, 100%, 25px);
   background-color: #E7EEEA;
-  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
+  box-shadow: 0 10px 20px rgba(3, 19, 23, 0.25);
   width: clamp(250px, 75%, 500px);
   height: 215px;
 }
@@ -1909,8 +1954,7 @@ header li {
 }
 .mainblog .sectionblog h1 {
   font-size: 50px;
-  font-family: sans-serif;
-  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
+  font-family: "poppins", sans-serif;
   color: #24262b;
   text-align: center;
 }
@@ -1922,14 +1966,13 @@ header li {
 }
 .mainblog .subtituloblog span {
   display: block;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
   white-space: nowrap;
   border-right: 2px solid;
-  width: 36ch;
-  animation: typing 6s infinite alternate steps(36), blink 0.5s infinite alternate-reverse;
+  width: 32ch;
+  animation: typing 7s infinite alternate steps(32), blink 0.5s infinite alternate-reverse;
   overflow: hidden;
   font-size: 16px;
-  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
 }
 @keyframes typing {
   from {
@@ -1946,7 +1989,7 @@ header li {
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 50px;
 }
 .mainblog .divglobal1 .cardblog {
   width: 300px;
@@ -1971,7 +2014,7 @@ header li {
   transition: all 0.4s;
 }
 .mainblog .divglobal1 .cardblog .card-usuario {
-  top: -30px;
+  top: -40px;
   box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.089), 0 20px 20px rgba(0, 0, 0, 0.089);
 }
 .mainblog .divglobal1 .cardblog .card-usuario img {
@@ -1986,6 +2029,7 @@ header li {
 .mainblog .divglobal1 .cardblog .card-usuario div p:nth-child(1) {
   font-size: 13px;
   font-weight: 700;
+  transform: translate(0px, 10px);
 }
 .mainblog .divglobal1 .cardblog .card-usuario div p:nth-child(2) {
   font-size: 10px;
@@ -2001,14 +2045,30 @@ header li {
 }
 .mainblog .divglobal1 .cardblog .card-contenido {
   padding: 12px 0;
-  justify-content: space-evenly;
   bottom: -20px;
   box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.089), 0 20px 20px rgba(0, 0, 0, 0.089);
   transform: translateY(20px);
   opacity: 0;
   transition: all 0.4s;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
 }
-.mainblog .divglobal1 .cardblog .card-contenido i {
+.mainblog .divglobal1 .cardblog .card-contenido .divp {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.mainblog .divglobal1 .cardblog .card-contenido .divp p {
+  text-align: center;
+}
+.mainblog .divglobal1 .cardblog .card-contenido .divi {
+  display: flex;
+  justify-content: center;
+  gap: 65px;
+}
+.mainblog .divglobal1 .cardblog .card-contenido .divi i {
   color: rgba(59, 59, 59, 0.514);
   text-shadow: inset 0 0 10px rgba(255, 53, 53, 0.342);
 }
@@ -2018,6 +2078,9 @@ header li {
   opacity: 1;
 }
 
+.maincontacto {
+  overflow-x: hidden;
+}
 .maincontacto .sectioncontacto {
   display: flex;
   justify-content: center;
@@ -2027,8 +2090,7 @@ header li {
 }
 .maincontacto .sectioncontacto h1 {
   font-size: 50px;
-  font-family: sans-serif;
-  text-shadow: #fff -1px -1px 0px, #444 1px 1px 0px;
+  font-family: "poppins", sans-serif;
   color: #24262b;
   text-align: center;
 }
@@ -2036,7 +2098,6 @@ header li {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-self: center;
   flex-wrap: wrap;
 }
 .maincontacto .parrafocontacto p {
@@ -2049,10 +2110,11 @@ header li {
   gap: 20px;
   font-size: clamp(14px, 100%, 25px);
   background-color: #E7EEEA;
-  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
+  box-shadow: 0 10px 20px rgba(3, 19, 23, 0.25);
   width: clamp(250px, 75%, 500px);
-  height: 75px;
+  height: 100px;
   width: 350px;
+  padding: 5px;
 }
 .maincontacto form {
   display: flex;
@@ -2068,7 +2130,7 @@ header li {
   width: 300px;
   border: 2px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
+  box-shadow: 0 10px 10px rgba(3, 19, 23, 0.25);
 }
 .maincontacto form .divform2 {
   text-align: center;
@@ -2077,39 +2139,46 @@ header li {
   width: 300px;
   border: 2px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
+  box-shadow: 0 10px 10px rgba(3, 19, 23, 0.25);
 }
 .maincontacto form .divform3 {
-  display: flex;
-  flex-direction: column;
+  text-align: center;
 }
-.maincontacto form .divform3 .formmensaje1, .maincontacto form .divform3 .formenviar {
+.maincontacto form .divform3 label {
+  text-align: center;
+}
+.maincontacto form .divform3 .formmensaje1 {
+  width: 325px;
   border: 2px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
+  box-shadow: 0 10px 10px rgba(3, 19, 23, 0.25);
+}
+.maincontacto form .formenviar {
+  width: 150px;
+  text-align: center;
 }
 .maincontacto form .form--form {
-  font-family: sans-serif;
+  font-family: "poppins";
   font-size: 25px;
   color: #2E302F;
 }
 .maincontacto form .form--form1 {
-  font-family: sans-serif;
+  font-family: "poppins";
   font-size: 25px;
   color: #2E302F;
 }
 .maincontacto form .form--form2 {
-  font-family: sans-serif;
+  font-family: "poppins";
   font-size: 25px;
   color: #2E302F;
 }
 .maincontacto form .form--form3 {
-  font-family: sans-serif;
+  font-family: "poppins";
   font-size: 25px;
   color: #2E302F;
 }
 .maincontacto form .form--form4 {
-  font-family: sans-serif;
+  font-family: "poppins";
   font-size: 25px;
   color: #2E302F;
 }
