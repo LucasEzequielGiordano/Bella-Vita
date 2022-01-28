@@ -48,33 +48,34 @@ header li {
 }
 .footer .social a {
   font-size: 24px;
-  color: inherit;
-  border: 1px solid #ccc;
   width: 40px;
   height: 40px;
   line-height: 35px;
   display: inline-block;
   text-align: center;
-  border-radius: 50%;
   margin: 0 8px;
   opacity: 0.75;
   background: #000;
   color: #fff;
   transition: all 0.3s ease;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 50%;
 }
 .footer .social a:hover {
   opacity: 0.9;
   transition: all 0.3s ease;
   color: #24262b;
-  background: #fff;
+  background-color: #fff;
 }
 .footer ul {
   margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
   list-style: none;
-  font-size: 18px;
   line-height: 1.6;
-  margin-bottom: 0;
+  font-size: 18px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -136,21 +137,25 @@ header li {
 .main .container-fluid .jumbotron a {
   visibility: visible;
   text-decoration: none;
-  background-color: #2E302F;
-  color: #E7EEEA;
   font-size: 500;
-  border: 1px solid #ccc;
+  color: #E7EEEA;
+  background-color: #2E302F;
+  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
   border-radius: 50px;
   border-color: #2E302F;
-  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
 }
 .main .container-fluid .jumbotron a:hover {
-  background-color: #E7EEEA;
-  color: #2E302F;
   font-size: 500;
-  border: 1px solid #E7EEEA;
-  border-radius: 50px;
+  color: #2E302F;
+  background-color: #E7EEEA;
   box-shadow: 0 0 5px #000, 0 0 25px #E7EEEA, 0 0 50px #E7EEEA, 0 0 75px #E7EEEA;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #E7EEEA;
+  border-radius: 50px;
 }
 .main .container-fluid .jumbotron .btn-tienda {
   text-align: center;
@@ -218,10 +223,10 @@ header li {
   padding-top: 25px;
 }
 .maintienda #sectionrelojes .itemrelojes1 .h1tienda {
+  text-align: center;
+  color: #000;
   font-size: 50px;
   font-family: "poppins", sans-serif;
-  color: #000;
-  text-align: center;
 }
 .maintienda #sectionrelojes .itemrelojes2 {
   grid-column: 1/2;
@@ -264,29 +269,29 @@ header li {
 }
 .maintienda #sectionrelojes .itemrelojes2 figure:hover > .efectocard h3 {
   color: #E7EEEA;
+  padding-left: 20px;
   font-size: 30px;
   font-family: "poppins", sans-serif;
   font-weight: 600;
   text-align: start;
   text-shadow: -1px -1px 1px #000;
-  padding-left: 20px;
 }
 .maintienda #sectionrelojes .itemrelojes2 figure:hover > .efectocard h4 {
   color: #00A650;
+  padding-left: 20px;
   font-size: 18px;
   font-family: "poppins", sans-serif;
   font-weight: 600;
   text-align: left;
   text-shadow: -1px -1px 1px #E7EEEA;
-  padding-left: 20px;
 }
 .maintienda #sectionrelojes .itemrelojes2 figure:hover > .efectocard p {
   color: #E7EEEA;
+  padding-left: 20px;
   font-size: 14px;
   font-family: "poppins", sans-serif;
   text-align: left;
   text-shadow: -1px -1px 1px #000;
-  padding-left: 20px;
 }
 .maintienda #sectionrelojes .itemrelojes3 {
   grid-column: 2/3;
@@ -329,28 +334,28 @@ header li {
 }
 .maintienda #sectionrelojes .itemrelojes3 figure:hover > .efectocard h3 {
   color: #E7EEEA;
+  padding-left: 20px;
   font-size: 30px;
   font-family: "poppins", sans-serif;
   font-weight: 600;
   text-shadow: -1px -1px 1px #000;
   text-align: start;
-  padding-left: 20px;
 }
 .maintienda #sectionrelojes .itemrelojes3 figure:hover > .efectocard h4 {
   color: #00A650;
+  padding-left: 20px;
   font-size: 18px;
   font-family: "poppins", sans-serif;
   font-weight: 600;
   text-align: left;
   text-shadow: -1px -1px 1px #E7EEEA;
-  padding-left: 20px;
 }
 .maintienda #sectionrelojes .itemrelojes3 figure:hover > .efectocard p {
   color: #E7EEEA;
+  padding-left: 20px;
   font-size: 14px;
   font-family: "poppins", sans-serif;
   text-align: left;
-  padding-left: 20px;
   text-shadow: -1px -1px 1px #000;
 }
 .maintienda #sectionrelojes .itemrelojes4 {
@@ -394,29 +399,29 @@ header li {
 }
 .maintienda #sectionrelojes .itemrelojes4 figure:hover > .efectocard h3 {
   color: #E7EEEA;
+  padding-left: 20px;
   font-size: 30px;
   font-family: "poppins", sans-serif;
   font-weight: 600;
   text-shadow: -1px -1px 1px #000;
   text-align: start;
-  padding-left: 20px;
 }
 .maintienda #sectionrelojes .itemrelojes4 figure:hover > .efectocard h4 {
   color: #00A650;
+  padding-left: 20px;
   font-size: 18px;
   font-family: "poppins", sans-serif;
   font-weight: 600;
   text-shadow: -1px -1px 1px #E7EEEA;
   text-align: left;
-  padding-left: 20px;
 }
 .maintienda #sectionrelojes .itemrelojes4 figure:hover > .efectocard p {
   color: #E7EEEA;
+  padding-left: 20px;
   font-size: 14px;
   font-family: "poppins", sans-serif;
   text-shadow: -1px -1px 1px #000;
   text-align: left;
-  padding-left: 20px;
 }
 .maintienda #sectionrelojes .itemrelojes5 {
   grid-column: 4/5;
@@ -459,29 +464,29 @@ header li {
 }
 .maintienda #sectionrelojes .itemrelojes5 figure:hover > .efectocard h3 {
   color: #E7EEEA;
+  padding-left: 20px;
   font-size: 30px;
   font-family: "poppins", sans-serif;
   font-weight: 600;
   text-shadow: -1px -1px 1px #000;
   text-align: start;
-  padding-left: 20px;
 }
 .maintienda #sectionrelojes .itemrelojes5 figure:hover > .efectocard h4 {
   color: #00A650;
+  padding-left: 20px;
   font-size: 18px;
   font-family: "poppins", sans-serif;
   font-weight: 600;
   text-shadow: -1px -1px 1px #E7EEEA;
   text-align: left;
-  padding-left: 20px;
 }
 .maintienda #sectionrelojes .itemrelojes5 figure:hover > .efectocard p {
   color: #E7EEEA;
+  padding-left: 20px;
   font-size: 14px;
   font-family: "poppins", sans-serif;
   text-shadow: -1px -1px 1px #000;
   text-align: left;
-  padding-left: 20px;
 }
 .maintienda #sectionpulseras {
   display: grid;
@@ -494,15 +499,15 @@ header li {
   justify-content: center;
 }
 .maintienda #sectionpulseras .itempulseras1 {
+  padding-top: 25px;
   grid-column: 1/5;
   grid-row: 1/2;
-  padding-top: 25px;
 }
 .maintienda #sectionpulseras .itempulseras1 .h1tienda {
-  font-size: 50px;
-  font-family: "poppins", sans-serif;
   color: #24262b;
   text-align: center;
+  font-size: 50px;
+  font-family: "poppins", sans-serif;
 }
 .maintienda #sectionpulseras .itempulseras2 {
   grid-column: 1/2;
@@ -545,29 +550,29 @@ header li {
 }
 .maintienda #sectionpulseras .itempulseras2 figure:hover > .efectocard h3 {
   color: #E7EEEA;
+  padding-left: 20px;
   font-size: 30px;
   font-family: "poppins", sans-serif;
   font-weight: 600;
   text-shadow: -1px -1px 1px #000;
   text-align: start;
-  padding-left: 20px;
 }
 .maintienda #sectionpulseras .itempulseras2 figure:hover > .efectocard h4 {
   color: #00A650;
+  padding-left: 20px;
   font-size: 18px;
   font-family: "poppins", sans-serif;
   font-weight: 600;
   text-shadow: -1px -1px 1px #E7EEEA;
   text-align: left;
-  padding-left: 20px;
 }
 .maintienda #sectionpulseras .itempulseras2 figure:hover > .efectocard p {
   color: #E7EEEA;
+  padding-left: 20px;
   font-size: 14px;
   font-family: "poppins", sans-serif;
   text-shadow: -1px -1px 1px #000;
   text-align: left;
-  padding-left: 20px;
 }
 .maintienda #sectionpulseras .itempulseras3 {
   grid-column: 2/3;
@@ -610,29 +615,29 @@ header li {
 }
 .maintienda #sectionpulseras .itempulseras3 figure:hover > .efectocard h3 {
   color: #E7EEEA;
+  padding-left: 20px;
   font-size: 30px;
   font-family: "poppins", sans-serif;
   font-weight: 600;
   text-shadow: -1px -1px 1px #000;
   text-align: start;
-  padding-left: 20px;
 }
 .maintienda #sectionpulseras .itempulseras3 figure:hover > .efectocard h4 {
   color: #00A650;
+  padding-left: 20px;
   font-size: 18px;
   font-family: "poppins", sans-serif;
   font-weight: 600;
   text-shadow: -1px -1px 1px #E7EEEA;
   text-align: left;
-  padding-left: 20px;
 }
 .maintienda #sectionpulseras .itempulseras3 figure:hover > .efectocard p {
   color: #E7EEEA;
-  font-size: 14px;
+  padding-left: 20px;
   font-family: "poppins", sans-serif;
+  font-size: 14px;
   text-shadow: -1px -1px 1px #000;
   text-align: left;
-  padding-left: 20px;
 }
 .maintienda #sectionpulseras .itempulseras4 {
   grid-column: 3/4;
@@ -675,29 +680,29 @@ header li {
 }
 .maintienda #sectionpulseras .itempulseras4 figure:hover > .efectocard h3 {
   color: #E7EEEA;
+  padding-left: 20px;
   font-size: 30px;
   font-family: "poppins", sans-serif;
   font-weight: 600;
   text-shadow: -1px -1px 1px #000;
   text-align: start;
-  padding-left: 20px;
 }
 .maintienda #sectionpulseras .itempulseras4 figure:hover > .efectocard h4 {
   color: #00A650;
+  padding-left: 20px;
   font-size: 18px;
   font-family: "poppins", sans-serif;
   font-weight: 600;
   text-shadow: -1px -1px 1px #E7EEEA;
   text-align: left;
-  padding-left: 20px;
 }
 .maintienda #sectionpulseras .itempulseras4 figure:hover > .efectocard p {
   color: #E7EEEA;
+  padding-left: 20px;
   font-size: 14px;
   font-family: "poppins", sans-serif;
   text-shadow: -1px -1px 1px #000;
   text-align: left;
-  padding-left: 20px;
 }
 .maintienda #sectionpulseras .itempulseras5 {
   grid-column: 4/5;
@@ -740,29 +745,29 @@ header li {
 }
 .maintienda #sectionpulseras .itempulseras5 figure:hover > .efectocard h3 {
   color: #E7EEEA;
+  padding-left: 20px;
   font-size: 30px;
   font-family: "poppins", sans-serif;
   font-weight: 600;
   text-shadow: -1px -1px 1px #000;
   text-align: start;
-  padding-left: 20px;
 }
 .maintienda #sectionpulseras .itempulseras5 figure:hover > .efectocard h4 {
   color: #00A650;
+  padding-left: 20px;
   font-size: 18px;
   font-family: "poppins", sans-serif;
   font-weight: 600;
   text-shadow: -1px -1px 1px #E7EEEA;
   text-align: left;
-  padding-left: 20px;
 }
 .maintienda #sectionpulseras .itempulseras5 figure:hover > .efectocard p {
   color: #E7EEEA;
+  padding-left: 20px;
   font-size: 14px;
   font-family: "poppins", sans-serif;
   text-shadow: -1px -1px 1px #000;
   text-align: left;
-  padding-left: 20px;
 }
 .maintienda #sectionaros {
   display: grid;
@@ -1322,7 +1327,7 @@ header li {
   color: #E7EEEA;
   font-size: 14px;
   font-family: "poppins", sans-serif;
-  text-shadow: -1px -1px 1px #E7EEEA;
+  text-shadow: -1px -1px 1px #000;
   text-align: left;
   padding-left: 20px;
 }
@@ -1890,10 +1895,10 @@ header li {
   display: flex;
 }
 .mainacercade .sectionacerca .tituloacerca h1 {
-  font-size: 50px;
-  font-family: "poppins", sans-serif;
   color: #24262b;
   text-align: center;
+  font-size: 50px;
+  font-family: "poppins", sans-serif;
 }
 .mainacercade .carouselacerca {
   display: flex;
@@ -1907,6 +1912,11 @@ header li {
   width: clamp(250px, 100%, 500px);
 }
 .mainacercade .carouselacerca p {
+  width: clamp(250px, 75%, 500px);
+  height: 215px;
+  font-size: clamp(14px, 100%, 25px);
+  background-color: #E7EEEA;
+  box-shadow: 0 10px 20px rgba(3, 19, 23, 0.25);
   text-align: center;
   display: flex;
   justify-content: center;
@@ -1914,11 +1924,6 @@ header li {
   align-self: center;
   flex-wrap: wrap;
   gap: 20px;
-  font-size: clamp(14px, 100%, 25px);
-  background-color: #E7EEEA;
-  box-shadow: 0 10px 20px rgba(3, 19, 23, 0.25);
-  width: clamp(250px, 75%, 500px);
-  height: 215px;
 }
 .mainacercade .underacerca {
   display: flex;
@@ -1935,11 +1940,11 @@ header li {
   align-self: center;
   flex-wrap: wrap;
   gap: 20px;
+  width: clamp(250px, 75%, 500px);
+  height: 215px;
   font-size: clamp(14px, 100%, 25px);
   background-color: #E7EEEA;
   box-shadow: 0 10px 20px rgba(3, 19, 23, 0.25);
-  width: clamp(250px, 75%, 500px);
-  height: 215px;
 }
 .mainacercade .underacerca iframe {
   width: clamp(250px, 100%, 500px);
@@ -1966,12 +1971,12 @@ header li {
 }
 .mainblog .subtituloblog span {
   display: block;
-  font-family: "poppins", sans-serif;
   white-space: nowrap;
   border-right: 2px solid;
   width: 32ch;
   animation: typing 7s infinite alternate steps(32), blink 0.5s infinite alternate-reverse;
   overflow: hidden;
+  font-family: "poppins", sans-serif;
   font-size: 16px;
 }
 @keyframes typing {
@@ -2020,16 +2025,21 @@ header li {
 .mainblog .divglobal1 .cardblog .card-usuario img {
   width: 50px;
   height: 50px;
+  border-width: 2px;
+  border-style: double;
   border-radius: 50px;
-  border: 2px solid #d72f80;
+  border-top-color: #d72f80;
+  border-right-color: #d72f80;
+  border-bottom-color: #fbc7a4;
+  border-left-color: #fbc7a4;
 }
 .mainblog .divglobal1 .cardblog .card-usuario div {
   padding-left: 8px;
 }
 .mainblog .divglobal1 .cardblog .card-usuario div p:nth-child(1) {
+  transform: translate(2px, 20px);
   font-size: 13px;
   font-weight: 700;
-  transform: translate(0px, 10px);
 }
 .mainblog .divglobal1 .cardblog .card-usuario div p:nth-child(2) {
   font-size: 10px;
@@ -2089,10 +2099,10 @@ header li {
   flex-wrap: wrap;
 }
 .maincontacto .sectioncontacto h1 {
-  font-size: 50px;
-  font-family: "poppins", sans-serif;
   color: #24262b;
   text-align: center;
+  font-size: 50px;
+  font-family: "poppins", sans-serif;
 }
 .maincontacto .parrafocontacto {
   display: flex;
@@ -2111,9 +2121,8 @@ header li {
   font-size: clamp(14px, 100%, 25px);
   background-color: #E7EEEA;
   box-shadow: 0 10px 20px rgba(3, 19, 23, 0.25);
-  width: clamp(250px, 75%, 500px);
-  height: 100px;
   width: 350px;
+  height: 100px;
   padding: 5px;
 }
 .maincontacto form {
@@ -2128,18 +2137,22 @@ header li {
 }
 .maincontacto form .divform1 .formnombre1, .maincontacto form .divform1 .formapellido1 {
   width: 300px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
   box-shadow: 0 10px 10px rgba(3, 19, 23, 0.25);
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 5px;
 }
 .maincontacto form .divform2 {
   text-align: center;
 }
 .maincontacto form .divform2 .formemail1, .maincontacto form .divform2 .formnumero1 {
   width: 300px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
   box-shadow: 0 10px 10px rgba(3, 19, 23, 0.25);
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ccc;
 }
 .maincontacto form .divform3 {
   text-align: center;
@@ -2149,38 +2162,45 @@ header li {
 }
 .maincontacto form .divform3 .formmensaje1 {
   width: 325px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
   box-shadow: 0 10px 10px rgba(3, 19, 23, 0.25);
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 5px;
 }
 .maincontacto form .formenviar {
   width: 150px;
   text-align: center;
+  box-shadow: 0 10px 40px rgba(3, 19, 23, 0.25);
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 5px;
 }
 .maincontacto form .form--form {
+  color: #2E302F;
   font-family: "poppins";
   font-size: 25px;
-  color: #2E302F;
 }
 .maincontacto form .form--form1 {
+  color: #2E302F;
   font-family: "poppins";
   font-size: 25px;
-  color: #2E302F;
 }
 .maincontacto form .form--form2 {
+  color: #2E302F;
   font-family: "poppins";
   font-size: 25px;
-  color: #2E302F;
 }
 .maincontacto form .form--form3 {
+  color: #2E302F;
   font-family: "poppins";
   font-size: 25px;
-  color: #2E302F;
 }
 .maincontacto form .form--form4 {
+  color: #2E302F;
   font-family: "poppins";
   font-size: 25px;
-  color: #2E302F;
 }
 
 /*# sourceMappingURL=estilos.css.map */
