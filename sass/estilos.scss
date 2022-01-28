@@ -362,8 +362,13 @@ header {
 
     #sectionrelojes {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 100px 1fr;
+
+        grid: {
+            template-columns: repeat(4, 1fr);
+            template-rows: 100px 1fr;
+        }
+
+        ;
         gap: 20px;
 
         .itemrelojes {
@@ -786,8 +791,13 @@ header {
 
     #sectionpulseras {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 100px 1fr;
+
+        grid: {
+            template-columns: repeat(4, 1fr);
+            template-rows: 100px 1fr;
+        }
+
+        ;
         gap: 20px;
 
         .itempulseras {
@@ -1209,8 +1219,13 @@ header {
 
     #sectionaros {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 100px 1fr;
+
+        grid: {
+            template-columns: repeat(4, 1fr);
+            template-rows: 100px 1fr;
+        }
+
+        ;
         gap: 20px;
 
         .itemaros {
@@ -1219,21 +1234,34 @@ header {
         }
 
         .itemaros1 {
-            grid-column: 1/5;
-            grid-row: 1/2;
+            grid: {
+                column: 1/5;
+                row: 1/2;
+            }
+
+            ;
             padding-top: 25px;
 
             .h1tienda {
-                font-size: 50px;
-                font-family: $font;
                 color: #24262b;
                 text-align: center;
+
+                font: {
+                    size: 50px;
+                    family: $font;
+                }
+
+                ;
             }
         }
 
         .itemaros2 {
-            grid-column: 1/2;
-            grid-row: 2/3;
+            grid: {
+                column: 1/2;
+                row: 2/3;
+            }
+
+            ;
 
             figure {
                 position: relative;
@@ -1265,38 +1293,72 @@ header {
 
                 h3 {
                     color: #E7EEEA;
-                    font-size: 30px;
-                    font-family: $font;
-                    font-weight: 600;
-                    text-shadow: -1px -1px 1px #000;
-                    text-align: start;
                     padding-left: 20px;
+
+                    font: {
+                        size: 30px;
+                        family: $font;
+                        weight: 600;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #000;
+                        align: start;
+                    }
+
+                    ;
                 }
 
                 h4 {
                     color: $colort;
-                    font-size: 18px;
-                    font-family: $font;
-                    font-weight: 600;
-                    text-shadow: -1px -1px 1px #E7EEEA;
-                    text-align: left;
                     padding-left: 20px;
+
+                    font: {
+                        size: 18px;
+                        family: $font;
+                        weight: 600;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #E7EEEA;
+                        align: left;
+                    }
+
+                    ;
                 }
 
                 p {
                     color: #E7EEEA;
-                    font-size: 14px;
-                    font-family: $font;
-                    text-shadow: -1px -1px 1px #000;
-                    text-align: left;
                     padding-left: 20px;
+
+                    font: {
+                        size: 14px;
+                        family: $font;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #000;
+                        align: left;
+                    }
+
+                    ;
                 }
             }
         }
 
         .itemaros3 {
-            grid-column: 2/3;
-            grid-row: 2/3;
+            grid: {
+                column: 2/3;
+                row: 2/3;
+            }
+
+            ;
 
             figure {
                 position: relative;
@@ -1328,38 +1390,72 @@ header {
 
                 h3 {
                     color: #E7EEEA;
-                    font-size: 30px;
-                    font-family: $font;
-                    font-weight: 600;
-                    text-shadow: -1px -1px 1px #000;
-                    text-align: start;
                     padding-left: 20px;
+
+                    font: {
+                        size: 30px;
+                        family: $font;
+                        weight: 600;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #000;
+                        align: start;
+                    }
+
+                    ;
                 }
 
                 h4 {
                     color: $colort;
-                    font-size: 18px;
-                    font-family: $font;
-                    font-weight: 600;
-                    text-shadow: -1px -1px 1px #E7EEEA;
-                    text-align: left;
                     padding-left: 20px;
+
+                    font: {
+                        size: 18px;
+                        family: $font;
+                        weight: 600;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #E7EEEA;
+                        align: left;
+                    }
+
+                    ;
                 }
 
                 p {
                     color: #E7EEEA;
-                    font-size: 14px;
-                    font-family: $font;
-                    text-shadow: -1px -1px 1px #000;
-                    text-align: left;
                     padding-left: 20px;
+
+                    font: {
+                        size: 14px;
+                        family: $font;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #000;
+                        align: left;
+                    }
+
+                    ;
                 }
             }
         }
 
         .itemaros4 {
-            grid-column: 3/4;
-            grid-row: 2/3;
+            grid: {
+                column: 3/4;
+                row: 2/3;
+            }
+
+            ;
 
             figure {
                 position: relative;
@@ -1391,38 +1487,72 @@ header {
 
                 h3 {
                     color: #E7EEEA;
-                    font-size: 30px;
-                    font-family: $font;
-                    font-weight: 600;
-                    text-shadow: -1px -1px 1px #000;
-                    text-align: start;
                     padding-left: 20px;
+
+                    font: {
+                        size: 30px;
+                        family: $font;
+                        weight: 600;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #000;
+                        align: start;
+                    }
+
+                    ;
                 }
 
                 h4 {
                     color: $colort;
-                    font-size: 18px;
-                    font-family: $font;
-                    font-weight: 600;
-                    text-shadow: -1px -1px 1px #E7EEEA;
-                    text-align: left;
                     padding-left: 20px;
+
+                    font: {
+                        size: 18px;
+                        family: $font;
+                        weight: 600;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #E7EEEA;
+                        align: left;
+                    }
+
+                    ;
                 }
 
                 p {
                     color: #E7EEEA;
-                    font-size: 14px;
-                    font-family: $font;
-                    text-shadow: -1px -1px 1px #000;
-                    text-align: left;
                     padding-left: 20px;
+
+                    font: {
+                        size: 14px;
+                        family: $font;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #000;
+                        align: left;
+                    }
+
+                    ;
                 }
             }
         }
 
         .itemaros5 {
-            grid-column: 4/5;
-            grid-row: 2/3;
+            grid: {
+                column: 4/5;
+                row: 2/3;
+            }
+
+            ;
 
             figure {
                 position: relative;
@@ -1454,31 +1584,61 @@ header {
 
                 h3 {
                     color: #E7EEEA;
-                    font-size: 30px;
-                    font-family: $font;
-                    font-weight: 600;
-                    text-shadow: -1px -1px 1px #000;
-                    text-align: start;
                     padding-left: 20px;
+
+                    font: {
+                        size: 30px;
+                        family: $font;
+                        weight: 600;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #000;
+                        align: start;
+                    }
+
+                    ;
                 }
 
                 h4 {
                     color: $colort;
-                    font-size: 18px;
-                    font-family: $font;
-                    font-weight: 600;
-                    text-shadow: -1px -1px 1px #E7EEEA;
-                    text-align: left;
                     padding-left: 20px;
+
+                    font: {
+                        size: 18px;
+                        family: $font;
+                        weight: 600;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #E7EEEA;
+                        align: left;
+                    }
+
+                    ;
                 }
 
                 p {
                     color: #E7EEEA;
-                    font-size: 14px;
-                    font-family: $font;
-                    text-shadow: -1px -1px 1px #000;
-                    text-align: left;
                     padding-left: 20px;
+
+                    font: {
+                        size: 14px;
+                        family: $font;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #000;
+                        align: left;
+                    }
+
+                    ;
                 }
             }
         }
@@ -1486,8 +1646,13 @@ header {
 
     #sectiondijes {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 100px 1fr;
+
+        grid: {
+            template-columns: repeat(4, 1fr);
+            template-rows: 100px 1fr;
+        }
+
+        ;
         gap: 20px;
 
         .itemdijes {
@@ -1496,21 +1661,35 @@ header {
         }
 
         .itemdijes1 {
-            grid-column: 1/5;
-            grid-row: 1/2;
             padding: 25px;
 
+            grid: {
+                column: 1/5;
+                row: 1/2;
+            }
+
+            ;
+
             .h1tienda {
-                font-size: 50px;
-                font-family: $font;
                 color: #24262b;
                 text-align: center;
+
+                font: {
+                    size: 50px;
+                    family: $font;
+                }
+
+                ;
             }
         }
 
         .itemdijes2 {
-            grid-column: 1/2;
-            grid-row: 2/3;
+            grid: {
+                column: 1/2;
+                row: 2/3;
+            }
+
+            ;
 
             figure {
                 position: relative;
@@ -1542,38 +1721,72 @@ header {
 
                 h3 {
                     color: #E7EEEA;
-                    font-size: 30px;
-                    font-family: $font;
-                    font-weight: 600;
-                    text-shadow: -1px -1px 1px #000;
-                    text-align: start;
                     padding-left: 20px;
+
+                    font: {
+                        size: 30px;
+                        family: $font;
+                        weight: 600;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #000;
+                        align: start;
+                    }
+
+                    ;
                 }
 
                 h4 {
                     color: $colort;
-                    font-size: 18px;
-                    font-family: $font;
-                    font-weight: 600;
-                    text-shadow: -1px -1px 1px #E7EEEA;
-                    text-align: left;
                     padding-left: 20px;
+
+                    font: {
+                        size: 18px;
+                        family: $font;
+                        weight: 600;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #E7EEEA;
+                        align: left;
+                    }
+
+                    ;
                 }
 
                 p {
                     color: #E7EEEA;
-                    font-size: 14px;
-                    font-family: $font;
-                    text-shadow: -1px -1px 1px #000;
-                    text-align: left;
                     padding-left: 20px;
+
+                    font: {
+                        size: 14px;
+                        family: $font;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #000;
+                        align: left;
+                    }
+
+                    ;
                 }
             }
         }
 
         .itemdijes3 {
-            grid-column: 2/3;
-            grid-row: 2/3;
+            grid: {
+                column: 2/3;
+                row: 2/3;
+            }
+
+            ;
 
             figure {
                 position: relative;
@@ -1605,38 +1818,72 @@ header {
 
                 h3 {
                     color: #E7EEEA;
-                    font-size: 30px;
-                    font-family: $font;
-                    font-weight: 600;
-                    text-shadow: -1px -1px 1px #000;
-                    text-align: start;
                     padding-left: 20px;
+
+                    font: {
+                        size: 30px;
+                        family: $font;
+                        weight: 600;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #000;
+                        align: start;
+                    }
+
+                    ;
                 }
 
                 h4 {
                     color: $colort;
-                    font-size: 18px;
-                    font-family: $font;
-                    font-weight: 600;
-                    text-shadow: -1px -1px 1px #E7EEEA;
-                    text-align: left;
                     padding-left: 20px;
+
+                    font: {
+                        size: 18px;
+                        family: $font;
+                        weight: 600;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #E7EEEA;
+                        align: left;
+                    }
+
+                    ;
                 }
 
                 p {
                     color: #E7EEEA;
-                    font-size: 14px;
-                    font-family: $font;
-                    text-shadow: -1px -1px 1px #000;
-                    text-align: left;
                     padding-left: 20px;
+
+                    font: {
+                        size: 14px;
+                        family: $font;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #000;
+                        align: left;
+                    }
+
+                    ;
                 }
             }
         }
 
         .itemdijes4 {
-            grid-column: 3/4;
-            grid-row: 2/3;
+            grid: {
+                column: 3/4;
+                row: 2/3;
+            }
+
+            ;
 
             figure {
                 position: relative;
@@ -1668,38 +1915,72 @@ header {
 
                 h3 {
                     color: #E7EEEA;
-                    font-size: 30px;
-                    font-family: $font;
-                    font-weight: 600;
-                    text-shadow: -1px -1px 1px #000;
-                    text-align: start;
                     padding-left: 20px;
+
+                    font: {
+                        size: 30px;
+                        family: $font;
+                        weight: 600;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #000;
+                        align: start;
+                    }
+
+                    ;
                 }
 
                 h4 {
                     color: $colort;
-                    font-size: 18px;
-                    font-family: $font;
-                    font-weight: 600;
-                    text-shadow: -1px -1px 1px #E7EEEA;
-                    text-align: left;
                     padding-left: 20px;
+
+                    font: {
+                        size: 18px;
+                        family: $font;
+                        weight: 600;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #E7EEEA;
+                        align: left;
+                    }
+
+                    ;
                 }
 
                 p {
                     color: #E7EEEA;
-                    font-size: 14px;
-                    font-family: $font;
-                    text-shadow: -1px -1px 1px #000;
-                    text-align: left;
                     padding-left: 20px;
+
+                    font: {
+                        size: 14px;
+                        family: $font;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #000;
+                        align: left;
+                    }
+
+                    ;
                 }
             }
         }
 
         .itemdijes5 {
-            grid-column: 4/5;
-            grid-row: 2/3;
+            grid: {
+                column: 4/5;
+                row: 2/3;
+            }
+
+            ;
 
             figure {
                 position: relative;
@@ -1731,31 +2012,61 @@ header {
 
                 h3 {
                     color: #E7EEEA;
-                    font-size: 30px;
-                    font-family: $font;
-                    font-weight: 600;
-                    text-shadow: -1px -1px 1px #000;
-                    text-align: start;
                     padding-left: 20px;
+
+                    font: {
+                        size: 30px;
+                        family: $font;
+                        weight: 600;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #000;
+                        align: start;
+                    }
+
+                    ;
                 }
 
                 h4 {
                     color: $colort;
-                    font-size: 18px;
-                    font-family: $font;
-                    font-weight: 600;
-                    text-shadow: -1px -1px 1px #E7EEEA;
-                    text-align: left;
                     padding-left: 20px;
+
+                    font: {
+                        size: 18px;
+                        family: $font;
+                        weight: 600;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #E7EEEA;
+                        align: left;
+                    }
+
+                    ;
                 }
 
                 p {
                     color: #E7EEEA;
-                    font-size: 14px;
-                    font-family: $font;
-                    text-shadow: -1px -1px 1px #000;
-                    text-align: left;
                     padding-left: 20px;
+
+                    font: {
+                        size: 14px;
+                        family: $font;
+                    }
+
+                    ;
+
+                    text: {
+                        shadow: -1px -1px 1px #000;
+                        align: left;
+                    }
+
+                    ;
                 }
             }
         }
@@ -1764,8 +2075,13 @@ header {
     @media only screen and (min-width: 320px) and (max-width: 768px) {
         #sectionrelojes {
             display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 50px repeat(4, 1fr);
+
+            grid: {
+                template-columns: 1fr;
+                template-rows: 50px repeat(4, 1fr);
+            }
+
+            ;
             gap: 20px;
 
             .itemrelojes {
@@ -1778,36 +2094,62 @@ header {
             }
 
             .itemrelojes1 {
-                grid-column: 1/2;
-                grid-row: 1/2;
                 padding-top: 15px;
+
+                grid: {
+                    column: 1/2;
+                    row: 1/2;
+                }
+
+                ;
             }
 
             .itemrelojes2 {
-                grid-column: 1/2;
-                grid-row: 2/3;
+                grid: {
+                    column: 1/2;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemrelojes3 {
-                grid-column: 1/2;
-                grid-row: 3/4;
+                grid: {
+                    column: 1/2;
+                    row: 3/4;
+                }
+
+                ;
             }
 
             .itemrelojes4 {
-                grid-column: 1/2;
-                grid-row: 4/5;
+                grid: {
+                    column: 1/2;
+                    row: 4/5;
+                }
+
+                ;
             }
 
             .itemrelojes5 {
-                grid-column: 1/2;
-                grid-row: 5/6;
+                grid: {
+                    column: 1/2;
+                    row: 5/6;
+                }
+
+                ;
             }
         }
 
         #sectionpulseras {
             display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 50px repeat(4, 1fr);
+
+            grid: {
+                template-columns: 1fr;
+                template-rows: 50px repeat(4, 1fr);
+            }
+
+            ;
             gap: 20px;
 
             .itempulseras {
@@ -1820,36 +2162,62 @@ header {
             }
 
             .itempulseras1 {
-                grid-column: 1/2;
-                grid-row: 1/2;
                 padding-top: 15px;
+
+                grid: {
+                    column: 1/2;
+                    row: 1/2;
+                }
+
+                ;
             }
 
             .itempulseras2 {
-                grid-column: 1/2;
-                grid-row: 2/3;
+                grid: {
+                    column: 1/2;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itempulseras3 {
-                grid-column: 1/2;
-                grid-row: 3/4;
+                grid: {
+                    column: 1/2;
+                    row: 3/4;
+                }
+
+                ;
             }
 
             .itempulseras4 {
-                grid-column: 1/2;
-                grid-row: 4/5;
+                grid: {
+                    column: 1/2;
+                    row: 4/5;
+                }
+
+                ;
             }
 
             .itempulseras5 {
-                grid-column: 1/2;
-                grid-row: 5/6;
+                grid: {
+                    column: 1/2;
+                    row: 5/6;
+                }
+
+                ;
             }
         }
 
         #sectionaros {
             display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 50px repeat(4, 1fr);
+
+            grid: {
+                template-columns: 1fr;
+                template-rows: 50px repeat(4, 1fr);
+            }
+
+            ;
             gap: 20px;
 
             .itemaros {
@@ -1862,36 +2230,62 @@ header {
             }
 
             .itemaros1 {
-                grid-column: 1/2;
-                grid-row: 1/2;
                 padding-top: 15px;
+
+                grid: {
+                    column: 1/2;
+                    row: 1/2;
+                }
+
+                ;
             }
 
             .itemaros2 {
-                grid-column: 1/2;
-                grid-row: 2/3;
+                grid: {
+                    column: 1/2;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemaros3 {
-                grid-column: 1/2;
-                grid-row: 3/4;
+                grid: {
+                    column: 1/2;
+                    row: 3/4;
+                }
+
+                ;
             }
 
             .itemaros4 {
-                grid-column: 1/2;
-                grid-row: 4/5;
+                grid: {
+                    column: 1/2;
+                    row: 4/5;
+                }
+
+                ;
             }
 
             .itemaros5 {
-                grid-column: 1/2;
-                grid-row: 5/6;
+                grid: {
+                    column: 1/2;
+                    row: 5/6;
+                }
+
+                ;
             }
         }
 
         #sectiondijes {
             display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 50px repeat(4, 1fr);
+
+            grid: {
+                template-columns: 1fr;
+                template-rows: 50px repeat(4, 1fr);
+            }
+
+            ;
             gap: 20px;
 
             .itemdijes {
@@ -1904,29 +2298,50 @@ header {
             }
 
             .itemdijes1 {
-                grid-column: 1/2;
-                grid-row: 1/2;
                 padding-top: 15px;
+
+                grid: {
+                    column: 1/2;
+                    row: 1/2;
+                }
+
+                ;
             }
 
             .itemdijes2 {
-                grid-column: 1/2;
-                grid-row: 2/3;
+                grid: {
+                    column: 1/2;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemdijes3 {
-                grid-column: 1/2;
-                grid-row: 3/4;
+                grid: {
+                    column: 1/2;
+                    row: 3/4;
+                }
+
+                ;
             }
 
             .itemdijes4 {
-                grid-column: 1/2;
-                grid-row: 4/5;
+                grid: {
+                    column: 1/2;
+                    row: 4/5;
+                }
+
+                ;
             }
 
             .itemdijes5 {
-                grid-column: 1/2;
-                grid-row: 5/6;
+                grid: {
+                    column: 1/2;
+                    row: 5/6;
+                }
+
+                ;
             }
         }
     }
@@ -1934,8 +2349,13 @@ header {
     @media only screen and (min-width: 768px) and (max-width: 992px) {
         #sectionrelojes {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 50px repeat(2, 1fr);
+
+            grid: {
+                template-columns: repeat(2, 1fr);
+                template-rows: 50px repeat(2, 1fr);
+            }
+
+            ;
             gap: 20px;
 
             .itemrelojes {
@@ -1948,36 +2368,62 @@ header {
             }
 
             .itemrelojes1 {
-                grid-column: 1/3;
-                grid-row: 1/2;
                 padding-top: 10px;
+
+                grid: {
+                    column: 1/3;
+                    row: 1/2;
+                }
+
+                ;
             }
 
             .itemrelojes2 {
-                grid-column: 1/2;
-                grid-row: 2/3;
+                grid: {
+                    column: 1/2;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemrelojes3 {
-                grid-column: 2/3;
-                grid-row: 2/3;
+                grid: {
+                    column: 2/3;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemrelojes4 {
-                grid-column: 1/2;
-                grid-row: 3/4;
+                grid: {
+                    column: 1/2;
+                    row: 3/4;
+                }
+
+                ;
             }
 
             .itemrelojes5 {
-                grid-column: 2/3;
-                grid-row: 3/4;
+                grid: {
+                    column: 2/3;
+                    row: 3/4;
+                }
+
+                ;
             }
         }
 
         #sectionpulseras {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 50px repeat(2, 1fr);
+
+            grid: {
+                template-columns: repeat(2, 1fr);
+                template-rows: 50px repeat(2, 1fr);
+            }
+
+            ;
             gap: 20px;
 
             .itempulseras {
@@ -1990,36 +2436,62 @@ header {
             }
 
             .itempulseras1 {
-                grid-column: 1/3;
-                grid-row: 1/2;
                 padding-top: 10px;
+
+                grid: {
+                    column: 1/3;
+                    row: 1/2;
+                }
+
+                ;
             }
 
             .itempulseras2 {
-                grid-column: 1/2;
-                grid-row: 2/3;
+                grid: {
+                    column: 1/2;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itempulseras3 {
-                grid-column: 2/3;
-                grid-row: 2/3;
+                grid: {
+                    column: 2/3;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itempulseras4 {
-                grid-column: 1/2;
-                grid-row: 3/4;
+                grid: {
+                    column: 1/2;
+                    row: 3/4;
+                }
+
+                ;
             }
 
             .itempulseras5 {
-                grid-column: 2/3;
-                grid-row: 3/4;
+                grid: {
+                    column: 2/3;
+                    row: 3/4;
+                }
+
+                ;
             }
         }
 
         #sectionaros {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 50px repeat(2, 1fr);
+
+            grid: {
+                template-columns: repeat(2, 1fr);
+                template-rows: 50px repeat(2, 1fr);
+            }
+
+            ;
             gap: 20px;
 
             .itemaros {
@@ -2032,36 +2504,62 @@ header {
             }
 
             .itemaros1 {
-                grid-column: 1/3;
-                grid-row: 1/2;
                 padding-top: 10px;
+
+                grid: {
+                    column: 1/3;
+                    row: 1/2;
+                }
+
+                ;
             }
 
             .itemaros2 {
-                grid-column: 1/2;
-                grid-row: 2/3;
+                grid: {
+                    column: 1/2;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemaros3 {
-                grid-column: 2/3;
-                grid-row: 2/3;
+                grid: {
+                    column: 2/3;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemaros4 {
-                grid-column: 1/2;
-                grid-row: 3/4;
+                grid: {
+                    column: 1/2;
+                    row: 3/4;
+                }
+
+                ;
             }
 
             .itemaros5 {
-                grid-column: 2/3;
-                grid-row: 3/4;
+                grid: {
+                    column: 2/3;
+                    row: 3/4;
+                }
+
+                ;
             }
         }
 
         #sectiondijes {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 50px repeat(2, 1fr);
+
+            grid: {
+                template-columns: repeat(2, 1fr);
+                template-rows: 50px repeat(2, 1fr);
+            }
+
+            ;
             gap: 20px;
 
             .itemdijes {
@@ -2074,29 +2572,50 @@ header {
             }
 
             .itemdijes1 {
-                grid-column: 1/3;
-                grid-row: 1/2;
                 padding-top: 10px;
+
+                grid: {
+                    column: 1/3;
+                    row: 1/2;
+                }
+
+                ;
             }
 
             .itemdijes2 {
-                grid-column: 1/2;
-                grid-row: 2/3;
+                grid: {
+                    column: 1/2;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemdijes3 {
-                grid-column: 2/3;
-                grid-row: 2/3;
+                grid: {
+                    column: 2/3;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemdijes4 {
-                grid-column: 1/2;
-                grid-row: 3/4;
+                grid: {
+                    column: 1/2;
+                    row: 3/4;
+                }
+
+                ;
             }
 
             .itemdijes5 {
-                grid-column: 2/3;
-                grid-row: 3/4;
+                grid: {
+                    column: 2/3;
+                    row: 3/4;
+                }
+
+                ;
             }
         }
     }
@@ -2104,8 +2623,13 @@ header {
     @media only screen and (min-width: 992px) and (max-width: 1300px) {
         #sectionrelojes {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 50px repeat(2, 1fr);
+
+            grid: {
+                template-columns: repeat(2, 1fr);
+                template-rows: 50px repeat(2, 1fr);
+            }
+
+            ;
             gap: 20px;
 
             .itemrelojes {
@@ -2118,36 +2642,62 @@ header {
             }
 
             .itemrelojes1 {
-                grid-column: 1/3;
-                grid-row: 1/2;
                 padding-top: 15px;
+
+                grid: {
+                    column: 1/3;
+                    row: 1/2;
+                }
+
+                ;
             }
 
             .itemrelojes2 {
-                grid-column: 1/2;
-                grid-row: 2/3;
+                grid: {
+                    column: 1/2;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemrelojes3 {
-                grid-column: 2/3;
-                grid-row: 2/3;
+                grid: {
+                    column: 2/3;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemrelojes4 {
-                grid-column: 1/2;
-                grid-row: 3/4;
+                grid: {
+                    column: 1/2;
+                    row: 3/4;
+                }
+
+                ;
             }
 
             .itemrelojes5 {
-                grid-column: 2/3;
-                grid-row: 3/4;
+                grid: {
+                    column: 2/3;
+                    row: 3/4;
+                }
+
+                ;
             }
         }
 
         #sectionpulseras {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 50px repeat(2, 1fr);
+
+            grid: {
+                template-columns: repeat(2, 1fr);
+                template-rows: 50px repeat(2, 1fr);
+            }
+
+            ;
             gap: 20px;
 
             .itempulseras {
@@ -2160,36 +2710,62 @@ header {
             }
 
             .itempulseras1 {
-                grid-column: 1/3;
-                grid-row: 1/2;
                 padding-top: 15px;
+
+                grid: {
+                    column: 1/3;
+                    row: 1/2;
+                }
+
+                ;
             }
 
             .itempulseras2 {
-                grid-column: 1/2;
-                grid-row: 2/3;
+                grid: {
+                    column: 1/2;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itempulseras3 {
-                grid-column: 2/3;
-                grid-row: 2/3;
+                grid: {
+                    column: 2/3;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itempulseras4 {
-                grid-column: 1/2;
-                grid-row: 3/4;
+                grid: {
+                    column: 1/2;
+                    row: 3/4;
+                }
+
+                ;
             }
 
             .itempulseras5 {
-                grid-column: 2/3;
-                grid-row: 3/4;
+                grid: {
+                    column: 2/3;
+                    row: 3/4;
+                }
+
+                ;
             }
         }
 
         #sectionaros {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 50px repeat(2, 1fr);
+
+            grid: {
+                template-columns: repeat(2, 1fr);
+                template-rows: 50px repeat(2, 1fr);
+            }
+
+            ;
             gap: 20px;
 
             .itemaros {
@@ -2202,36 +2778,62 @@ header {
             }
 
             .itemaros1 {
-                grid-column: 1/3;
-                grid-row: 1/2;
                 padding-top: 15px;
+
+                grid: {
+                    column: 1/3;
+                    row: 1/2;
+                }
+
+                ;
             }
 
             .itemaros2 {
-                grid-column: 1/2;
-                grid-row: 2/3;
+                grid: {
+                    column: 1/2;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemaros3 {
-                grid-column: 2/3;
-                grid-row: 2/3;
+                grid: {
+                    column: 2/3;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemaros4 {
-                grid-column: 1/2;
-                grid-row: 3/4;
+                grid: {
+                    column: 1/2;
+                    row: 3/4;
+                }
+
+                ;
             }
 
             .itemaros5 {
-                grid-column: 2/3;
-                grid-row: 3/4;
+                grid: {
+                    column: 2/3;
+                    row: 3/4;
+                }
+
+                ;
             }
         }
 
         #sectiondijes {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 50px repeat(2, 1fr);
+
+            grid: {
+                template-columns: repeat(2, 1fr);
+                template-rows: 50px repeat(2, 1fr);
+            }
+
+            ;
             gap: 20px;
 
             .itemdijes {
@@ -2244,29 +2846,50 @@ header {
             }
 
             .itemdijes1 {
-                grid-column: 1/3;
-                grid-row: 1/2;
                 padding-top: 15px;
+
+                grid: {
+                    column: 1/3;
+                    row: 1/2;
+                }
+
+                ;
             }
 
             .itemdijes2 {
-                grid-column: 1/2;
-                grid-row: 2/3;
+                grid: {
+                    column: 1/2;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemdijes3 {
-                grid-column: 2/3;
-                grid-row: 2/3;
+                grid: {
+                    column: 2/3;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemdijes4 {
-                grid-column: 1/2;
-                grid-row: 3/4;
+                grid: {
+                    column: 1/2;
+                    row: 3/4;
+                }
+
+                ;
             }
 
             .itemdijes5 {
-                grid-column: 2/3;
-                grid-row: 3/4;
+                grid: {
+                    column: 2/3;
+                    row: 3/4;
+                }
+
+                ;
             }
         }
     }
@@ -2274,8 +2897,13 @@ header {
     @media only screen and (min-width: 1300px) and (max-width: 1500px) {
         #sectionrelojes {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 50px 1fr;
+
+            grid: {
+                template-columns: repeat(4, 1fr);
+                template-rows: 50px 1fr;
+            }
+
+            ;
             gap: 20px;
 
             .itemrelojes {
@@ -2288,37 +2916,63 @@ header {
             }
 
             .itemrelojes1 {
-                grid-column: 1/5;
-                grid-row: 1/2;
                 padding-top: 5px;
+
+                grid: {
+                    column: 1/5;
+                    row: 1/2;
+                }
+
+                ;
             }
 
             .itemrelojes2 {
-                grid-column: 1/2;
-                grid-row: 2/3;
+                grid: {
+                    column: 1/2;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemrelojes3 {
-                grid-column: 2/3;
-                grid-row: 2/3;
+                grid: {
+                    column: 2/3;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemrelojes4 {
-                grid-column: 3/4;
-                grid-row: 2/3;
+                grid: {
+                    column: 3/4;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemrelojes5 {
-                grid-column: 4/5;
-                grid-row: 2/3;
+                grid: {
+                    column: 4/5;
+                    row: 2/3;
+                }
+
+                ;
             }
         }
 
 
         #sectionpulseras {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 50px 1fr;
+
+            grid: {
+                template-columns: repeat(4, 1fr);
+                template-rows: 50px 1fr;
+            }
+
+            ;
             gap: 20px;
 
             .itempulseras {
@@ -2331,37 +2985,63 @@ header {
             }
 
             .itempulseras1 {
-                grid-column: 1/5;
-                grid-row: 1/2;
                 padding-top: 5px;
+
+                grid: {
+                    column: 1/5;
+                    row: 1/2;
+                }
+
+                ;
             }
 
             .itempulseras2 {
-                grid-column: 1/2;
-                grid-row: 2/3;
+                grid: {
+                    column: 1/2;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itempulseras3 {
-                grid-column: 2/3;
-                grid-row: 2/3;
+                grid: {
+                    column: 2/3;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itempulseras4 {
-                grid-column: 3/4;
-                grid-row: 2/3;
+                grid: {
+                    column: 3/4;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itempulseras5 {
-                grid-column: 4/5;
-                grid-row: 2/3;
+                grid: {
+                    column: 4/5;
+                    row: 2/3;
+                }
+
+                ;
             }
         }
 
 
         #sectionaros {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 50px 1fr;
+
+            grid: {
+                template-columns: repeat(4, 1fr);
+                template-rows: 50px 1fr;
+            }
+
+            ;
             gap: 20px;
 
             .itemaros {
@@ -2374,37 +3054,63 @@ header {
             }
 
             .itemaros1 {
-                grid-column: 1/5;
-                grid-row: 1/2;
                 padding-top: 5px;
+
+                grid: {
+                    column: 1/5;
+                    row: 1/2;
+                }
+
+                ;
             }
 
             .itemaros2 {
-                grid-column: 1/2;
-                grid-row: 2/3;
+                grid: {
+                    column: 1/2;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemaros3 {
-                grid-column: 2/3;
-                grid-row: 2/3;
+                grid: {
+                    column: 2/3;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemaros4 {
-                grid-column: 3/4;
-                grid-row: 2/3;
+                grid: {
+                    column: 3/4;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemaros5 {
-                grid-column: 4/5;
-                grid-row: 2/3;
+                grid: {
+                    column: 4/5;
+                    row: 2/3;
+                }
+
+                ;
             }
         }
 
 
         #sectiondijes {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 50px 1fr;
+
+            grid: {
+                template-columns: repeat(4, 1fr);
+                template-rows: 50px 1fr;
+            }
+
+            ;
             gap: 20px;
 
             .itemdijes {
@@ -2417,29 +3123,50 @@ header {
             }
 
             .itemdijes1 {
-                grid-column: 1/5;
-                grid-row: 1/2;
                 padding-top: 5px;
+
+                grid: {
+                    column: 1/5;
+                    row: 1/2;
+                }
+
+                ;
             }
 
             .itemdijes2 {
-                grid-column: 1/2;
-                grid-row: 2/3;
+                grid: {
+                    column: 1/2;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemdijes3 {
-                grid-column: 2/3;
-                grid-row: 2/3;
+                grid: {
+                    column: 2/3;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemdijes4 {
-                grid-column: 3/4;
-                grid-row: 2/3;
+                grid: {
+                    column: 3/4;
+                    row: 2/3;
+                }
+
+                ;
             }
 
             .itemdijes5 {
-                grid-column: 4/5;
-                grid-row: 2/3;
+                grid: {
+                    column: 4/5;
+                    row: 2/3;
+                }
+
+                ;
             }
         }
     }
@@ -2627,7 +3354,7 @@ header {
 
                     border: {
                         width: 2px;
-                        style: double;
+                        style: solid;
                         radius: 50px;
                         top-color: rgba(215, 47, 128, 1);
                         right-color: rgba(215, 47, 128, 1);
